@@ -1,8 +1,8 @@
 {
   "application.js": "/packs/js/application-fa717a4d65462a449619.js",
   "application.js.map": "/packs/js/application-fa717a4d65462a449619.js.map",
-  "constants.js": "/packs/js/constants-c1b4d5e2cffc1709b58e.js",
-  "constants.js.map": "/packs/js/constants-c1b4d5e2cffc1709b58e.js.map",
+  "constants.js": "/packs/js/constants-1ac2801fd4aea5552e9d.js",
+  "constants.js.map": "/packs/js/constants-1ac2801fd4aea5552e9d.js.map",
   "entrypoints": {
     "application": {
       "js": [
@@ -14,51 +14,141 @@
     },
     "constants": {
       "js": [
-        "/packs/js/constants-c1b4d5e2cffc1709b58e.js"
+        "/packs/js/constants-1ac2801fd4aea5552e9d.js"
       ],
       "js.map": [
-        "/packs/js/constants-c1b4d5e2cffc1709b58e.js.map"
+        "/packs/js/constants-1ac2801fd4aea5552e9d.js.map"
       ]
     },
     "index": {
       "js": [
-        "/packs/js/index-93cb029d6040adc014dc.js"
+        "/packs/js/index-e16954dc81fa39643e12.js"
       ],
       "js.map": [
-        "/packs/js/index-93cb029d6040adc014dc.js.map"
+        "/packs/js/index-e16954dc81fa39643e12.js.map"
+      ]
+    },
+    "src/actions/attemptLogin": {
+      "js": [
+        "/packs/js/src/actions/attemptLogin-d7c9cb4c53a58ca13200.js"
+      ],
+      "js.map": [
+        "/packs/js/src/actions/attemptLogin-d7c9cb4c53a58ca13200.js.map"
+      ]
+    },
+    "src/actions/index": {
+      "js": [
+        "/packs/js/src/actions/index-db6f847f2dbb67899f22.js"
+      ],
+      "js.map": [
+        "/packs/js/src/actions/index-db6f847f2dbb67899f22.js.map"
+      ]
+    },
+    "src/API/index": {
+      "js": [
+        "/packs/js/src/API/index-861ab63ba66ec4bf6abb.js"
+      ],
+      "js.map": [
+        "/packs/js/src/API/index-861ab63ba66ec4bf6abb.js.map"
+      ]
+    },
+    "src/API/login": {
+      "js": [
+        "/packs/js/src/API/login-f27fe32e26749edca675.js"
+      ],
+      "js.map": [
+        "/packs/js/src/API/login-f27fe32e26749edca675.js.map"
+      ]
+    },
+    "src/API/logout": {
+      "js": [
+        "/packs/js/src/API/logout-7f0a12f5b762e7ecc7e5.js"
+      ],
+      "js.map": [
+        "/packs/js/src/API/logout-7f0a12f5b762e7ecc7e5.js.map"
       ]
     },
     "src/app/App": {
       "js": [
-        "/packs/js/src/app/App-63d6ca5c87756130324e.js"
+        "/packs/js/src/app/App-9424e14d8296608003a6.js"
       ],
       "js.map": [
-        "/packs/js/src/app/App-63d6ca5c87756130324e.js.map"
+        "/packs/js/src/app/App-9424e14d8296608003a6.js.map"
       ]
     },
     "src/app/Provided": {
       "js": [
-        "/packs/js/src/app/Provided-264824ffb506cbf8d109.js"
+        "/packs/js/src/app/Provided-177c80d010510d97dd83.js"
       ],
       "js.map": [
-        "/packs/js/src/app/Provided-264824ffb506cbf8d109.js.map"
+        "/packs/js/src/app/Provided-177c80d010510d97dd83.js.map"
       ]
     },
-    "src/components/LogIn": {
+    "src/components/LogInForm": {
       "js": [
-        "/packs/js/src/components/LogIn-5efd9bcf6b5f7824e528.js"
+        "/packs/js/src/components/LogInForm-0ff875f4844220ffd523.js"
       ],
       "js.map": [
-        "/packs/js/src/components/LogIn-5efd9bcf6b5f7824e528.js.map"
+        "/packs/js/src/components/LogInForm-0ff875f4844220ffd523.js.map"
+      ]
+    },
+    "src/components/LogoutButton": {
+      "js": [
+        "/packs/js/src/components/LogoutButton-040ce57172d87bc9c11f.js"
+      ],
+      "js.map": [
+        "/packs/js/src/components/LogoutButton-040ce57172d87bc9c11f.js.map"
+      ]
+    },
+    "src/containers/Login": {
+      "js": [
+        "/packs/js/src/containers/Login-49f4cdb1e1dc29c1206a.js"
+      ],
+      "js.map": [
+        "/packs/js/src/containers/Login-49f4cdb1e1dc29c1206a.js.map"
+      ]
+    },
+    "src/helpers/getToken": {
+      "js": [
+        "/packs/js/src/helpers/getToken-b4eaf6f91870f2f8b1b6.js"
+      ],
+      "js.map": [
+        "/packs/js/src/helpers/getToken-b4eaf6f91870f2f8b1b6.js.map"
+      ]
+    },
+    "src/reducers/index": {
+      "js": [
+        "/packs/js/src/reducers/index-e54f3d5f202066bd5053.js"
+      ],
+      "js.map": [
+        "/packs/js/src/reducers/index-e54f3d5f202066bd5053.js.map"
       ]
     }
   },
-  "index.js": "/packs/js/index-93cb029d6040adc014dc.js",
-  "index.js.map": "/packs/js/index-93cb029d6040adc014dc.js.map",
-  "src/app/App.js": "/packs/js/src/app/App-63d6ca5c87756130324e.js",
-  "src/app/App.js.map": "/packs/js/src/app/App-63d6ca5c87756130324e.js.map",
-  "src/app/Provided.js": "/packs/js/src/app/Provided-264824ffb506cbf8d109.js",
-  "src/app/Provided.js.map": "/packs/js/src/app/Provided-264824ffb506cbf8d109.js.map",
-  "src/components/LogIn.js": "/packs/js/src/components/LogIn-5efd9bcf6b5f7824e528.js",
-  "src/components/LogIn.js.map": "/packs/js/src/components/LogIn-5efd9bcf6b5f7824e528.js.map"
+  "index.js": "/packs/js/index-e16954dc81fa39643e12.js",
+  "index.js.map": "/packs/js/index-e16954dc81fa39643e12.js.map",
+  "src/API/index.js": "/packs/js/src/API/index-861ab63ba66ec4bf6abb.js",
+  "src/API/index.js.map": "/packs/js/src/API/index-861ab63ba66ec4bf6abb.js.map",
+  "src/API/login.js": "/packs/js/src/API/login-f27fe32e26749edca675.js",
+  "src/API/login.js.map": "/packs/js/src/API/login-f27fe32e26749edca675.js.map",
+  "src/API/logout.js": "/packs/js/src/API/logout-7f0a12f5b762e7ecc7e5.js",
+  "src/API/logout.js.map": "/packs/js/src/API/logout-7f0a12f5b762e7ecc7e5.js.map",
+  "src/actions/attemptLogin.js": "/packs/js/src/actions/attemptLogin-d7c9cb4c53a58ca13200.js",
+  "src/actions/attemptLogin.js.map": "/packs/js/src/actions/attemptLogin-d7c9cb4c53a58ca13200.js.map",
+  "src/actions/index.js": "/packs/js/src/actions/index-db6f847f2dbb67899f22.js",
+  "src/actions/index.js.map": "/packs/js/src/actions/index-db6f847f2dbb67899f22.js.map",
+  "src/app/App.js": "/packs/js/src/app/App-9424e14d8296608003a6.js",
+  "src/app/App.js.map": "/packs/js/src/app/App-9424e14d8296608003a6.js.map",
+  "src/app/Provided.js": "/packs/js/src/app/Provided-177c80d010510d97dd83.js",
+  "src/app/Provided.js.map": "/packs/js/src/app/Provided-177c80d010510d97dd83.js.map",
+  "src/components/LogInForm.js": "/packs/js/src/components/LogInForm-0ff875f4844220ffd523.js",
+  "src/components/LogInForm.js.map": "/packs/js/src/components/LogInForm-0ff875f4844220ffd523.js.map",
+  "src/components/LogoutButton.js": "/packs/js/src/components/LogoutButton-040ce57172d87bc9c11f.js",
+  "src/components/LogoutButton.js.map": "/packs/js/src/components/LogoutButton-040ce57172d87bc9c11f.js.map",
+  "src/containers/Login.js": "/packs/js/src/containers/Login-49f4cdb1e1dc29c1206a.js",
+  "src/containers/Login.js.map": "/packs/js/src/containers/Login-49f4cdb1e1dc29c1206a.js.map",
+  "src/helpers/getToken.js": "/packs/js/src/helpers/getToken-b4eaf6f91870f2f8b1b6.js",
+  "src/helpers/getToken.js.map": "/packs/js/src/helpers/getToken-b4eaf6f91870f2f8b1b6.js.map",
+  "src/reducers/index.js": "/packs/js/src/reducers/index-e54f3d5f202066bd5053.js",
+  "src/reducers/index.js.map": "/packs/js/src/reducers/index-e54f3d5f202066bd5053.js.map"
 }
