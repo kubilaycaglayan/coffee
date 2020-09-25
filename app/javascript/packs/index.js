@@ -5,27 +5,11 @@
 
 import React from 'react';
 import ReactDOM from 'react-dom';
-import PropTypes from 'prop-types';
-
-const Hello = ({ name }) => (
-  <div>
-    Hello
-    {name}
-    !
-  </div>
-);
-
-Hello.defaultProps = {
-  name: 'David',
-};
-
-Hello.propTypes = {
-  name: PropTypes.string,
-};
+import Provided from './src/app/Provided';
 
 document.addEventListener('DOMContentLoaded', () => {
   ReactDOM.render(
-    <Hello name="React" />,
+    <Provided />,
     document.getElementById('root'),
   );
 });
