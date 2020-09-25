@@ -12,6 +12,7 @@ class SessionsController < ApplicationController
 
   private
   def inside_outside
-    user_signed_in? ? "inside" : "outside"
+    #user_signed_in? ? "inside" : "outside"
+    'application'
   end
 end

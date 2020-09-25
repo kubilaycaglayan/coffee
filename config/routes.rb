@@ -3,7 +3,7 @@ Rails.application.routes.draw do
   get 'sessions/create'
   get 'sessions/destroy'
   devise_for :users
-  # root 'pages#index'
+  #root 'pages#index'
 
   get '*path', to: 'pages#index', via: :all
 end
