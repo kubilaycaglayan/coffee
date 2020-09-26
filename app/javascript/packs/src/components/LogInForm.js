@@ -20,11 +20,6 @@ const LoginForm = props => {
     });
   };
 
-  const handleClick = () => {
-    console.log('in form, in handle click');
-    handleLogin(creds);
-  };
-
   return (
     <>
       <form>
