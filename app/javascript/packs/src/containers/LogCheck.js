@@ -9,7 +9,7 @@ const LogCheck = props => {
   return (
     <>
       {
-        loggedIn
+        !loggedIn
           ? <App />
           : <Login />
       }

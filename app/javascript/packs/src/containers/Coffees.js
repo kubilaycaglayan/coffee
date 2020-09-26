@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react';
 import { connect } from 'react-redux';
+import { Link } from 'react-router-dom';
 import Slider from 'react-slick';
 import PropTypes from 'prop-types';
 import { getCoffees } from '../actions';
@@ -19,6 +20,7 @@ const Coffees = props => {
     speed: 500,
     slidesToShow: 1,
     slidesToScroll: 1,
+    arrows: true,
   };
 
   return (
@@ -30,8 +32,12 @@ const Coffees = props => {
         {
           coffees.map(coffee => (
             <div key={coffee.id}>
-              <h2>{coffee.name}</h2>
               <img src={coffee.photo} alt="bean" />
+              <h2>
+                <Link to={`/coffee/${coffee.id}`}>
+                  {coffee.name}
+                </Link>
+              </h2>
             </div>
           ))
         }

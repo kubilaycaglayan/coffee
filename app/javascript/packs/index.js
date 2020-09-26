@@ -6,6 +6,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import Provided from './src/containers/Provided';
+import './src/styles/main.sass';
 
 document.addEventListener('DOMContentLoaded', () => {
   ReactDOM.render(
