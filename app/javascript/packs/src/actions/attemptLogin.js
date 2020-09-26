@@ -12,7 +12,7 @@ const attemptLogin = creds => {
             dispatch(createSession(response.user));
             dispatch(autoFlash('Login successful...'));
           } else {
-            console.log('login not successful');
+            dispatch(autoFlash('login not successful'));
           }
         },
       );

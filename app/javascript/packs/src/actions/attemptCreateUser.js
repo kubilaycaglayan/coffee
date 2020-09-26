@@ -1,18 +1,28 @@
 import { createUser } from '../API';
-// import flash from './flash';
+import autoFlash from './autoFlash';
 
 const attemptCreateUser = user => {
 
   return dispatch => {
+    if (user.email === '') {
+      dispatch(autoFlash('Email can\'t be blank'));
+      return;
+    }
+    if (user.password === '') {
+      dispatch(autoFlash('Password can\'t be blank'));
+      return;
+    }
+    if (user.password !== user.password_confirmation) {
+      dispatch(autoFlash('Passwords should match'));
+      return;
+    }
     createUser(user)
       .then(
         response => {
           if (response.success) {
-            console.log('success');
-            // dispatch(flash('User created successfully'));
+            dispatch(autoFlash('User created successfully.'));
           } else {
-            console.log('nopeee');
-            // dispatch(flash('User not created successfully'));
+            dispatch(autoFlash('Something went wrong.'));
           }
         },
       );

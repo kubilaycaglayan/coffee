@@ -35,11 +35,11 @@ const LoginForm = props => {
         </label>
         <label htmlFor="password">
           Password:
-          <input id="password" onChange={handlePasswordChange} />
+          <input type="password" id="password" onChange={handlePasswordChange} />
         </label>
         <label htmlFor="passwordConfirmation">
           Password Confirmation:
-          <input id="passwordConfirmation" onChange={handlePasswordConfirmationChange} />
+          <input type="password" id="passwordConfirmation" onChange={handlePasswordConfirmationChange} />
         </label>
         <button type="button" onClick={() => { handleNewUser(newUser); }}>
           Create New User
