@@ -15,6 +15,15 @@ const Coffees = props => {
       <h1>
         Coffees
       </h1>
+      <div>
+        {
+          coffees.map(coffee => (
+            <div key={coffee.id}>
+              <h2>{coffee.name}</h2>
+            </div>
+          ))
+        }
+      </div>
     </>
   );
 };

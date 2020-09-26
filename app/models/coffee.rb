@@ -1,18 +1,15 @@
 class Coffee < ApplicationRecord
-  has_many :photos, dependent: :destroy
+  has_one :photo, dependent: :destroy
 
   def self.coffees_with_photos
     coffees = Coffee.all
     result = []
     coffees.each do |coffee|
-      coffe_photos = []
-      coffee.photos.each do |photo|
-        coffe_photos << photo.image.url
-      end
       result << {
+        id: coffee[:id],
         name: coffee[:name],
         description: coffee[:description],
-        photos: coffe_photos
+        photo: coffee.photo.image.url
       }
     end
     result
