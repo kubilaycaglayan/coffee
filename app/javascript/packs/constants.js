@@ -15,6 +15,9 @@ export const DEFAULT_SESSION = {
   loggedIn: false,
   email: '',
 };
+export const DEFAULT_COFFEES = [{}];
+
 export const INITIAL_STATE = {
   session: DEFAULT_SESSION,
+  coffees: [],
 };

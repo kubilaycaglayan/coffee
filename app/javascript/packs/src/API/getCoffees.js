@@ -13,14 +13,7 @@ const getCoffees = () => {
   })
     .then(
       response => response.json(),
-    )
-    .then(
-      res => {
-        console.log(res);
-      },
     );
 };
-
-getCoffees();
 
 export default getCoffees;
