@@ -7,7 +7,7 @@ Rails.application.routes.draw do
 
   namespace :api, :defaults => {:format => :json} do
     resources :coffees, only: [:index, :show]
-    resources :favorites, only: [:index, :show, :create, :destroy]
+    resources :favorites, only: [:index, :create, :destroy]
   end
 
   get '*path', to: 'pages#index', via: :all
