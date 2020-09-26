@@ -14,4 +14,14 @@ class Coffee < ApplicationRecord
     end
     result
   end
+
+  def self.coffees_with_photos(id)
+    coffee = Coffee.find_by(id: id)
+    result = {
+      id: coffee[:id],
+      name: coffee[:name],
+      description: coffee[:description],
+      photo: coffee.photo.image.url
+    }
+  end
 end

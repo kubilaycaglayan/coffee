@@ -4,7 +4,8 @@ class Api::CoffeesController < ApplicationController
     render :json => @coffees
   end
 
-  def create
-
+  def show
+    @coffee = Coffee.coffee_with_photos(params[:id])
+    render :json => @coffee
   end
 end
