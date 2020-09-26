@@ -12,6 +12,11 @@ user = User.create(
   password: '000000',
   password_confirmation: '000000',
   )
+User.create(
+  email: 'b@b.com',
+  password: '000000',
+  password_confirmation: '000000',
+  )
 
 coffees = [
   {
@@ -44,5 +49,6 @@ end
 
 Favorite.create(user_id: 1, coffee_id: 1)
 Favorite.create(user_id: 1, coffee_id: 2)
+Favorite.create(user_id: 2, coffee_id: 3)
 
 puts "Seeding done"
