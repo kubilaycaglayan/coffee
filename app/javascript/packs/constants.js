@@ -17,6 +17,7 @@ export const GET_COFFEE_URL = '/api/coffees/';
 export const DEFAULT_SESSION = {
   loggedIn: false,
   email: '',
+  id: '',
 };
 export const DEFAULT_COFFEE = {
   id: 0,

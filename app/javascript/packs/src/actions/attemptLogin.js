@@ -7,10 +7,8 @@ const attemptLogin = creds => {
     login(creds)
       .then(
         response => {
-          console.log(response);
           if (response.loggedIn) {
-            console.log('login successful');
-            dispatch(createSession(response.user.email));
+            dispatch(createSession(response.user));
           } else {
             console.log('login not successful');
           }

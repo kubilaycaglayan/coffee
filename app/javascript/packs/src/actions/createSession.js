@@ -1,8 +1,9 @@
 import { CREATE_SESSION } from '../../constants';
 
-const createSession = email => ({
+const createSession = user => ({
   type: CREATE_SESSION,
-  email,
+  email: user.email,
+  id: user.id,
 });
 
 export default createSession;

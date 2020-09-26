@@ -6,11 +6,13 @@ const session = (state = DEFAULT_SESSION, action) => {
       return {
         loggedIn: true,
         email: action.email,
+        id: action.id,
       };
     case DESTROY_SESSION:
       return {
         loggedIn: false,
         email: '',
+        id: '',
       };
     default:
       return state;
