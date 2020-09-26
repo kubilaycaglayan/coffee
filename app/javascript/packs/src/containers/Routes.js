@@ -8,12 +8,12 @@ import Coffees from './Coffees';
 import Coffee from './Coffee';
 
 const Routes = props => {
-  const { handleLogout } = props;
+  const { handleLogout, userId } = props;
 
   return (
     <>
       <Route exact path="/">
-        <LogoutButton handleClick={handleLogout} />
+        <LogoutButton handleClick={() => { handleLogout(userId); }} />
       </Route>
       <Route exact path="/">
         <Coffees />
@@ -27,11 +27,15 @@ Routes.propTypes = {
   handleLogout: PropTypes.func.isRequired,
 };
 
+const mapStateToProps = state => ({
+  userId: state.session.id,
+});
+
 const mapDispatchToProps = dispatch => ({
-  handleLogout: () => dispatch(attemptLogout()),
+  handleLogout: userId => dispatch(attemptLogout(userId)),
 });
 
 export default connect(
-  null,
+  mapStateToProps,
   mapDispatchToProps,
 )(Routes);

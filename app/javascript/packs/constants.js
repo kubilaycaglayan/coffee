@@ -9,8 +9,8 @@ export const DESTROY_SESSION = 'DESTROY_SESSION';
 export const RECORD_COFFEES = 'RECORD_COFFEES';
 export const RECORD_COFFEE = 'RECORD_COFFEE';
 
-export const LOGIN_URL = '/sessions/create/';
-export const LOGOUT_URL = '/sessions/destroy/';
+export const LOGIN_URL = '/sessions';
+export const LOGOUT_URL = '/sessions/';
 export const GET_COFFEES_URL = '/api/coffees';
 export const GET_COFFEE_URL = '/api/coffees/';
 

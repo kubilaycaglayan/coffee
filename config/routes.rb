@@ -1,8 +1,9 @@
 Rails.application.routes.draw do
-  # root 'sessions#new'
-  post 'sessions/create'
-  delete 'sessions/destroy'
+  # post 'sessions/create'
+  # delete 'sessions/destroy'
   root 'pages#index'
+
+  resources :sessions, only: [:create, :destroy]
 
   namespace :api, :defaults => {:format => :json} do
     resources :coffees, only: [:index, :show]

@@ -1,10 +1,10 @@
 import destroySession from './destroySession';
 import { logout } from '../API';
 
-const attemptLogout = creds => {
+const attemptLogout = userId => {
 
   return dispatch => {
-    logout()
+    logout(userId)
       .then(
         response => {
           console.log(response);
