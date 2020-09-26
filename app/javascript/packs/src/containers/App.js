@@ -1,12 +1,10 @@
 import React from 'react';
-import { BrowserRouter as Router, Route } from 'react-router-dom';
-import LogoutButton from '../components/LogoutButton';
+import { BrowserRouter as Router } from 'react-router-dom';
+import Routes from './Routes';
 
 const App = () => (
   <Router>
-    <Route exact path="/">
-      <LogoutButton handleClick={} />
-    </Route>
+    <Routes />
   </Router>
 );
 

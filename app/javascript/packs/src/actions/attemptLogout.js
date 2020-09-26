@@ -11,6 +11,7 @@ const attemptLogout = creds => {
           if (!response.loggedIn) {
             console.log('logout successful');
             dispatch(destroySession());
+            window.location.reload();
           } else {
             console.log('logout not successful');
           }
