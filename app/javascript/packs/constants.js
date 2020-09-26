@@ -9,6 +9,7 @@ export const DESTROY_SESSION = 'DESTROY_SESSION';
 
 export const LOGIN_URL = 'http://localhost:3000/sessions/create/';
 export const LOGOUT_URL = 'http://localhost:3000/sessions/destroy/';
+export const GET_COFFEES_URL = 'http://localhost:3000/api/coffees/';
 
 export const DEFAULT_SESSION = {
   loggedIn: false,
