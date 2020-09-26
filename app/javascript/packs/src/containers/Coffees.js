@@ -1,7 +1,10 @@
 import React, { useEffect } from 'react';
 import { connect } from 'react-redux';
+import Slider from 'react-slick';
 import PropTypes from 'prop-types';
 import { getCoffees } from '../actions';
+import 'slick-carousel/slick/slick.css';
+import 'slick-carousel/slick/slick-theme.css';
 
 const Coffees = props => {
   const { coffeeLoader, coffees } = props;
@@ -10,20 +13,29 @@ const Coffees = props => {
     coffeeLoader();
   }, []);
 
+  const settings = {
+    dots: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+  };
+
   return (
     <>
       <h1>
         Coffees
       </h1>
-      <div>
+      <Slider {...settings}>
         {
           coffees.map(coffee => (
             <div key={coffee.id}>
               <h2>{coffee.name}</h2>
+              <img src={coffee.photo} alt="bean" />
             </div>
           ))
         }
-      </div>
+      </Slider>
     </>
   );
 };
