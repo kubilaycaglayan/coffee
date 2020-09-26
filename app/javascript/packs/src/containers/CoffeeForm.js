@@ -1,10 +1,9 @@
 import React from 'react';
 import { connect } from 'react-redux';
-import { createNewCoffee, changeNewCoffee } from '../actions';
-import newCoffee from '../reducers/newCoffee';
+import { attemptCreateCoffee, changeNewCoffee } from '../actions';
 
 const CoffeeForm = props => {
-  const { handleDescriptionChange, handleNameChange, handleSubmit } = props;
+  const { handleDescriptionChange, handleNameChange, handleSubmit, newCoffee } = props;
 
   return (
     <form>
@@ -12,11 +11,11 @@ const CoffeeForm = props => {
         Coffe Name
         <input id="name" onChange={e => { handleNameChange(e, newCoffee); }} />
       </label>
-      <label htmlFor="description" >
+      <label htmlFor="description">
         Description
         <input id="description" onChange={e => { handleDescriptionChange(e, newCoffee); }} />
       </label>
-      <label htmlFor="file" >
+      <label htmlFor="file">
         Image
         <input id="file" type="file" />
       </label>
@@ -31,7 +30,7 @@ const mapStateToProps = state => ({
 
 const mapDispatchToProps = dispatch => ({
   handleSubmit:
-  newCoffee => dispatch(createNewCoffee(newCoffee)),
+  newCoffee => dispatch(attemptCreateCoffee(newCoffee)),
   handleNameChange:
   (e, newCoffee) => dispatch(changeNewCoffee({ ...newCoffee, name: e.target.value })),
   handleDescriptionChange:

@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 const CreateNewCoffeeButton = () => {
 
   return (
-    <Link to="/createNewCoffee">
+    <Link to="/create-coffee">
       Create New Coffee
     </Link>
   );

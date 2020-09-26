@@ -1,8 +1,8 @@
 {
   "application.js": "/packs/js/application-fa717a4d65462a449619.js",
   "application.js.map": "/packs/js/application-fa717a4d65462a449619.js.map",
-  "constants.js": "/packs/js/constants-7f65815196ae7e1d9558.js",
-  "constants.js.map": "/packs/js/constants-7f65815196ae7e1d9558.js.map",
+  "constants.js": "/packs/js/constants-3aaa20d744e230916a37.js",
+  "constants.js.map": "/packs/js/constants-3aaa20d744e230916a37.js.map",
   "entrypoints": {
     "application": {
       "js": [
@@ -14,202 +14,210 @@
     },
     "constants": {
       "js": [
-        "/packs/js/constants-7f65815196ae7e1d9558.js"
+        "/packs/js/constants-3aaa20d744e230916a37.js"
       ],
       "js.map": [
-        "/packs/js/constants-7f65815196ae7e1d9558.js.map"
+        "/packs/js/constants-3aaa20d744e230916a37.js.map"
       ]
     },
     "index": {
       "js": [
-        "/packs/js/index-3aa377232caa0fb9a102.js"
+        "/packs/js/index-747039c53720386bbf2c.js"
       ],
       "js.map": [
-        "/packs/js/index-3aa377232caa0fb9a102.js.map"
+        "/packs/js/index-747039c53720386bbf2c.js.map"
       ]
     },
     "src/actions/attemptCreateCoffee": {
       "js": [
-        "/packs/js/src/actions/attemptCreateCoffee-80a53cfe45304ca5c571.js"
+        "/packs/js/src/actions/attemptCreateCoffee-8003936fb907ea686957.js"
       ],
       "js.map": [
-        "/packs/js/src/actions/attemptCreateCoffee-80a53cfe45304ca5c571.js.map"
+        "/packs/js/src/actions/attemptCreateCoffee-8003936fb907ea686957.js.map"
       ]
     },
     "src/actions/attemptCreateFav": {
       "js": [
-        "/packs/js/src/actions/attemptCreateFav-60c63a922b27a46d7235.js"
+        "/packs/js/src/actions/attemptCreateFav-39f8053bd4369a34a788.js"
       ],
       "js.map": [
-        "/packs/js/src/actions/attemptCreateFav-60c63a922b27a46d7235.js.map"
+        "/packs/js/src/actions/attemptCreateFav-39f8053bd4369a34a788.js.map"
       ]
     },
     "src/actions/attemptDeleteFav": {
       "js": [
-        "/packs/js/src/actions/attemptDeleteFav-99c37298f70846ee75fc.js"
+        "/packs/js/src/actions/attemptDeleteFav-a5c64f1b1bfba47642bb.js"
       ],
       "js.map": [
-        "/packs/js/src/actions/attemptDeleteFav-99c37298f70846ee75fc.js.map"
+        "/packs/js/src/actions/attemptDeleteFav-a5c64f1b1bfba47642bb.js.map"
       ]
     },
     "src/actions/attemptLogin": {
       "js": [
-        "/packs/js/src/actions/attemptLogin-c8a53f8c5ca14b12a6cf.js"
+        "/packs/js/src/actions/attemptLogin-c4eed8925d45eb1f3b63.js"
       ],
       "js.map": [
-        "/packs/js/src/actions/attemptLogin-c8a53f8c5ca14b12a6cf.js.map"
+        "/packs/js/src/actions/attemptLogin-c4eed8925d45eb1f3b63.js.map"
       ]
     },
     "src/actions/attemptLogout": {
       "js": [
-        "/packs/js/src/actions/attemptLogout-c035656007d99bcf97ab.js"
+        "/packs/js/src/actions/attemptLogout-78e375ca17a603b2b07b.js"
       ],
       "js.map": [
-        "/packs/js/src/actions/attemptLogout-c035656007d99bcf97ab.js.map"
+        "/packs/js/src/actions/attemptLogout-78e375ca17a603b2b07b.js.map"
+      ]
+    },
+    "src/actions/changeNewCoffee": {
+      "js": [
+        "/packs/js/src/actions/changeNewCoffee-224229d3080db5147294.js"
+      ],
+      "js.map": [
+        "/packs/js/src/actions/changeNewCoffee-224229d3080db5147294.js.map"
       ]
     },
     "src/actions/createSession": {
       "js": [
-        "/packs/js/src/actions/createSession-84b47ea8b94d18cdd284.js"
+        "/packs/js/src/actions/createSession-c417d6ea82f35e146d35.js"
       ],
       "js.map": [
-        "/packs/js/src/actions/createSession-84b47ea8b94d18cdd284.js.map"
+        "/packs/js/src/actions/createSession-c417d6ea82f35e146d35.js.map"
       ]
     },
     "src/actions/destroySession": {
       "js": [
-        "/packs/js/src/actions/destroySession-72fa051d5ef82906a457.js"
+        "/packs/js/src/actions/destroySession-c49fba4dd59a5faadd04.js"
       ],
       "js.map": [
-        "/packs/js/src/actions/destroySession-72fa051d5ef82906a457.js.map"
+        "/packs/js/src/actions/destroySession-c49fba4dd59a5faadd04.js.map"
       ]
     },
     "src/actions/getCoffee": {
       "js": [
-        "/packs/js/src/actions/getCoffee-83e3e3c52eb9bf140a1c.js"
+        "/packs/js/src/actions/getCoffee-a9dcfe74c161aa32fb2d.js"
       ],
       "js.map": [
-        "/packs/js/src/actions/getCoffee-83e3e3c52eb9bf140a1c.js.map"
+        "/packs/js/src/actions/getCoffee-a9dcfe74c161aa32fb2d.js.map"
       ]
     },
     "src/actions/getCoffees": {
       "js": [
-        "/packs/js/src/actions/getCoffees-d4c5fe9f06c4647a13c0.js"
+        "/packs/js/src/actions/getCoffees-c5a8da254378067b0839.js"
       ],
       "js.map": [
-        "/packs/js/src/actions/getCoffees-d4c5fe9f06c4647a13c0.js.map"
+        "/packs/js/src/actions/getCoffees-c5a8da254378067b0839.js.map"
       ]
     },
     "src/actions/getFavorites": {
       "js": [
-        "/packs/js/src/actions/getFavorites-e40bcb79f513027d3784.js"
+        "/packs/js/src/actions/getFavorites-eab3bfac5b9388205e11.js"
       ],
       "js.map": [
-        "/packs/js/src/actions/getFavorites-e40bcb79f513027d3784.js.map"
+        "/packs/js/src/actions/getFavorites-eab3bfac5b9388205e11.js.map"
       ]
     },
     "src/actions/index": {
       "js": [
-        "/packs/js/src/actions/index-2a85ae19a33e8330e975.js"
+        "/packs/js/src/actions/index-2074af9a7d479affe719.js"
       ],
       "js.map": [
-        "/packs/js/src/actions/index-2a85ae19a33e8330e975.js.map"
+        "/packs/js/src/actions/index-2074af9a7d479affe719.js.map"
       ]
     },
     "src/actions/recordCoffee": {
       "js": [
-        "/packs/js/src/actions/recordCoffee-84adac0b71d90c158b0d.js"
+        "/packs/js/src/actions/recordCoffee-34e6bbb55e161adb1abb.js"
       ],
       "js.map": [
-        "/packs/js/src/actions/recordCoffee-84adac0b71d90c158b0d.js.map"
+        "/packs/js/src/actions/recordCoffee-34e6bbb55e161adb1abb.js.map"
       ]
     },
     "src/actions/recordCoffees": {
       "js": [
-        "/packs/js/src/actions/recordCoffees-a3ee8a9ca57be14202f4.js"
+        "/packs/js/src/actions/recordCoffees-8d913301497b13eb0410.js"
       ],
       "js.map": [
-        "/packs/js/src/actions/recordCoffees-a3ee8a9ca57be14202f4.js.map"
+        "/packs/js/src/actions/recordCoffees-8d913301497b13eb0410.js.map"
       ]
     },
     "src/actions/recordFavorites": {
       "js": [
-        "/packs/js/src/actions/recordFavorites-1307d85f130939a10da5.js"
+        "/packs/js/src/actions/recordFavorites-97484b0964d9bb494d8d.js"
       ],
       "js.map": [
-        "/packs/js/src/actions/recordFavorites-1307d85f130939a10da5.js.map"
+        "/packs/js/src/actions/recordFavorites-97484b0964d9bb494d8d.js.map"
       ]
     },
     "src/API/coffeeIndex": {
       "js": [
-        "/packs/js/src/API/coffeeIndex-f413da2ce0aaa70c6dc3.js"
+        "/packs/js/src/API/coffeeIndex-222db777d0ecb1765c44.js"
       ],
       "js.map": [
-        "/packs/js/src/API/coffeeIndex-f413da2ce0aaa70c6dc3.js.map"
+        "/packs/js/src/API/coffeeIndex-222db777d0ecb1765c44.js.map"
       ]
     },
     "src/API/coffeesIndex": {
       "js": [
-        "/packs/js/src/API/coffeesIndex-28c3e84ec4adf7f6c7d7.js"
+        "/packs/js/src/API/coffeesIndex-6f825c7698ddc3dd4c27.js"
       ],
       "js.map": [
-        "/packs/js/src/API/coffeesIndex-28c3e84ec4adf7f6c7d7.js.map"
+        "/packs/js/src/API/coffeesIndex-6f825c7698ddc3dd4c27.js.map"
       ]
     },
     "src/API/createCoffee": {
       "js": [
-        "/packs/js/src/API/createCoffee-8f0ca52d55f029ed9bc4.js"
+        "/packs/js/src/API/createCoffee-8b29cdfab5723d33329a.js"
       ],
       "js.map": [
-        "/packs/js/src/API/createCoffee-8f0ca52d55f029ed9bc4.js.map"
+        "/packs/js/src/API/createCoffee-8b29cdfab5723d33329a.js.map"
       ]
     },
     "src/API/createFavorite": {
       "js": [
-        "/packs/js/src/API/createFavorite-b139d89532476ea99ad5.js"
+        "/packs/js/src/API/createFavorite-9601a1c291b8ad5a40c6.js"
       ],
       "js.map": [
-        "/packs/js/src/API/createFavorite-b139d89532476ea99ad5.js.map"
+        "/packs/js/src/API/createFavorite-9601a1c291b8ad5a40c6.js.map"
       ]
     },
     "src/API/deleteFavorite": {
       "js": [
-        "/packs/js/src/API/deleteFavorite-b2098fd54eb0fd124561.js"
+        "/packs/js/src/API/deleteFavorite-6aa5f96b6be09738ffb6.js"
       ],
       "js.map": [
-        "/packs/js/src/API/deleteFavorite-b2098fd54eb0fd124561.js.map"
+        "/packs/js/src/API/deleteFavorite-6aa5f96b6be09738ffb6.js.map"
       ]
     },
     "src/API/favoritesIndex": {
       "js": [
-        "/packs/js/src/API/favoritesIndex-1ad79b6e0a1ac9aab76c.js"
+        "/packs/js/src/API/favoritesIndex-0aa8bfff7d05ae6776f0.js"
       ],
       "js.map": [
-        "/packs/js/src/API/favoritesIndex-1ad79b6e0a1ac9aab76c.js.map"
+        "/packs/js/src/API/favoritesIndex-0aa8bfff7d05ae6776f0.js.map"
       ]
     },
     "src/API/index": {
       "js": [
-        "/packs/js/src/API/index-615689c9778fe40976b3.js"
+        "/packs/js/src/API/index-9dcdd50c1fdfa1c3e42a.js"
       ],
       "js.map": [
-        "/packs/js/src/API/index-615689c9778fe40976b3.js.map"
+        "/packs/js/src/API/index-9dcdd50c1fdfa1c3e42a.js.map"
       ]
     },
     "src/API/login": {
       "js": [
-        "/packs/js/src/API/login-987966cb9285e5e46d66.js"
+        "/packs/js/src/API/login-8a3dd02bb92c04ae4ee0.js"
       ],
       "js.map": [
-        "/packs/js/src/API/login-987966cb9285e5e46d66.js.map"
+        "/packs/js/src/API/login-8a3dd02bb92c04ae4ee0.js.map"
       ]
     },
     "src/API/logout": {
       "js": [
-        "/packs/js/src/API/logout-5478dc2a7c23e0d59e25.js"
+        "/packs/js/src/API/logout-f45b2ce62643253a3ed2.js"
       ],
       "js.map": [
-        "/packs/js/src/API/logout-5478dc2a7c23e0d59e25.js.map"
+        "/packs/js/src/API/logout-f45b2ce62643253a3ed2.js.map"
       ]
     },
     "src/components/CoffeesButton": {
@@ -230,10 +238,10 @@
     },
     "src/components/CreateNewCoffeeButton": {
       "js": [
-        "/packs/js/src/components/CreateNewCoffeeButton-3e90b870d02abbe303fb.js"
+        "/packs/js/src/components/CreateNewCoffeeButton-a866a12802cb03bc0ac4.js"
       ],
       "js.map": [
-        "/packs/js/src/components/CreateNewCoffeeButton-3e90b870d02abbe303fb.js.map"
+        "/packs/js/src/components/CreateNewCoffeeButton-a866a12802cb03bc0ac4.js.map"
       ]
     },
     "src/components/DeleteFavoriteButton": {
@@ -262,10 +270,10 @@
     },
     "src/components/LogInForm": {
       "js": [
-        "/packs/js/src/components/LogInForm-3348709d67c455c6cc54.js"
+        "/packs/js/src/components/LogInForm-15f4aafe38df9a5e47c0.js"
       ],
       "js.map": [
-        "/packs/js/src/components/LogInForm-3348709d67c455c6cc54.js.map"
+        "/packs/js/src/components/LogInForm-15f4aafe38df9a5e47c0.js.map"
       ]
     },
     "src/components/LogoutButton": {
@@ -278,74 +286,74 @@
     },
     "src/containers/App": {
       "js": [
-        "/packs/js/src/containers/App-dadc3851ee199a053b0e.js"
+        "/packs/js/src/containers/App-68e4604ef61f3a8004e9.js"
       ],
       "js.map": [
-        "/packs/js/src/containers/App-dadc3851ee199a053b0e.js.map"
+        "/packs/js/src/containers/App-68e4604ef61f3a8004e9.js.map"
       ]
     },
     "src/containers/Coffee": {
       "js": [
-        "/packs/js/src/containers/Coffee-40946ebdaa90e5671af8.js"
+        "/packs/js/src/containers/Coffee-b28625857054914fa292.js"
       ],
       "js.map": [
-        "/packs/js/src/containers/Coffee-40946ebdaa90e5671af8.js.map"
+        "/packs/js/src/containers/Coffee-b28625857054914fa292.js.map"
       ]
     },
     "src/containers/CoffeeForm": {
       "js": [
-        "/packs/js/src/containers/CoffeeForm-92269786d1e2d88f39ff.js"
+        "/packs/js/src/containers/CoffeeForm-e68028a7f3e16b0b2ae1.js"
       ],
       "js.map": [
-        "/packs/js/src/containers/CoffeeForm-92269786d1e2d88f39ff.js.map"
+        "/packs/js/src/containers/CoffeeForm-e68028a7f3e16b0b2ae1.js.map"
       ]
     },
     "src/containers/Coffees": {
       "js": [
-        "/packs/js/src/containers/Coffees-845e438cb417d541c349.js"
+        "/packs/js/src/containers/Coffees-ebb9871eaeb33f62b557.js"
       ],
       "js.map": [
-        "/packs/js/src/containers/Coffees-845e438cb417d541c349.js.map"
+        "/packs/js/src/containers/Coffees-ebb9871eaeb33f62b557.js.map"
       ]
     },
     "src/containers/Favorites": {
       "js": [
-        "/packs/js/src/containers/Favorites-fae66dc8b17f68744dfa.js"
+        "/packs/js/src/containers/Favorites-da2e30ac6562af6d4d8d.js"
       ],
       "js.map": [
-        "/packs/js/src/containers/Favorites-fae66dc8b17f68744dfa.js.map"
+        "/packs/js/src/containers/Favorites-da2e30ac6562af6d4d8d.js.map"
       ]
     },
     "src/containers/LogCheck": {
       "js": [
-        "/packs/js/src/containers/LogCheck-c6e8dea61cde96c5b7ec.js"
+        "/packs/js/src/containers/LogCheck-ac3c8c4c1d2ffad72b1e.js"
       ],
       "js.map": [
-        "/packs/js/src/containers/LogCheck-c6e8dea61cde96c5b7ec.js.map"
+        "/packs/js/src/containers/LogCheck-ac3c8c4c1d2ffad72b1e.js.map"
       ]
     },
     "src/containers/Login": {
       "js": [
-        "/packs/js/src/containers/Login-025f3f4e68465c2f9ae7.js"
+        "/packs/js/src/containers/Login-2ed12e4e34fcdbca0b66.js"
       ],
       "js.map": [
-        "/packs/js/src/containers/Login-025f3f4e68465c2f9ae7.js.map"
+        "/packs/js/src/containers/Login-2ed12e4e34fcdbca0b66.js.map"
       ]
     },
     "src/containers/Provided": {
       "js": [
-        "/packs/js/src/containers/Provided-b70e6112a1915184f677.js"
+        "/packs/js/src/containers/Provided-1d5967359c73e3f0ff60.js"
       ],
       "js.map": [
-        "/packs/js/src/containers/Provided-b70e6112a1915184f677.js.map"
+        "/packs/js/src/containers/Provided-1d5967359c73e3f0ff60.js.map"
       ]
     },
     "src/containers/Routes": {
       "js": [
-        "/packs/js/src/containers/Routes-46f7aa4ef2233e69a365.js"
+        "/packs/js/src/containers/Routes-cecc02deef7ae420edf9.js"
       ],
       "js.map": [
-        "/packs/js/src/containers/Routes-46f7aa4ef2233e69a365.js.map"
+        "/packs/js/src/containers/Routes-cecc02deef7ae420edf9.js.map"
       ]
     },
     "src/helpers/getToken": {
@@ -358,42 +366,50 @@
     },
     "src/reducers/coffee": {
       "js": [
-        "/packs/js/src/reducers/coffee-60d83d658e12f826940f.js"
+        "/packs/js/src/reducers/coffee-9b3bf6f7e1577ecf2311.js"
       ],
       "js.map": [
-        "/packs/js/src/reducers/coffee-60d83d658e12f826940f.js.map"
+        "/packs/js/src/reducers/coffee-9b3bf6f7e1577ecf2311.js.map"
       ]
     },
     "src/reducers/coffees": {
       "js": [
-        "/packs/js/src/reducers/coffees-4fda9ffb05f3cfec1428.js"
+        "/packs/js/src/reducers/coffees-6020d67560c69b283996.js"
       ],
       "js.map": [
-        "/packs/js/src/reducers/coffees-4fda9ffb05f3cfec1428.js.map"
+        "/packs/js/src/reducers/coffees-6020d67560c69b283996.js.map"
       ]
     },
     "src/reducers/favorites": {
       "js": [
-        "/packs/js/src/reducers/favorites-a2567998619e15d3ec3d.js"
+        "/packs/js/src/reducers/favorites-1d1b683c8e0b33fcfee0.js"
       ],
       "js.map": [
-        "/packs/js/src/reducers/favorites-a2567998619e15d3ec3d.js.map"
+        "/packs/js/src/reducers/favorites-1d1b683c8e0b33fcfee0.js.map"
       ]
     },
     "src/reducers/index": {
       "js": [
-        "/packs/js/src/reducers/index-a8e50d0fe2371056c8f2.js"
+        "/packs/js/src/reducers/index-e7f0e7889465e4fff427.js"
       ],
       "js.map": [
-        "/packs/js/src/reducers/index-a8e50d0fe2371056c8f2.js.map"
+        "/packs/js/src/reducers/index-e7f0e7889465e4fff427.js.map"
+      ]
+    },
+    "src/reducers/newCoffee": {
+      "js": [
+        "/packs/js/src/reducers/newCoffee-0690add9ba981ef5a5cf.js"
+      ],
+      "js.map": [
+        "/packs/js/src/reducers/newCoffee-0690add9ba981ef5a5cf.js.map"
       ]
     },
     "src/reducers/session": {
       "js": [
-        "/packs/js/src/reducers/session-0ae016851e366b2a11cb.js"
+        "/packs/js/src/reducers/session-a962a31f9cd7b63212e3.js"
       ],
       "js.map": [
-        "/packs/js/src/reducers/session-0ae016851e366b2a11cb.js.map"
+        "/packs/js/src/reducers/session-a962a31f9cd7b63212e3.js.map"
       ]
     },
     "src/styles/loading": {
@@ -413,105 +429,109 @@
       ]
     }
   },
-  "index.js": "/packs/js/index-3aa377232caa0fb9a102.js",
-  "index.js.map": "/packs/js/index-3aa377232caa0fb9a102.js.map",
+  "index.js": "/packs/js/index-747039c53720386bbf2c.js",
+  "index.js.map": "/packs/js/index-747039c53720386bbf2c.js.map",
   "media/fonts/slick.eot": "/packs/media/fonts/slick-ced611da.eot",
   "media/fonts/slick.svg": "/packs/media/fonts/slick-f97e3bbf.svg",
   "media/fonts/slick.ttf": "/packs/media/fonts/slick-d41f55a7.ttf",
   "media/fonts/slick.woff": "/packs/media/fonts/slick-b7c9e1e4.woff",
   "media/slick/ajax-loader.gif": "/packs/media/slick/ajax-loader-c5cd7f53.gif",
-  "src/API/coffeeIndex.js": "/packs/js/src/API/coffeeIndex-f413da2ce0aaa70c6dc3.js",
-  "src/API/coffeeIndex.js.map": "/packs/js/src/API/coffeeIndex-f413da2ce0aaa70c6dc3.js.map",
-  "src/API/coffeesIndex.js": "/packs/js/src/API/coffeesIndex-28c3e84ec4adf7f6c7d7.js",
-  "src/API/coffeesIndex.js.map": "/packs/js/src/API/coffeesIndex-28c3e84ec4adf7f6c7d7.js.map",
-  "src/API/createCoffee.js": "/packs/js/src/API/createCoffee-8f0ca52d55f029ed9bc4.js",
-  "src/API/createCoffee.js.map": "/packs/js/src/API/createCoffee-8f0ca52d55f029ed9bc4.js.map",
-  "src/API/createFavorite.js": "/packs/js/src/API/createFavorite-b139d89532476ea99ad5.js",
-  "src/API/createFavorite.js.map": "/packs/js/src/API/createFavorite-b139d89532476ea99ad5.js.map",
-  "src/API/deleteFavorite.js": "/packs/js/src/API/deleteFavorite-b2098fd54eb0fd124561.js",
-  "src/API/deleteFavorite.js.map": "/packs/js/src/API/deleteFavorite-b2098fd54eb0fd124561.js.map",
-  "src/API/favoritesIndex.js": "/packs/js/src/API/favoritesIndex-1ad79b6e0a1ac9aab76c.js",
-  "src/API/favoritesIndex.js.map": "/packs/js/src/API/favoritesIndex-1ad79b6e0a1ac9aab76c.js.map",
-  "src/API/index.js": "/packs/js/src/API/index-615689c9778fe40976b3.js",
-  "src/API/index.js.map": "/packs/js/src/API/index-615689c9778fe40976b3.js.map",
-  "src/API/login.js": "/packs/js/src/API/login-987966cb9285e5e46d66.js",
-  "src/API/login.js.map": "/packs/js/src/API/login-987966cb9285e5e46d66.js.map",
-  "src/API/logout.js": "/packs/js/src/API/logout-5478dc2a7c23e0d59e25.js",
-  "src/API/logout.js.map": "/packs/js/src/API/logout-5478dc2a7c23e0d59e25.js.map",
-  "src/actions/attemptCreateCoffee.js": "/packs/js/src/actions/attemptCreateCoffee-80a53cfe45304ca5c571.js",
-  "src/actions/attemptCreateCoffee.js.map": "/packs/js/src/actions/attemptCreateCoffee-80a53cfe45304ca5c571.js.map",
-  "src/actions/attemptCreateFav.js": "/packs/js/src/actions/attemptCreateFav-60c63a922b27a46d7235.js",
-  "src/actions/attemptCreateFav.js.map": "/packs/js/src/actions/attemptCreateFav-60c63a922b27a46d7235.js.map",
-  "src/actions/attemptDeleteFav.js": "/packs/js/src/actions/attemptDeleteFav-99c37298f70846ee75fc.js",
-  "src/actions/attemptDeleteFav.js.map": "/packs/js/src/actions/attemptDeleteFav-99c37298f70846ee75fc.js.map",
-  "src/actions/attemptLogin.js": "/packs/js/src/actions/attemptLogin-c8a53f8c5ca14b12a6cf.js",
-  "src/actions/attemptLogin.js.map": "/packs/js/src/actions/attemptLogin-c8a53f8c5ca14b12a6cf.js.map",
-  "src/actions/attemptLogout.js": "/packs/js/src/actions/attemptLogout-c035656007d99bcf97ab.js",
-  "src/actions/attemptLogout.js.map": "/packs/js/src/actions/attemptLogout-c035656007d99bcf97ab.js.map",
-  "src/actions/createSession.js": "/packs/js/src/actions/createSession-84b47ea8b94d18cdd284.js",
-  "src/actions/createSession.js.map": "/packs/js/src/actions/createSession-84b47ea8b94d18cdd284.js.map",
-  "src/actions/destroySession.js": "/packs/js/src/actions/destroySession-72fa051d5ef82906a457.js",
-  "src/actions/destroySession.js.map": "/packs/js/src/actions/destroySession-72fa051d5ef82906a457.js.map",
-  "src/actions/getCoffee.js": "/packs/js/src/actions/getCoffee-83e3e3c52eb9bf140a1c.js",
-  "src/actions/getCoffee.js.map": "/packs/js/src/actions/getCoffee-83e3e3c52eb9bf140a1c.js.map",
-  "src/actions/getCoffees.js": "/packs/js/src/actions/getCoffees-d4c5fe9f06c4647a13c0.js",
-  "src/actions/getCoffees.js.map": "/packs/js/src/actions/getCoffees-d4c5fe9f06c4647a13c0.js.map",
-  "src/actions/getFavorites.js": "/packs/js/src/actions/getFavorites-e40bcb79f513027d3784.js",
-  "src/actions/getFavorites.js.map": "/packs/js/src/actions/getFavorites-e40bcb79f513027d3784.js.map",
-  "src/actions/index.js": "/packs/js/src/actions/index-2a85ae19a33e8330e975.js",
-  "src/actions/index.js.map": "/packs/js/src/actions/index-2a85ae19a33e8330e975.js.map",
-  "src/actions/recordCoffee.js": "/packs/js/src/actions/recordCoffee-84adac0b71d90c158b0d.js",
-  "src/actions/recordCoffee.js.map": "/packs/js/src/actions/recordCoffee-84adac0b71d90c158b0d.js.map",
-  "src/actions/recordCoffees.js": "/packs/js/src/actions/recordCoffees-a3ee8a9ca57be14202f4.js",
-  "src/actions/recordCoffees.js.map": "/packs/js/src/actions/recordCoffees-a3ee8a9ca57be14202f4.js.map",
-  "src/actions/recordFavorites.js": "/packs/js/src/actions/recordFavorites-1307d85f130939a10da5.js",
-  "src/actions/recordFavorites.js.map": "/packs/js/src/actions/recordFavorites-1307d85f130939a10da5.js.map",
+  "src/API/coffeeIndex.js": "/packs/js/src/API/coffeeIndex-222db777d0ecb1765c44.js",
+  "src/API/coffeeIndex.js.map": "/packs/js/src/API/coffeeIndex-222db777d0ecb1765c44.js.map",
+  "src/API/coffeesIndex.js": "/packs/js/src/API/coffeesIndex-6f825c7698ddc3dd4c27.js",
+  "src/API/coffeesIndex.js.map": "/packs/js/src/API/coffeesIndex-6f825c7698ddc3dd4c27.js.map",
+  "src/API/createCoffee.js": "/packs/js/src/API/createCoffee-8b29cdfab5723d33329a.js",
+  "src/API/createCoffee.js.map": "/packs/js/src/API/createCoffee-8b29cdfab5723d33329a.js.map",
+  "src/API/createFavorite.js": "/packs/js/src/API/createFavorite-9601a1c291b8ad5a40c6.js",
+  "src/API/createFavorite.js.map": "/packs/js/src/API/createFavorite-9601a1c291b8ad5a40c6.js.map",
+  "src/API/deleteFavorite.js": "/packs/js/src/API/deleteFavorite-6aa5f96b6be09738ffb6.js",
+  "src/API/deleteFavorite.js.map": "/packs/js/src/API/deleteFavorite-6aa5f96b6be09738ffb6.js.map",
+  "src/API/favoritesIndex.js": "/packs/js/src/API/favoritesIndex-0aa8bfff7d05ae6776f0.js",
+  "src/API/favoritesIndex.js.map": "/packs/js/src/API/favoritesIndex-0aa8bfff7d05ae6776f0.js.map",
+  "src/API/index.js": "/packs/js/src/API/index-9dcdd50c1fdfa1c3e42a.js",
+  "src/API/index.js.map": "/packs/js/src/API/index-9dcdd50c1fdfa1c3e42a.js.map",
+  "src/API/login.js": "/packs/js/src/API/login-8a3dd02bb92c04ae4ee0.js",
+  "src/API/login.js.map": "/packs/js/src/API/login-8a3dd02bb92c04ae4ee0.js.map",
+  "src/API/logout.js": "/packs/js/src/API/logout-f45b2ce62643253a3ed2.js",
+  "src/API/logout.js.map": "/packs/js/src/API/logout-f45b2ce62643253a3ed2.js.map",
+  "src/actions/attemptCreateCoffee.js": "/packs/js/src/actions/attemptCreateCoffee-8003936fb907ea686957.js",
+  "src/actions/attemptCreateCoffee.js.map": "/packs/js/src/actions/attemptCreateCoffee-8003936fb907ea686957.js.map",
+  "src/actions/attemptCreateFav.js": "/packs/js/src/actions/attemptCreateFav-39f8053bd4369a34a788.js",
+  "src/actions/attemptCreateFav.js.map": "/packs/js/src/actions/attemptCreateFav-39f8053bd4369a34a788.js.map",
+  "src/actions/attemptDeleteFav.js": "/packs/js/src/actions/attemptDeleteFav-a5c64f1b1bfba47642bb.js",
+  "src/actions/attemptDeleteFav.js.map": "/packs/js/src/actions/attemptDeleteFav-a5c64f1b1bfba47642bb.js.map",
+  "src/actions/attemptLogin.js": "/packs/js/src/actions/attemptLogin-c4eed8925d45eb1f3b63.js",
+  "src/actions/attemptLogin.js.map": "/packs/js/src/actions/attemptLogin-c4eed8925d45eb1f3b63.js.map",
+  "src/actions/attemptLogout.js": "/packs/js/src/actions/attemptLogout-78e375ca17a603b2b07b.js",
+  "src/actions/attemptLogout.js.map": "/packs/js/src/actions/attemptLogout-78e375ca17a603b2b07b.js.map",
+  "src/actions/changeNewCoffee.js": "/packs/js/src/actions/changeNewCoffee-224229d3080db5147294.js",
+  "src/actions/changeNewCoffee.js.map": "/packs/js/src/actions/changeNewCoffee-224229d3080db5147294.js.map",
+  "src/actions/createSession.js": "/packs/js/src/actions/createSession-c417d6ea82f35e146d35.js",
+  "src/actions/createSession.js.map": "/packs/js/src/actions/createSession-c417d6ea82f35e146d35.js.map",
+  "src/actions/destroySession.js": "/packs/js/src/actions/destroySession-c49fba4dd59a5faadd04.js",
+  "src/actions/destroySession.js.map": "/packs/js/src/actions/destroySession-c49fba4dd59a5faadd04.js.map",
+  "src/actions/getCoffee.js": "/packs/js/src/actions/getCoffee-a9dcfe74c161aa32fb2d.js",
+  "src/actions/getCoffee.js.map": "/packs/js/src/actions/getCoffee-a9dcfe74c161aa32fb2d.js.map",
+  "src/actions/getCoffees.js": "/packs/js/src/actions/getCoffees-c5a8da254378067b0839.js",
+  "src/actions/getCoffees.js.map": "/packs/js/src/actions/getCoffees-c5a8da254378067b0839.js.map",
+  "src/actions/getFavorites.js": "/packs/js/src/actions/getFavorites-eab3bfac5b9388205e11.js",
+  "src/actions/getFavorites.js.map": "/packs/js/src/actions/getFavorites-eab3bfac5b9388205e11.js.map",
+  "src/actions/index.js": "/packs/js/src/actions/index-2074af9a7d479affe719.js",
+  "src/actions/index.js.map": "/packs/js/src/actions/index-2074af9a7d479affe719.js.map",
+  "src/actions/recordCoffee.js": "/packs/js/src/actions/recordCoffee-34e6bbb55e161adb1abb.js",
+  "src/actions/recordCoffee.js.map": "/packs/js/src/actions/recordCoffee-34e6bbb55e161adb1abb.js.map",
+  "src/actions/recordCoffees.js": "/packs/js/src/actions/recordCoffees-8d913301497b13eb0410.js",
+  "src/actions/recordCoffees.js.map": "/packs/js/src/actions/recordCoffees-8d913301497b13eb0410.js.map",
+  "src/actions/recordFavorites.js": "/packs/js/src/actions/recordFavorites-97484b0964d9bb494d8d.js",
+  "src/actions/recordFavorites.js.map": "/packs/js/src/actions/recordFavorites-97484b0964d9bb494d8d.js.map",
   "src/components/CoffeesButton.js": "/packs/js/src/components/CoffeesButton-0e85ba7ed8304f704282.js",
   "src/components/CoffeesButton.js.map": "/packs/js/src/components/CoffeesButton-0e85ba7ed8304f704282.js.map",
   "src/components/CreateFavoriteButton.js": "/packs/js/src/components/CreateFavoriteButton-d8ae7ebf6bb7ab2cdcd9.js",
   "src/components/CreateFavoriteButton.js.map": "/packs/js/src/components/CreateFavoriteButton-d8ae7ebf6bb7ab2cdcd9.js.map",
-  "src/components/CreateNewCoffeeButton.js": "/packs/js/src/components/CreateNewCoffeeButton-3e90b870d02abbe303fb.js",
-  "src/components/CreateNewCoffeeButton.js.map": "/packs/js/src/components/CreateNewCoffeeButton-3e90b870d02abbe303fb.js.map",
+  "src/components/CreateNewCoffeeButton.js": "/packs/js/src/components/CreateNewCoffeeButton-a866a12802cb03bc0ac4.js",
+  "src/components/CreateNewCoffeeButton.js.map": "/packs/js/src/components/CreateNewCoffeeButton-a866a12802cb03bc0ac4.js.map",
   "src/components/DeleteFavoriteButton.js": "/packs/js/src/components/DeleteFavoriteButton-19eb7825a9f65c26b17e.js",
   "src/components/DeleteFavoriteButton.js.map": "/packs/js/src/components/DeleteFavoriteButton-19eb7825a9f65c26b17e.js.map",
   "src/components/FavoritesButton.js": "/packs/js/src/components/FavoritesButton-975e7d6cc7578ab4d688.js",
   "src/components/FavoritesButton.js.map": "/packs/js/src/components/FavoritesButton-975e7d6cc7578ab4d688.js.map",
   "src/components/Loading.js": "/packs/js/src/components/Loading-fbecfba978f48529cd3c.js",
   "src/components/Loading.js.map": "/packs/js/src/components/Loading-fbecfba978f48529cd3c.js.map",
-  "src/components/LogInForm.js": "/packs/js/src/components/LogInForm-3348709d67c455c6cc54.js",
-  "src/components/LogInForm.js.map": "/packs/js/src/components/LogInForm-3348709d67c455c6cc54.js.map",
+  "src/components/LogInForm.js": "/packs/js/src/components/LogInForm-15f4aafe38df9a5e47c0.js",
+  "src/components/LogInForm.js.map": "/packs/js/src/components/LogInForm-15f4aafe38df9a5e47c0.js.map",
   "src/components/LogoutButton.js": "/packs/js/src/components/LogoutButton-ac86e6f4729325194e70.js",
   "src/components/LogoutButton.js.map": "/packs/js/src/components/LogoutButton-ac86e6f4729325194e70.js.map",
-  "src/containers/App.js": "/packs/js/src/containers/App-dadc3851ee199a053b0e.js",
-  "src/containers/App.js.map": "/packs/js/src/containers/App-dadc3851ee199a053b0e.js.map",
-  "src/containers/Coffee.js": "/packs/js/src/containers/Coffee-40946ebdaa90e5671af8.js",
-  "src/containers/Coffee.js.map": "/packs/js/src/containers/Coffee-40946ebdaa90e5671af8.js.map",
-  "src/containers/CoffeeForm.js": "/packs/js/src/containers/CoffeeForm-92269786d1e2d88f39ff.js",
-  "src/containers/CoffeeForm.js.map": "/packs/js/src/containers/CoffeeForm-92269786d1e2d88f39ff.js.map",
-  "src/containers/Coffees.js": "/packs/js/src/containers/Coffees-845e438cb417d541c349.js",
-  "src/containers/Coffees.js.map": "/packs/js/src/containers/Coffees-845e438cb417d541c349.js.map",
-  "src/containers/Favorites.js": "/packs/js/src/containers/Favorites-fae66dc8b17f68744dfa.js",
-  "src/containers/Favorites.js.map": "/packs/js/src/containers/Favorites-fae66dc8b17f68744dfa.js.map",
-  "src/containers/LogCheck.js": "/packs/js/src/containers/LogCheck-c6e8dea61cde96c5b7ec.js",
-  "src/containers/LogCheck.js.map": "/packs/js/src/containers/LogCheck-c6e8dea61cde96c5b7ec.js.map",
-  "src/containers/Login.js": "/packs/js/src/containers/Login-025f3f4e68465c2f9ae7.js",
-  "src/containers/Login.js.map": "/packs/js/src/containers/Login-025f3f4e68465c2f9ae7.js.map",
-  "src/containers/Provided.js": "/packs/js/src/containers/Provided-b70e6112a1915184f677.js",
-  "src/containers/Provided.js.map": "/packs/js/src/containers/Provided-b70e6112a1915184f677.js.map",
-  "src/containers/Routes.js": "/packs/js/src/containers/Routes-46f7aa4ef2233e69a365.js",
-  "src/containers/Routes.js.map": "/packs/js/src/containers/Routes-46f7aa4ef2233e69a365.js.map",
+  "src/containers/App.js": "/packs/js/src/containers/App-68e4604ef61f3a8004e9.js",
+  "src/containers/App.js.map": "/packs/js/src/containers/App-68e4604ef61f3a8004e9.js.map",
+  "src/containers/Coffee.js": "/packs/js/src/containers/Coffee-b28625857054914fa292.js",
+  "src/containers/Coffee.js.map": "/packs/js/src/containers/Coffee-b28625857054914fa292.js.map",
+  "src/containers/CoffeeForm.js": "/packs/js/src/containers/CoffeeForm-e68028a7f3e16b0b2ae1.js",
+  "src/containers/CoffeeForm.js.map": "/packs/js/src/containers/CoffeeForm-e68028a7f3e16b0b2ae1.js.map",
+  "src/containers/Coffees.js": "/packs/js/src/containers/Coffees-ebb9871eaeb33f62b557.js",
+  "src/containers/Coffees.js.map": "/packs/js/src/containers/Coffees-ebb9871eaeb33f62b557.js.map",
+  "src/containers/Favorites.js": "/packs/js/src/containers/Favorites-da2e30ac6562af6d4d8d.js",
+  "src/containers/Favorites.js.map": "/packs/js/src/containers/Favorites-da2e30ac6562af6d4d8d.js.map",
+  "src/containers/LogCheck.js": "/packs/js/src/containers/LogCheck-ac3c8c4c1d2ffad72b1e.js",
+  "src/containers/LogCheck.js.map": "/packs/js/src/containers/LogCheck-ac3c8c4c1d2ffad72b1e.js.map",
+  "src/containers/Login.js": "/packs/js/src/containers/Login-2ed12e4e34fcdbca0b66.js",
+  "src/containers/Login.js.map": "/packs/js/src/containers/Login-2ed12e4e34fcdbca0b66.js.map",
+  "src/containers/Provided.js": "/packs/js/src/containers/Provided-1d5967359c73e3f0ff60.js",
+  "src/containers/Provided.js.map": "/packs/js/src/containers/Provided-1d5967359c73e3f0ff60.js.map",
+  "src/containers/Routes.js": "/packs/js/src/containers/Routes-cecc02deef7ae420edf9.js",
+  "src/containers/Routes.js.map": "/packs/js/src/containers/Routes-cecc02deef7ae420edf9.js.map",
   "src/helpers/getToken.js": "/packs/js/src/helpers/getToken-b4eaf6f91870f2f8b1b6.js",
   "src/helpers/getToken.js.map": "/packs/js/src/helpers/getToken-b4eaf6f91870f2f8b1b6.js.map",
-  "src/reducers/coffee.js": "/packs/js/src/reducers/coffee-60d83d658e12f826940f.js",
-  "src/reducers/coffee.js.map": "/packs/js/src/reducers/coffee-60d83d658e12f826940f.js.map",
-  "src/reducers/coffees.js": "/packs/js/src/reducers/coffees-4fda9ffb05f3cfec1428.js",
-  "src/reducers/coffees.js.map": "/packs/js/src/reducers/coffees-4fda9ffb05f3cfec1428.js.map",
-  "src/reducers/favorites.js": "/packs/js/src/reducers/favorites-a2567998619e15d3ec3d.js",
-  "src/reducers/favorites.js.map": "/packs/js/src/reducers/favorites-a2567998619e15d3ec3d.js.map",
-  "src/reducers/index.js": "/packs/js/src/reducers/index-a8e50d0fe2371056c8f2.js",
-  "src/reducers/index.js.map": "/packs/js/src/reducers/index-a8e50d0fe2371056c8f2.js.map",
-  "src/reducers/session.js": "/packs/js/src/reducers/session-0ae016851e366b2a11cb.js",
-  "src/reducers/session.js.map": "/packs/js/src/reducers/session-0ae016851e366b2a11cb.js.map",
+  "src/reducers/coffee.js": "/packs/js/src/reducers/coffee-9b3bf6f7e1577ecf2311.js",
+  "src/reducers/coffee.js.map": "/packs/js/src/reducers/coffee-9b3bf6f7e1577ecf2311.js.map",
+  "src/reducers/coffees.js": "/packs/js/src/reducers/coffees-6020d67560c69b283996.js",
+  "src/reducers/coffees.js.map": "/packs/js/src/reducers/coffees-6020d67560c69b283996.js.map",
+  "src/reducers/favorites.js": "/packs/js/src/reducers/favorites-1d1b683c8e0b33fcfee0.js",
+  "src/reducers/favorites.js.map": "/packs/js/src/reducers/favorites-1d1b683c8e0b33fcfee0.js.map",
+  "src/reducers/index.js": "/packs/js/src/reducers/index-e7f0e7889465e4fff427.js",
+  "src/reducers/index.js.map": "/packs/js/src/reducers/index-e7f0e7889465e4fff427.js.map",
+  "src/reducers/newCoffee.js": "/packs/js/src/reducers/newCoffee-0690add9ba981ef5a5cf.js",
+  "src/reducers/newCoffee.js.map": "/packs/js/src/reducers/newCoffee-0690add9ba981ef5a5cf.js.map",
+  "src/reducers/session.js": "/packs/js/src/reducers/session-a962a31f9cd7b63212e3.js",
+  "src/reducers/session.js.map": "/packs/js/src/reducers/session-a962a31f9cd7b63212e3.js.map",
   "src/styles/loading.js": "/packs/js/src/styles/loading-50124d60b29227a7f6ef.js",
   "src/styles/loading.js.map": "/packs/js/src/styles/loading-50124d60b29227a7f6ef.js.map",
   "src/styles/main.js": "/packs/js/src/styles/main-a5ed74cac0bbf14b57ed.js",

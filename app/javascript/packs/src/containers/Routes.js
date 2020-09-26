@@ -26,7 +26,7 @@ const Routes = props => {
       <Route exact path="/">
         <Coffees />
       </Route>
-      <Route exact path="/createNewCoffee" component={CoffeeForm} />
+      <Route exact path="/create-coffee" component={CoffeeForm} />
       <Route exact path="/favorites" component={Favorites} />
       <Route exact path="/coffee/:coffeeId" component={Coffee} />
     </>

@@ -33,4 +33,11 @@ class Coffee < ApplicationRecord
     result
   end
 
+  def self.initialize_with_images(coffee_params)
+    coffee = Coffee.new(coffee_params)
+    photo = Photo.new(coffee_id: coffee.id)
+    photo.image = File.new(Rails.root.join('public', 'images', 'coffee-image.jpg'))
+    coffee.photo = photo
+    coffee
+  end
 end
