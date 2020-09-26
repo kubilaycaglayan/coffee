@@ -1,14 +1,16 @@
 import { createFavorite } from '../API';
 import getFavorites from './getFavorites';
+import getCoffee from './getCoffee';
 
-const attemptCreateFav = data => {
+const attemptCreateFav = id => {
 
   return dispatch => {
-    createFavorite(data)
+    createFavorite(id)
       .then(
         response => {
           if (response.success) {
             dispatch(getFavorites());
+            dispatch(getCoffee(id));
           } else {
             console.log('fav creation not successful');
           }
