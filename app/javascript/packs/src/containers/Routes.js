@@ -9,6 +9,8 @@ import Favorites from './Favorites';
 import Coffee from './Coffee';
 import FavoritesButton from '../components/FavoritesButton';
 import CoffeesButton from '../components/CoffeesButton';
+import CoffeeForm from './CoffeeForm';
+import CreateNewCoffeeButton from '../components/CreateNewCoffeeButton';
 
 const Routes = props => {
   const { handleLogout, userId } = props;
@@ -20,9 +22,11 @@ const Routes = props => {
       </Route>
       <Route path="/" component={FavoritesButton} />
       <Route path="/" component={CoffeesButton} />
+      <Route path="/" component={CreateNewCoffeeButton} />
       <Route exact path="/">
         <Coffees />
       </Route>
+      <Route exact path="/createNewCoffee" component={CoffeeForm} />
       <Route exact path="/favorites" component={Favorites} />
       <Route exact path="/coffee/:coffeeId" component={Coffee} />
     </>

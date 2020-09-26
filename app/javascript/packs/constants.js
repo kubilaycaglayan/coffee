@@ -9,6 +9,7 @@ export const DESTROY_SESSION = 'DESTROY_SESSION';
 export const RECORD_COFFEES = 'RECORD_COFFEES';
 export const RECORD_COFFEE = 'RECORD_COFFEE';
 export const RECORD_FAVORITES = 'RECORD_FAVORITES';
+export const CHANGE_NEW_COFFEE = 'CHANGE_NEW_COFFEE';
 
 export const LOGIN_URL = '/sessions';
 export const LOGOUT_URL = '/sessions/';
@@ -30,6 +31,11 @@ export const DEFAULT_COFFEE = {
   description: '',
   photo: '',
 };
+export const NEW_COFFEE = {
+  name: '',
+  description: '',
+  photo: '',
+};
 export const DEFAULT_COFFEES = [DEFAULT_COFFEE];
 export const DEFAULT_FAVORITES = [DEFAULT_COFFEE];
 
@@ -38,4 +44,5 @@ export const INITIAL_STATE = {
   coffees: DEFAULT_COFFEES,
   coffee: DEFAULT_COFFEE,
   favorites: DEFAULT_FAVORITES,
+  newCoffee: NEW_COFFEE,
 };

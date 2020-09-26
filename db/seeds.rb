@@ -43,7 +43,7 @@ coffees.each do |coffee|
   )
 
   photo = Photo.new(coffee_id: cof.id)
-  photo.image = File.new(Rails.root.join('public', 'images', coffee[:image_path]))
+  photo.image = File.new(Rails.root.join('public', 'images', 'coffee-image.jpg'))
   photo.save
 end
 
