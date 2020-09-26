@@ -6,3 +6,4 @@ export { default as getCoffees } from './getCoffees';
 export { default as getCoffee } from './getCoffee';
 export { default as getFavorites } from './getFavorites';
 export { default as attemptCreateFav } from './attemptCreateFav';
+export { default as attemptDeleteFav } from './attemptDeleteFav';

@@ -1,13 +1,14 @@
 import React, { useEffect } from 'react';
 import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
-import { attemptCreateFav, getCoffee } from '../actions';
+import { attemptDeleteFav, attemptCreateFav, getCoffee } from '../actions';
 import Loading from '../components/Loading';
 import CreateFavoriteButton from '../components/CreateFavoriteButton';
+import DeleteFavoriteButton from '../components/DeleteFavoriteButton';
 
 const Coffees = props => {
   const {
-    coffeeLoader, coffee, match, createFavHandler,
+    coffeeLoader, coffee, match, createFavHandler, deleteFavHandler,
   } = props;
   const { coffeeId } = match.params;
 
@@ -31,7 +32,7 @@ const Coffees = props => {
               <h2>
                 {
                   coffee.favorite
-                    ? 'Yess'
+                    ? <DeleteFavoriteButton handleClick={() => { deleteFavHandler(coffee.id); }} />
                     : <CreateFavoriteButton handleClick={() => { createFavHandler(coffee.id); }} />
                 }
               </h2>
@@ -55,6 +56,7 @@ const Coffees = props => {
 Coffees.propTypes = {
   coffeeLoader: PropTypes.func.isRequired,
   createFavHandler: PropTypes.func.isRequired,
+  deleteFavHandler: PropTypes.func.isRequired,
   coffee: PropTypes.shape({
     name: PropTypes.string.isRequired,
     description: PropTypes.string.isRequired,
@@ -76,6 +78,7 @@ const mapStateToProps = state => ({
 const mapDispatchToProps = dispatch => ({
   coffeeLoader: coffeeId => dispatch(getCoffee(coffeeId)),
   createFavHandler: coffeeId => dispatch(attemptCreateFav(coffeeId)),
+  deleteFavHandler: coffeeId => dispatch(attemptDeleteFav(coffeeId)),
 });
 
 export default connect(

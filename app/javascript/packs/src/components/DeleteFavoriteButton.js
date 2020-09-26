@@ -1,12 +1,12 @@
 import React from 'react';
 
-const CreateFavoriteButton = props => {
+const DeleteFavoriteButton = props => {
   const { handleClick } = props;
   return (
     <button type="button" onClick={handleClick}>
-      Add to favorites
+      Delete from favorites
     </button>
   );
 };
 
-export default CreateFavoriteButton;
+export default DeleteFavoriteButton;
