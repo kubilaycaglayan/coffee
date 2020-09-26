@@ -1,14 +1,14 @@
 import React, { useEffect } from 'react';
 import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
-import getCoffees from '../actions';
+import { getCoffees } from '../actions';
 
 const Coffees = props => {
   const { coffeeLoader, coffees } = props;
 
   useEffect(() => {
     coffeeLoader();
-  });
+  }, []);
 
   return (
     <>
