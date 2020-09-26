@@ -5,3 +5,4 @@ export { default as coffeesIndex } from './coffeesIndex';
 export { default as favoritesIndex } from './favoritesIndex';
 export { default as createFavorite } from './createFavorite';
 export { default as deleteFavorite } from './deleteFavorite';
+export { default as createCoffee } from './createCoffee';

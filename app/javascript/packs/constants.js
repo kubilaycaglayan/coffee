@@ -17,6 +17,7 @@ export const GET_COFFEE_URL = '/api/coffees/';
 export const GET_FAVORITES_URL = '/api/favorites/';
 export const CREATE_FAVORITE_URL = '/api/favorites/';
 export const DELETE_FAVORITE_URL = '/api/favorites/';
+export const CREATE_COFFEE_URL = '/api/coffees/';
 
 export const DEFAULT_SESSION = {
   loggedIn: false,
