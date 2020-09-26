@@ -8,18 +8,18 @@ import Coffees from './Coffees';
 import Favorites from './Favorites';
 import Coffee from './Coffee';
 import FavoritesButton from '../components/FavoritesButton';
+import CoffeesButton from '../components/CoffeesButton';
 
 const Routes = props => {
   const { handleLogout, userId } = props;
 
   return (
     <>
-      <Route exact path="/">
+      <Route path="/">
         <LogoutButton handleClick={() => { handleLogout(userId); }} />
       </Route>
-      <Route exact path="/">
-        <FavoritesButton />
-      </Route>
+      <Route path="/" component={FavoritesButton} />
+      <Route path="/" component={CoffeesButton} />
       <Route exact path="/">
         <Coffees />
       </Route>

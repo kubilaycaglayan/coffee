@@ -8,11 +8,13 @@ export const CREATE_SESSION = 'CREATE_SESSION';
 export const DESTROY_SESSION = 'DESTROY_SESSION';
 export const RECORD_COFFEES = 'RECORD_COFFEES';
 export const RECORD_COFFEE = 'RECORD_COFFEE';
+export const RECORD_FAVORITES = 'RECORD_FAVORITES';
 
 export const LOGIN_URL = '/sessions';
 export const LOGOUT_URL = '/sessions/';
 export const GET_COFFEES_URL = '/api/coffees';
 export const GET_COFFEE_URL = '/api/coffees/';
+export const GET_FAVORITES_URL = '/api/favorites/';
 
 export const DEFAULT_SESSION = {
   loggedIn: false,
@@ -26,9 +28,11 @@ export const DEFAULT_COFFEE = {
   photo: '',
 };
 export const DEFAULT_COFFEES = [DEFAULT_COFFEE];
+export const DEFAULT_FAVORITES = [DEFAULT_COFFEE];
 
 export const INITIAL_STATE = {
   session: DEFAULT_SESSION,
   coffees: DEFAULT_COFFEES,
   coffee: DEFAULT_COFFEE,
+  favorites: DEFAULT_FAVORITES,
 };
