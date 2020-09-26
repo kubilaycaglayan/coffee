@@ -1,21 +1,11 @@
 import React from 'react';
-import { connect } from 'react-redux';
-import LoginForm from '../components/LogInForm';
-import { attemptLogin } from '../actions';
+import { BrowserRouter as Router } from 'react-router-dom';
+import LoginRoutes from './LoginRoutes';
 
-const Login = props => {
-  const { handleLogin } = props;
+const Login = () => (
+  <Router>
+    <LoginRoutes />
+  </Router>
+);
 
-  return (
-    <LoginForm handleLogin={handleLogin} />
-  );
-};
-
-const mapDispatchToProps = dispatch => ({
-  handleLogin: creds => dispatch(attemptLogin(creds)),
-});
-
-export default connect(
-  null,
-  mapDispatchToProps,
-)(Login);
+export default Login;

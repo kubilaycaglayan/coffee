@@ -23,9 +23,7 @@ const Routes = props => {
       <Route path="/" component={FavoritesButton} />
       <Route path="/" component={CoffeesButton} />
       <Route path="/" component={CreateNewCoffeeButton} />
-      <Route exact path="/">
-        <Coffees />
-      </Route>
+      <Route exact path="/" component={Coffees} />
       <Route exact path="/create-coffee" component={CoffeeForm} />
       <Route exact path="/favorites" component={Favorites} />
       <Route exact path="/coffee/:coffeeId" component={Coffee} />

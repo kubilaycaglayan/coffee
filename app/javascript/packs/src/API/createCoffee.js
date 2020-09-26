@@ -4,7 +4,6 @@ import { CREATE_COFFEE_URL } from '../../constants';
 const token = getToken();
 
 const createCoffee = data => {
-  console.log('IN create Coffee API, data: ', data);
 
   return fetch(CREATE_COFFEE_URL, {
     method: 'POST',
