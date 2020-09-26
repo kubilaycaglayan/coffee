@@ -4,6 +4,7 @@ import { Route } from 'react-router-dom';
 import PropTypes from 'prop-types';
 import { attemptLogout } from '../actions';
 import LogoutButton from '../components/LogoutButton';
+import Coffees from './Coffees';
 
 const Routes = props => {
   const { handleLogout } = props;
@@ -12,6 +13,9 @@ const Routes = props => {
     <>
       <Route exact path="/">
         <LogoutButton handleClick={handleLogout} />
+      </Route>
+      <Route path="/">
+        <Coffees />
       </Route>
     </>
   );

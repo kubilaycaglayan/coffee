@@ -22,10 +22,10 @@
     },
     "index": {
       "js": [
-        "/packs/js/index-90a9cb9bcf9946c81837.js"
+        "/packs/js/index-d4cf4aacff781f15499e.js"
       ],
       "js.map": [
-        "/packs/js/index-90a9cb9bcf9946c81837.js.map"
+        "/packs/js/index-d4cf4aacff781f15499e.js.map"
       ]
     },
     "src/actions/attemptLogin": {
@@ -110,18 +110,26 @@
     },
     "src/containers/App": {
       "js": [
-        "/packs/js/src/containers/App-edf1009269a10dd87d7e.js"
+        "/packs/js/src/containers/App-e8d6e16debb9f8bf5726.js"
       ],
       "js.map": [
-        "/packs/js/src/containers/App-edf1009269a10dd87d7e.js.map"
+        "/packs/js/src/containers/App-e8d6e16debb9f8bf5726.js.map"
+      ]
+    },
+    "src/containers/Coffees": {
+      "js": [
+        "/packs/js/src/containers/Coffees-6bd0a852c2518699cf7f.js"
+      ],
+      "js.map": [
+        "/packs/js/src/containers/Coffees-6bd0a852c2518699cf7f.js.map"
       ]
     },
     "src/containers/LogCheck": {
       "js": [
-        "/packs/js/src/containers/LogCheck-6b8860e57f2afb1f7371.js"
+        "/packs/js/src/containers/LogCheck-b01b96335cfd0c6d0b1d.js"
       ],
       "js.map": [
-        "/packs/js/src/containers/LogCheck-6b8860e57f2afb1f7371.js.map"
+        "/packs/js/src/containers/LogCheck-b01b96335cfd0c6d0b1d.js.map"
       ]
     },
     "src/containers/Login": {
@@ -134,18 +142,18 @@
     },
     "src/containers/Provided": {
       "js": [
-        "/packs/js/src/containers/Provided-6afd05a4b477979266c9.js"
+        "/packs/js/src/containers/Provided-c55545298cd23ad32647.js"
       ],
       "js.map": [
-        "/packs/js/src/containers/Provided-6afd05a4b477979266c9.js.map"
+        "/packs/js/src/containers/Provided-c55545298cd23ad32647.js.map"
       ]
     },
     "src/containers/Routes": {
       "js": [
-        "/packs/js/src/containers/Routes-396847fa3680cd5a2b7f.js"
+        "/packs/js/src/containers/Routes-56070e71feba9c90c187.js"
       ],
       "js.map": [
-        "/packs/js/src/containers/Routes-396847fa3680cd5a2b7f.js.map"
+        "/packs/js/src/containers/Routes-56070e71feba9c90c187.js.map"
       ]
     },
     "src/helpers/getToken": {
@@ -173,8 +181,8 @@
       ]
     }
   },
-  "index.js": "/packs/js/index-90a9cb9bcf9946c81837.js",
-  "index.js.map": "/packs/js/index-90a9cb9bcf9946c81837.js.map",
+  "index.js": "/packs/js/index-d4cf4aacff781f15499e.js",
+  "index.js.map": "/packs/js/index-d4cf4aacff781f15499e.js.map",
   "src/API/index.js": "/packs/js/src/API/index-4c1d00a17bc70e6a2ffa.js",
   "src/API/index.js.map": "/packs/js/src/API/index-4c1d00a17bc70e6a2ffa.js.map",
   "src/API/login.js": "/packs/js/src/API/login-8a2e9ee6e750ce13250c.js",
@@ -195,16 +203,18 @@
   "src/components/LogInForm.js.map": "/packs/js/src/components/LogInForm-d7f4981eebb1e9d45067.js.map",
   "src/components/LogoutButton.js": "/packs/js/src/components/LogoutButton-ac86e6f4729325194e70.js",
   "src/components/LogoutButton.js.map": "/packs/js/src/components/LogoutButton-ac86e6f4729325194e70.js.map",
-  "src/containers/App.js": "/packs/js/src/containers/App-edf1009269a10dd87d7e.js",
-  "src/containers/App.js.map": "/packs/js/src/containers/App-edf1009269a10dd87d7e.js.map",
-  "src/containers/LogCheck.js": "/packs/js/src/containers/LogCheck-6b8860e57f2afb1f7371.js",
-  "src/containers/LogCheck.js.map": "/packs/js/src/containers/LogCheck-6b8860e57f2afb1f7371.js.map",
+  "src/containers/App.js": "/packs/js/src/containers/App-e8d6e16debb9f8bf5726.js",
+  "src/containers/App.js.map": "/packs/js/src/containers/App-e8d6e16debb9f8bf5726.js.map",
+  "src/containers/Coffees.js": "/packs/js/src/containers/Coffees-6bd0a852c2518699cf7f.js",
+  "src/containers/Coffees.js.map": "/packs/js/src/containers/Coffees-6bd0a852c2518699cf7f.js.map",
+  "src/containers/LogCheck.js": "/packs/js/src/containers/LogCheck-b01b96335cfd0c6d0b1d.js",
+  "src/containers/LogCheck.js.map": "/packs/js/src/containers/LogCheck-b01b96335cfd0c6d0b1d.js.map",
   "src/containers/Login.js": "/packs/js/src/containers/Login-b1d2e27ae2ebda350f51.js",
   "src/containers/Login.js.map": "/packs/js/src/containers/Login-b1d2e27ae2ebda350f51.js.map",
-  "src/containers/Provided.js": "/packs/js/src/containers/Provided-6afd05a4b477979266c9.js",
-  "src/containers/Provided.js.map": "/packs/js/src/containers/Provided-6afd05a4b477979266c9.js.map",
-  "src/containers/Routes.js": "/packs/js/src/containers/Routes-396847fa3680cd5a2b7f.js",
-  "src/containers/Routes.js.map": "/packs/js/src/containers/Routes-396847fa3680cd5a2b7f.js.map",
+  "src/containers/Provided.js": "/packs/js/src/containers/Provided-c55545298cd23ad32647.js",
+  "src/containers/Provided.js.map": "/packs/js/src/containers/Provided-c55545298cd23ad32647.js.map",
+  "src/containers/Routes.js": "/packs/js/src/containers/Routes-56070e71feba9c90c187.js",
+  "src/containers/Routes.js.map": "/packs/js/src/containers/Routes-56070e71feba9c90c187.js.map",
   "src/helpers/getToken.js": "/packs/js/src/helpers/getToken-b4eaf6f91870f2f8b1b6.js",
   "src/helpers/getToken.js.map": "/packs/js/src/helpers/getToken-b4eaf6f91870f2f8b1b6.js.map",
   "src/reducers/index.js": "/packs/js/src/reducers/index-0174c39c0208e831cefd.js",
