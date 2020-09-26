@@ -5,6 +5,7 @@ import PropTypes from 'prop-types';
 import { attemptLogout } from '../actions';
 import LogoutButton from '../components/LogoutButton';
 import Coffees from './Coffees';
+import Coffee from './Coffee';
 
 const Routes = props => {
   const { handleLogout } = props;
@@ -16,6 +17,9 @@ const Routes = props => {
       </Route>
       <Route path="/">
         <Coffees />
+      </Route>
+      <Route path="/coffee/:coffeeId">
+        <Coffee />
       </Route>
     </>
   );
