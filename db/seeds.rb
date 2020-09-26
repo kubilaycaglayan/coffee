@@ -7,10 +7,20 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 puts "Seeding..."
 
-User.create(
+user = User.create(
   email: 'a@a.com',
   password: '000000',
   password_confirmation: '000000',
   )
+
+
+cof = Coffee.create(
+  name: 'Ethiopia Geisha Bebeka',
+  description: 'In the southwest corner of Ethiopia near the village of Gesha...',
+)
+
+photo = Photo.new(coffee_id: cof.id)
+photo.image = File.new(Rails.root.join('public', 'images', 'coffee-image.jpg'))
+photo.save
 
 puts "Seeding done"
