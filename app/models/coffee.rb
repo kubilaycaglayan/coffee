@@ -15,7 +15,7 @@ class Coffee < ApplicationRecord
 
   def self.coffee_with_photos(id, user)
     coffee = Coffee.find_by(id: id)
-    jsonifize_coffee([coffee])
+    jsonifize_coffee([coffee], user)
   end
 
   def self.jsonifize_coffee(collection, user = nil)
@@ -25,8 +25,8 @@ class Coffee < ApplicationRecord
         id: coffee[:id],
         name: coffee[:name],
         description: coffee[:description],
-        photo: coffee.photo.image.url
-        favorited: coffee.favoriters.include?(user)
+        photo: coffee.photo.image.url,
+        favorite: coffee.favoriters.include?(user)
       }
     end
     return result.first if result.size === 1

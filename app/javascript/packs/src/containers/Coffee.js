@@ -23,6 +23,12 @@ const Coffees = props => {
                 Coffee
               </h1>
               <h2>
+                Fav?
+              </h2>
+              <h2>
+                {coffee.favorite ? 'Yess' : 'Nopee'}
+              </h2>
+              <h2>
                 {coffee.name}
               </h2>
               <h2>
