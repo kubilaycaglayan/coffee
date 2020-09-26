@@ -1,4 +1,5 @@
 import recordFavorites from './recordFavorites';
+import autoFlash from './autoFlash';
 import { favoritesIndex } from '../API';
 
 const getFavorites = () => {
@@ -8,6 +9,7 @@ const getFavorites = () => {
       .then(
         response => {
           dispatch(recordFavorites(response));
+          dispatch(autoFlash('Heres your favs'));
         },
       );
   };

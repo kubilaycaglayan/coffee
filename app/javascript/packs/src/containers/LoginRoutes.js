@@ -17,7 +17,6 @@ const Login = props => {
       <Route exact path="/" render={() => <LoginForm handleLogin={handleLogin} />} />
       <Route exact path="/new-user" component={LoginButton} />
       <Route exact path="/new-user" render={() => <NewUserForm handleNewUser={handleNewUser} />} />
-      <Flash message="heey" />
     </>
   );
 };
