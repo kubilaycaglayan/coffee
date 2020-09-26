@@ -12,16 +12,6 @@ const logout = () => fetch(LOGOUT_URL, {
 })
   .then(
     response => response.json(),
-  )
-  .then(
-    response => {
-      console.log(response);
-      if (true) {
-        console.log('');
-      } else {
-        console.log('');
-      }
-    },
   );
 
 export default logout;

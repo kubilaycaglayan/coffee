@@ -1,7 +1,7 @@
 import { DESTROY_SESSION } from '../../constants';
 
-const createSession = () => ({
+const destroySession = () => ({
   type: DESTROY_SESSION,
 });
 
-export default createSession;
+export default destroySession;
