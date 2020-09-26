@@ -32,7 +32,7 @@ const Favorites = props => {
           : (
             <>
               <h1>
-                Coffees
+                Favorites
               </h1>
               <Slider {...settings}>
                 {

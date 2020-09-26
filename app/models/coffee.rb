@@ -1,6 +1,7 @@
 class Coffee < ApplicationRecord
   has_one :photo, dependent: :destroy
-  has_many :favorites
+  accepts_nested_attributes_for :photo
+  has_many :favorites, dependent: :destroy
   has_many :favoriters, source: :user, through: :favorites, class_name: 'User'
 
   def self.coffees_with_photos

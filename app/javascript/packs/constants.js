@@ -34,7 +34,9 @@ export const DEFAULT_COFFEE = {
 export const NEW_COFFEE = {
   name: '',
   description: '',
-  photo: '',
+  photo: {
+    image: '',
+  },
 };
 export const DEFAULT_COFFEES = [DEFAULT_COFFEE];
 export const DEFAULT_FAVORITES = [DEFAULT_COFFEE];
