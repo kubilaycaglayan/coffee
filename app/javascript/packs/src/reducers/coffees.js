@@ -1,6 +1,6 @@
 import { RECORD_COFFEES, DEFAULT_COFFEES } from '../../constants';
 
-const session = (state = DEFAULT_COFFEES, action) => {
+const coffees = (state = DEFAULT_COFFEES, action) => {
   switch (action.type) {
     case RECORD_COFFEES:
       return action.coffees;
@@ -9,4 +9,4 @@ const session = (state = DEFAULT_COFFEES, action) => {
   }
 };
 
-export default session;
+export default coffees;

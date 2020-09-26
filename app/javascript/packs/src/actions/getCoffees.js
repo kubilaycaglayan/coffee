@@ -1,10 +1,10 @@
 import recordCoffees from './recordCoffees';
-import { coffeeIndex } from '../API';
+import { coffeesIndex } from '../API';
 
 const getCoffees = () => {
 
   return dispatch => {
-    coffeeIndex()
+    coffeesIndex()
       .then(
         response => {
           dispatch(recordCoffees(response));

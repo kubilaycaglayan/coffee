@@ -1,11 +1,11 @@
 import getToken from '../helpers/getToken';
-import { GET_COFFEE_URL } from '../../constants';
+import { GET_COFFEES_URL } from '../../constants';
 
 const token = getToken();
 
-const coffeeIndex = id => {
-  const endpoint = `${GET_COFFEE_URL}${id}`;
-  return fetch(endpoint, {
+const coffeesIndex = () => {
+
+  return fetch(GET_COFFEES_URL, {
     headers: {
       'Content-Type': 'application/json',
       'X-CSRF-Token': token,
@@ -16,4 +16,4 @@ const coffeeIndex = id => {
     );
 };
 
-export default coffeeIndex;
+export default coffeesIndex;
