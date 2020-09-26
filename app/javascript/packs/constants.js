@@ -6,6 +6,7 @@ export const ATTEMPT = 'ATTEMPT';
 export const LOADING = 'LOADING';
 export const CREATE_SESSION = 'CREATE_SESSION';
 export const DESTROY_SESSION = 'DESTROY_SESSION';
+export const RECORD_COFFEES = 'RECORD_COFFEES';
 
 export const LOGIN_URL = 'http://localhost:3000/sessions/create/';
 export const LOGOUT_URL = 'http://localhost:3000/sessions/destroy/';

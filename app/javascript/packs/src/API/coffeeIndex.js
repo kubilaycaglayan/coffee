@@ -3,7 +3,7 @@ import { GET_COFFEES_URL } from '../../constants';
 
 const token = getToken();
 
-const getCoffees = () => {
+const coffeeIndex = () => {
 
   return fetch(GET_COFFEES_URL, {
     headers: {
@@ -16,4 +16,4 @@ const getCoffees = () => {
     );
 };
 
-export default getCoffees;
+export default coffeeIndex;
