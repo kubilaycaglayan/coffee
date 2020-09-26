@@ -1,5 +1,3 @@
-require 'byebug'
-
 class SessionsController < ApplicationController
   def new
   end
@@ -17,16 +15,13 @@ class SessionsController < ApplicationController
       puts "USER FOUND"
       session[:user_id] = user.id
       render json: {
-        status: 'created',
-        logged_in: true,
+        loggedIn: true,
         user: user
       }
     else
       puts "USER NOT FOUND"
       render json: {
-        status: :created,
-        logged_in: false,
-        user: 'unknown'
+        loggedIn: false,
       }
     end
   end
@@ -35,7 +30,7 @@ class SessionsController < ApplicationController
     reset_session
     render json: {
       status: 200,
-      logged_in: false
+      loggedIn: false
     }
   end
 

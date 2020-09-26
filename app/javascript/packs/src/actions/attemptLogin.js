@@ -1,23 +1,18 @@
-import { ATTEMPT, LOADING, LOGIN_URL } from '../../constants';
-// import loading from './loading';
+import createSession from './createSession';
+import { login } from '../API';
 
 const attemptLogin = creds => {
-  const data = JSON.stringify({
-    user: creds,
-  });
 
   return dispatch => {
-    // dispatch(loading);
-    fetch(LOGIN_URL, {
-      body: data,
-    })
+    login(creds)
       .then(
         response => {
           console.log(response);
-          if (true) {
-            console.log('');
+          if (response.loggedIn) {
+            console.log('login successful');
+            dispatch(createSession(response.user.email));
           } else {
-            console.log('');
+            console.log('login not successful');
           }
         },
       );

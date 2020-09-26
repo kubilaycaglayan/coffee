@@ -18,17 +18,7 @@ const login = creds => {
   })
     .then(
       response => response.json(),
-    )
-    .then(
-      response => {
-        console.log(response);
-        if (true) {
-          console.log('');
-        } else {
-          console.log('');
-        }
-      },
     );
-}
+};
 
 export default login;
