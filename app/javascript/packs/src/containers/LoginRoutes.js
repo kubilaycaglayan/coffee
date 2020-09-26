@@ -6,6 +6,7 @@ import NewUserForm from '../components/NewUserForm';
 import { attemptLogin, attemptCreateUser } from '../actions';
 import NewUserButton from '../components/NewUserButton';
 import LoginButton from '../components/LoginButton';
+import Flash from '../components/Flash';
 
 const Login = props => {
   const { handleLogin, handleNewUser } = props;
@@ -16,6 +17,7 @@ const Login = props => {
       <Route exact path="/" render={() => <LoginForm handleLogin={handleLogin} />} />
       <Route exact path="/new-user" component={LoginButton} />
       <Route exact path="/new-user" render={() => <NewUserForm handleNewUser={handleNewUser} />} />
+      <Flash message="heey" />
     </>
   );
 };
