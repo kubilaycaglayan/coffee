@@ -10,10 +10,31 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_09_25_193615) do
+ActiveRecord::Schema.define(version: 2020_09_26_112807) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
+  create_table "coffees", force: :cascade do |t|
+    t.string "name"
+    t.string "description"
+    t.string "photo"
+    t.bigint "user_id", null: false
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+    t.index ["user_id"], name: "index_coffees_on_user_id"
+  end
+
+  create_table "photos", force: :cascade do |t|
+    t.bigint "coffee_id", null: false
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+    t.string "image_file_name"
+    t.string "image_content_type"
+    t.integer "image_file_size"
+    t.datetime "image_updated_at"
+    t.index ["coffee_id"], name: "index_photos_on_coffee_id"
+  end
 
   create_table "users", force: :cascade do |t|
     t.string "email"
@@ -22,4 +43,6 @@ ActiveRecord::Schema.define(version: 2020_09_25_193615) do
     t.datetime "updated_at", precision: 6, null: false
   end
 
+  add_foreign_key "coffees", "users"
+  add_foreign_key "photos", "coffees"
 end
