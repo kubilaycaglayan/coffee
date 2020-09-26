@@ -3,7 +3,7 @@ import React, { useState } from 'react';
 const LoginForm = props => {
   const { handleNewUser } = props;
 
-  const [newUser, setNewUser] = useState({ email: '', password: '', passwordConfirmation: '' });
+  const [newUser, setNewUser] = useState({ email: '', password: '', password_confirmation: '' });
 
   const handleMailChange = e => {
     setNewUser({
@@ -22,7 +22,7 @@ const LoginForm = props => {
   const handlePasswordConfirmationChange = e => {
     setNewUser({
       ...newUser,
-      passwordConfirmation: e.target.value,
+      password_confirmation: e.target.value,
     });
   };
 
