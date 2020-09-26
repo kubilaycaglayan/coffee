@@ -1,28 +1,26 @@
 import React from 'react';
 import { connect } from 'react-redux';
 import { createNewCoffee, changeNewCoffee } from '../actions';
+import newCoffee from '../reducers/newCoffee';
 
 const CoffeeForm = props => {
-
-  const handleNameChange = e => {
-    changeNewCoffee()
-  }
+  const { handleDescriptionChange, handleNameChange, handleSubmit } = props;
 
   return (
     <form>
-      <label htmlFor="name" >
+      <label htmlFor="name">
         Coffe Name
+        <input id="name" onChange={e => { handleNameChange(e, newCoffee); }} />
       </label>
-      <input id="name" onChange={handleNameChange}/>
       <label htmlFor="description" >
         Description
+        <input id="description" onChange={e => { handleDescriptionChange(e, newCoffee); }} />
       </label>
-      <input id="description" onChange={handleDescriptionChange}/>
       <label htmlFor="file" >
         Image
+        <input id="file" type="file" />
       </label>
-      <input id="file" type="file" />
-      <button type="button" onClick={() => {handleSubmit(newCoffee); }} />
+      <button type="button" onClick={() => { handleSubmit(newCoffee); }}>Add Coffee</button>
     </form>
   );
 };
@@ -32,9 +30,12 @@ const mapStateToProps = state => ({
 });
 
 const mapDispatchToProps = dispatch => ({
-  handleSubmit: newCoffee => dispatch(createNewCoffee(newCoffee)),
-  handleNameChange: e => dispatch(changeNewCoffee({ name: e.target.value })),
-  handleDescriptionChange: e => dispatch(changeNewCoffee({ description: e.target.value })),
+  handleSubmit:
+  newCoffee => dispatch(createNewCoffee(newCoffee)),
+  handleNameChange:
+  (e, newCoffee) => dispatch(changeNewCoffee({ ...newCoffee, name: e.target.value })),
+  handleDescriptionChange:
+  (e, newCoffee) => dispatch(changeNewCoffee({ ...newCoffee, description: e.target.value })),
 });
 
 export default connect(
