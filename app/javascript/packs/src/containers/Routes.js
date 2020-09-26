@@ -15,7 +15,7 @@ const Routes = props => {
       <Route exact path="/">
         <LogoutButton handleClick={handleLogout} />
       </Route>
-      <Route path="/">
+      <Route exact path="/">
         <Coffees />
       </Route>
       <Route exact path="/coffee/:coffeeId" component={Coffee} />

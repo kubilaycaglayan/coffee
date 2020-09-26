@@ -19,7 +19,12 @@ export const DEFAULT_SESSION = {
   email: '',
 };
 export const DEFAULT_COFFEES = [{}];
-export const DEFAULT_COFFEE = {};
+export const DEFAULT_COFFEE = {
+  id: 0,
+  name: '',
+  description: '',
+  photo: '',
+};
 
 export const INITIAL_STATE = {
   session: DEFAULT_SESSION,

@@ -2,6 +2,7 @@ import React, { useEffect } from 'react';
 import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
 import { getCoffee } from '../actions';
+import Loading from '../components/Loading';
 
 const Coffees = props => {
   const { coffeeLoader, coffee, match } = props;
@@ -9,23 +10,31 @@ const Coffees = props => {
 
   useEffect(() => {
     coffeeLoader(coffeeId);
-  }, []);
+  }, [coffee.id]);
 
   return (
     <>
-      <h1>
-        Coffee
-      </h1>
-      <h2>
-        {coffee.name}
-      </h2>
-      <h2>
-        Description
-      </h2>
-      <p>
-        {coffee.description}
-      </p>
-      <img src={coffee.photo} alt="coffee bean" />
+      {
+        coffeeId.toString() !== coffee.id.toString()
+          ? <Loading />
+          : (
+            <>
+              <h1>
+                Coffee
+              </h1>
+              <h2>
+                {coffee.name}
+              </h2>
+              <h2>
+                Description
+              </h2>
+              <p>
+                {coffee.description}
+              </p>
+              <img src={coffee.photo} alt="coffee bean" />
+            </>
+          )
+      }
     </>
   );
 };
@@ -36,6 +45,12 @@ Coffees.propTypes = {
     name: PropTypes.string.isRequired,
     description: PropTypes.string.isRequired,
     photo: PropTypes.string.isRequired,
+    id: PropTypes.number.isRequired,
+  }).isRequired,
+  match: PropTypes.shape({
+    params: PropTypes.shape({
+      coffeeId: PropTypes.string.isRequired,
+    }).isRequired,
   }).isRequired,
 };
 

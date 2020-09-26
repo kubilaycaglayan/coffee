@@ -1,3 +1,8 @@
+@mixin flex-it($justify-content, $align-items)
+  align-items: $align-items
+  display: flex
+  justify-content: $justify-content
+
 .slick-slider
   width: 90%
   margin: 0 auto
@@ -9,3 +14,7 @@
   h2
     margin: 0 auto
     text-align: center
+
+.loading
+  width: 100%
+  +flex-it(center, center)
