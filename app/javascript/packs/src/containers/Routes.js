@@ -5,7 +5,9 @@ import PropTypes from 'prop-types';
 import { attemptLogout } from '../actions';
 import LogoutButton from '../components/LogoutButton';
 import Coffees from './Coffees';
+import Favorites from './Favorites';
 import Coffee from './Coffee';
+import FavoritesButton from '../components/FavoritesButton';
 
 const Routes = props => {
   const { handleLogout, userId } = props;
@@ -16,8 +18,12 @@ const Routes = props => {
         <LogoutButton handleClick={() => { handleLogout(userId); }} />
       </Route>
       <Route exact path="/">
+        <FavoritesButton />
+      </Route>
+      <Route exact path="/">
         <Coffees />
       </Route>
+      <Route exact path="/favorites" component={Favorites} />
       <Route exact path="/coffee/:coffeeId" component={Coffee} />
     </>
   );
