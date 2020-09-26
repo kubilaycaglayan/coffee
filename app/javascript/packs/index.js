@@ -5,7 +5,7 @@
 
 import React from 'react';
 import ReactDOM from 'react-dom';
-import Provided from './src/app/Provided';
+import Provided from './src/containers/Provided';
 
 document.addEventListener('DOMContentLoaded', () => {
   ReactDOM.render(

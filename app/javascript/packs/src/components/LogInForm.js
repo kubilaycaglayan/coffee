@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import { credentials } from '../../constants';
-import LogoutButton from './LogoutButton';
 
 const LoginForm = props => {
   const { handleLogin } = props;
@@ -35,7 +34,6 @@ const LoginForm = props => {
           Log In
         </button>
       </form>
-      <LogoutButton />
     </>
   );
 };
