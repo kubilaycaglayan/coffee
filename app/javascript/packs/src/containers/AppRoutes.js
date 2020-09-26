@@ -13,7 +13,7 @@ import CoffeeForm from './CoffeeForm';
 import CreateNewCoffeeButton from '../components/CreateNewCoffeeButton';
 
 const Routes = props => {
-  const { handleLogout, userId } = props;
+  const { handleLogout, userId, loggedIn } = props;
 
   return (
     <>
@@ -37,6 +37,7 @@ Routes.propTypes = {
 
 const mapStateToProps = state => ({
   userId: state.session.id,
+  loggedIn: state.session.loggedIn,
 });
 
 const mapDispatchToProps = dispatch => ({
