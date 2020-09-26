@@ -11,7 +11,7 @@ export const RECORD_COFFEE = 'RECORD_COFFEE';
 
 export const LOGIN_URL = 'http://localhost:3000/sessions/create/';
 export const LOGOUT_URL = 'http://localhost:3000/sessions/destroy/';
-export const GET_COFFEES_URL = 'http://localhost:3000/api/coffees/';
+export const GET_COFFEES_URL = 'http://localhost:3000/api/coffees';
 export const GET_COFFEE_URL = 'http://localhost:3000/api/coffees/';
 
 export const DEFAULT_SESSION = {

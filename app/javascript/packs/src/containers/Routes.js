@@ -18,9 +18,7 @@ const Routes = props => {
       <Route path="/">
         <Coffees />
       </Route>
-      <Route path="/coffee/:coffeeId">
-        <Coffee />
-      </Route>
+      <Route exact path="/coffee/:coffeeId" component={Coffee} />
     </>
   );
 };

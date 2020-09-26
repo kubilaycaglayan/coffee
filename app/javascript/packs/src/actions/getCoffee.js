@@ -1,13 +1,13 @@
 import recordCoffee from './recordCoffee';
 import { coffeeIndex } from '../API';
 
-const getCoffee = () => {
+const getCoffee = id => {
 
   return dispatch => {
-    coffeeIndex()
+    coffeeIndex(id)
       .then(
         response => {
-          dispatch(recordCoffees(response));
+          dispatch(recordCoffee(response));
         },
       );
   };

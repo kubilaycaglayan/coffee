@@ -4,10 +4,11 @@ import PropTypes from 'prop-types';
 import { getCoffee } from '../actions';
 
 const Coffees = props => {
-  const { coffeeLoader, coffee } = props;
+  const { coffeeLoader, coffee, match } = props;
+  const { coffeeId } = match.params;
 
   useEffect(() => {
-    coffeeLoader();
+    coffeeLoader(coffeeId);
   }, []);
 
   return (
@@ -18,13 +19,24 @@ const Coffees = props => {
       <h2>
         {coffee.name}
       </h2>
+      <h2>
+        Description
+      </h2>
+      <p>
+        {coffee.description}
+      </p>
+      <img src={coffee.photo} alt="coffee bean" />
     </>
   );
 };
 
 Coffees.propTypes = {
   coffeeLoader: PropTypes.func.isRequired,
-  coffee: PropTypes.object.isRequired,
+  coffee: PropTypes.shape({
+    name: PropTypes.string.isRequired,
+    description: PropTypes.string.isRequired,
+    photo: PropTypes.string.isRequired,
+  }).isRequired,
 };
 
 const mapStateToProps = state => ({
@@ -32,7 +44,7 @@ const mapStateToProps = state => ({
 });
 
 const mapDispatchToProps = dispatch => ({
-  coffeeLoader: () => dispatch(getCoffee()),
+  coffeeLoader: coffeeId => dispatch(getCoffee(coffeeId)),
 });
 
 export default connect(
