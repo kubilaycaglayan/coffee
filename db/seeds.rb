@@ -13,14 +13,33 @@ user = User.create(
   password_confirmation: '000000',
   )
 
+coffees = [
+  {
+    name: 'Ethiopia Geisha Bebeka',
+    description: 'In the southwest corner of Ethiopia near the village of Gesha...',
+    image_path: 'coffee-image.jpg'
+  },
+  {
+    name: 'Ethiopia Yirgacheffe',
+    description: 'Amazing taste',
+    image_path: 'coffee-image-2.jpg'
+  },
+  {
+    name: 'Australia Skyburry, Queensland Murebba',
+    description: 'Daaamn',
+    image_path: 'coffee-image.jpg'
+  }
+]
 
-cof = Coffee.create(
-  name: 'Ethiopia Geisha Bebeka',
-  description: 'In the southwest corner of Ethiopia near the village of Gesha...',
-)
+coffees.each do |coffee|
+  cof = Coffee.create(
+    name: coffee[:name],
+    description: coffee[:description],
+  )
 
-photo = Photo.new(coffee_id: cof.id)
-photo.image = File.new(Rails.root.join('public', 'images', 'coffee-image.jpg'))
-photo.save
+  photo = Photo.new(coffee_id: cof.id)
+  photo.image = File.new(Rails.root.join('public', 'images', coffee[:image_path]))
+  photo.save
+end
 
 puts "Seeding done"
