@@ -1,11 +1,14 @@
 import React, { useEffect } from 'react';
 import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
-import { getCoffee } from '../actions';
+import { attemptCreateFav, getCoffee } from '../actions';
 import Loading from '../components/Loading';
+import CreateFavoriteButton from '../components/CreateFavoriteButton';
 
 const Coffees = props => {
-  const { coffeeLoader, coffee, match } = props;
+  const {
+    coffeeLoader, coffee, match, createFavHandler,
+  } = props;
   const { coffeeId } = match.params;
 
   useEffect(() => {
@@ -26,7 +29,11 @@ const Coffees = props => {
                 Fav?
               </h2>
               <h2>
-                {coffee.favorite ? 'Yess' : 'Nopee'}
+                {
+                  coffee.favorite
+                    ? 'Yess'
+                    : <CreateFavoriteButton handleClick={() => { createFavHandler(coffee.id); }} />
+                }
               </h2>
               <h2>
                 {coffee.name}
@@ -47,11 +54,13 @@ const Coffees = props => {
 
 Coffees.propTypes = {
   coffeeLoader: PropTypes.func.isRequired,
+  createFavHandler: PropTypes.func.isRequired,
   coffee: PropTypes.shape({
     name: PropTypes.string.isRequired,
     description: PropTypes.string.isRequired,
     photo: PropTypes.string.isRequired,
     id: PropTypes.number.isRequired,
+    favorite: PropTypes.bool.isRequired,
   }).isRequired,
   match: PropTypes.shape({
     params: PropTypes.shape({
@@ -66,6 +75,7 @@ const mapStateToProps = state => ({
 
 const mapDispatchToProps = dispatch => ({
   coffeeLoader: coffeeId => dispatch(getCoffee(coffeeId)),
+  createFavHandler: coffeeId => dispatch(attemptCreateFav(coffeeId)),
 });
 
 export default connect(
