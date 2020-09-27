@@ -20,7 +20,7 @@ const Coffees = props => {
     speed: 500,
     slidesToShow: 1,
     slidesToScroll: 1,
-    arrows: false,
+    arrows: true,
   };
 
   return (
@@ -33,10 +33,10 @@ const Coffees = props => {
               <h1>
                 Coffees
               </h1>
-              <Slider {...settings} className="mt-5 shadow">
+              <Slider {...settings} className="mt-5">
                 {
                   coffees.map(coffee => (
-                    <div className="card px-4 border-0 d-flex flex-column justify-content-between" key={coffee.id}>
+                    <div className="card px-4 border-0 d-flex flex-column justify-content-between shadow" key={coffee.id}>
                       <img className="card-img-top" src={coffee.photo} alt="coffee representation" />
                       <div className="card-body d-flex flex-column justify-content-between">
                         <div className="stars">

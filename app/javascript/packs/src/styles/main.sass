@@ -7,6 +7,7 @@ $orange: #ee5331
 $text-black: #545252
 $text-gray: #646364
 $gray: #b2b2b2
+$gray-opaq: #b2b2b2c0
 $transparent: #ffffff00
 
 $wallpaper: url('../images/coffee-wallpaper.jpg')
@@ -144,13 +145,34 @@ a
   margin: 0 auto
   max-width: 800px
 
-  @media ( max-width: 600px )
-    .card
-      height: 60vh
+  .slick-arrow
+    background-color: $gray-opaq
+    border-radius: 50%
+    width: 30px
+    height: 30px
+    z-index: 10
+    &:hover
+      background-color: $gray
+
+  .slick-prev
+    left: 10px
+
+  .slick-next
+    right: 10px
+
+  .slick-slide
+    padding: 20px
+
+  .slick-track
+    align-items: center
+    display: flex
+
+  .card
+    height: 100%
 
   img
     margin: 0 auto
-    width: 50%
+    max-width: 400px
 
   h2
     margin: 0 auto
