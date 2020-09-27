@@ -22,9 +22,9 @@ const Coffees = props => {
         coffeeId.toString() !== coffee.id.toString()
           ? <Loading />
           : (
-            <div className="single-coffee">
-              <h1>
-                Coffee
+            <div className="single-coffee pt-5">
+              <h1 className="pt-5">
+                {coffee.name}
               </h1>
               <h2>
                 Fav?
@@ -36,16 +36,21 @@ const Coffees = props => {
                     : <CreateFavoriteButton handleClick={() => { createFavHandler(coffee.id); }} />
                 }
               </h2>
-              <h2>
-                {coffee.name}
-              </h2>
-              <h2>
-                Description
-              </h2>
-              <p>
-                {coffee.description}
-              </p>
-              <img src={coffee.photo} alt="coffee bean" />
+              <div className="card border-0 d-flex flex-column justify-content-between shadow" key={coffee.id}>
+                <img className="card-img-top" src={coffee.photo} alt="coffee representation" />
+                <div className="card-body d-flex flex-column justify-content-between">
+                  <div className="stars">
+                    <i className="fas fa-star" />
+                    <i className="fas fa-star" />
+                    <i className="fas fa-star" />
+                    <i className="fas fa-star" />
+                    <i className="far fa-star" />
+                  </div>
+                  <p className="card-text">
+                    {coffee.description}
+                  </p>
+                </div>
+              </div>
             </div>
           )
       }
