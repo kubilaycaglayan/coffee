@@ -4,9 +4,9 @@ import PropTypes from 'prop-types';
 const CreateFavoriteButton = props => {
   const { handleClick } = props;
   return (
-    <button type="button" onClick={handleClick}>
+    <p onClick={handleClick}>
       Add to favorites
-    </button>
+    </p>
   );
 };
 

@@ -23,33 +23,55 @@ const Coffees = props => {
           ? <Loading />
           : (
             <div className="single-coffee pt-5">
-              <h1 className="pt-5">
+              <h1 className="pt-5 pb-3">
                 {coffee.name}
               </h1>
-              <h2>
-                Fav?
-              </h2>
-              <h2>
+              <div className="card border-0 d-flex flex-column justify-content-between shadow" key={coffee.id}>
+                <div className="signature-wrapper d-flex justif-content-between align-items-center">
+                  <img className="card-img-top" src={coffee.photo} alt="coffee representation" />
+                  <div className="signature d-flex justify-content-start align-items-center">
+                    <img src="http://lofrev.net/wp-content/photos/2017/03/user_blue_logo.png" alt="representational user" />
+                    <div className="pl-2 pb-1">
+                      <p>
+                        Kubilay Caglayan
+                      </p>
+                      <div className="stars">
+                        <i className="fas fa-star" />
+                        <i className="fas fa-star" />
+                        <i className="fas fa-star" />
+                        <i className="fas fa-star" />
+                        <i className="far fa-star" />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div className="card-body d-flex flex-column justify-content-between">
+                  <h2>
+                    About This Coffee
+                  </h2>
+                  <p className="card-text">
+                    {coffee.description}
+                  </p>
+                  <h2>
+                    Altitude
+                  </h2>
+                  <p className="card-text">
+                    650m.
+                  </p>
+                  <h2>
+                    Blend?
+                  </h2>
+                  <p className="card-text">
+                    None of our products is blend. We favor the quality more than anything else.
+                  </p>
+                </div>
+              </div>
+              <div className="subtitle">
                 {
                   coffee.favorite
                     ? <DeleteFavoriteButton handleClick={() => { deleteFavHandler(coffee.id); }} />
                     : <CreateFavoriteButton handleClick={() => { createFavHandler(coffee.id); }} />
                 }
-              </h2>
-              <div className="card border-0 d-flex flex-column justify-content-between shadow" key={coffee.id}>
-                <img className="card-img-top" src={coffee.photo} alt="coffee representation" />
-                <div className="card-body d-flex flex-column justify-content-between">
-                  <div className="stars">
-                    <i className="fas fa-star" />
-                    <i className="fas fa-star" />
-                    <i className="fas fa-star" />
-                    <i className="fas fa-star" />
-                    <i className="far fa-star" />
-                  </div>
-                  <p className="card-text">
-                    {coffee.description}
-                  </p>
-                </div>
               </div>
             </div>
           )

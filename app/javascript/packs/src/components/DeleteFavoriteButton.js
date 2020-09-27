@@ -4,9 +4,9 @@ import PropTypes from 'prop-types';
 const DeleteFavoriteButton = props => {
   const { handleClick } = props;
   return (
-    <button type="button" onClick={handleClick}>
-      Delete from favorites
-    </button>
+    <p onClick={handleClick}>
+      Remove from favorites
+    </p>
   );
 };
 

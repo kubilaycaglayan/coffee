@@ -4,6 +4,7 @@ $white-original: #ffffff
 $white: #e0d2cf
 $yellow: #FABD57
 $orange: #ee5331
+$orange-subtitle: #EF5D32
 $text-black: #545252
 $text-gray: #646364
 $gray: #b2b2b2
@@ -141,6 +142,11 @@ a
     @media ( max-width: 436px )
       padding-top: 36px
 
+  .fas
+    color: $yellow
+  .far
+    color: $gray
+
 .slick-slider
   margin: 0 auto
   max-width: 800px
@@ -181,11 +187,6 @@ a
   a
     color: $text-gray
 
-  .fas
-    color: $yellow
-  .far
-    color: $gray
-
 .single-coffee
   h1
     font-size: 5vw
@@ -196,3 +197,42 @@ a
   .card
     max-width: 800px
     margin: 0 auto
+
+    h2
+      font-size: 1.3em
+
+  .card-body
+    p
+      padding-bottom: 25px
+
+  .signature-wrapper
+    position: relative
+
+  .signature
+    position: absolute
+    bottom: 25px
+    left: 25px
+    width: 250px
+
+    p
+      color: $white
+      font-size: 1.3em
+      font-weight: bolder
+
+    img
+      width: 50px
+
+  .subtitle
+    background-color: $orange-subtitle
+    position: fixed
+    bottom: 0
+    left: 0
+    right: 0
+    height: 50px
+
+    p
+      color: $white-original
+      cursor: pointer
+      font-weight: bolder
+      text-align: center
+      padding-top: 12px
