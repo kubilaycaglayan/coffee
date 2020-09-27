@@ -8,8 +8,9 @@ const attemptCreateCoffee = data => dispatch => {
       response => {
         if (response.success) {
           dispatch(getCoffees());
+          dispatch(autoFlash('Your coffee is ready 🎉'));
         } else {
-          dispatch(autoFlash('Something went wrong.'));
+          dispatch(autoFlash('Something went wrong'));
         }
       },
     );
