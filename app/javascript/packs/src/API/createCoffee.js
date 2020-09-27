@@ -6,10 +6,10 @@ const token = getToken();
 const createCoffee = data => fetch(CREATE_COFFEE_URL, {
   method: 'POST',
   headers: {
-    'Content-Type': 'application/json',
     'X-CSRF-Token': token,
   },
-  body: JSON.stringify(data),
+  body: data,
+  // body: JSON.stringify({ coffee: data }),
 })
   .then(
     response => response.json(),

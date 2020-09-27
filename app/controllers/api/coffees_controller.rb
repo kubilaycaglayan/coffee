@@ -10,7 +10,8 @@ class Api::CoffeesController < ApplicationController
   end
 
   def create
-    @coffee = Coffee.initialize_with_images(coffee_params)
+    byebug
+    @coffee = Coffee.new(coffee_params)
 
     if @coffee.save
       render json: {
@@ -24,8 +25,8 @@ class Api::CoffeesController < ApplicationController
   end
 
   private
-
   def coffee_params
-    params.require(:coffee).permit(:name, :description)
+    params.require(:coffee).permit(:name, :description, :photo, photo_attributes: [:image])
   end
+
 end

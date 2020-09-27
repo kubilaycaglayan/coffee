@@ -37,15 +37,15 @@ const mapDispatchToProps = dispatch => ({
     const form = new FormData();
     form.append('coffee[name]', newCoffee.name);
     form.append('coffee[description]', newCoffee.description);
-    form.append('coffee[photo][image]', newCoffee.photo.image);
-    dispatch(attemptCreateCoffee(newCoffee));
+    form.append('coffee[photo_attributes][image]', newCoffee.photo_attributes.image);
+    dispatch(attemptCreateCoffee(form));
   },
   handleNameChange:
   (e, newCoffee) => dispatch(changeNewCoffee({ ...newCoffee, name: e.target.value })),
   handleDescriptionChange:
   (e, newCoffee) => dispatch(changeNewCoffee({ ...newCoffee, description: e.target.value })),
   handlePhotoChange:
-  (e, newCoffee) => dispatch(changeNewCoffee({ ...newCoffee, photo: { image: e.target.value } })),
+  (e, newCoffee) => dispatch(changeNewCoffee({ ...newCoffee, photo_attributes: { image: e.target.files[0] } })),
 });
 
 CoffeeForm.propTypes = {
