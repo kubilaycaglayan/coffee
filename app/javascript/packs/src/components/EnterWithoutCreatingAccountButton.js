@@ -11,9 +11,9 @@ const EnterWithoutCreatingAccountButton = props => {
 
   return (
     <button type="button" onClick={() => { handleLogin(creds); }}>
-      Enter Without Account
+      Quick Access
       <span className="pl-2" role="img" aria-label="emergency entrance">
-        ➡️
+        ➡
       </span>
     </button>
   );
