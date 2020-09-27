@@ -40,15 +40,21 @@ a
   +flex-it(center, center)
 
 .flash
-  left: 50%
+  width: 100%
   margin: 0 auto
-  position: absolute
+  position: fixed
   text-align: center
-  top: 50px
+  top: 38px
+  z-index: 30
   div
+    background-color: $gray-opaq
+    border-radius: 20px
+    width: 60%
+    max-width: 400px
     margin: 0 auto
     text-align: center
-    color: #ff0000
+  strong
+    color: $white-original
 
 #root
   min-height: 100vh
