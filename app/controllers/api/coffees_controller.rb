@@ -1,6 +1,6 @@
 class Api::CoffeesController < ApplicationController
   def index
-    @coffees = Coffee.coffees_with_photos
+    @coffees = Coffee.coffees_with_photos(current_user)
     render json: @coffees
   end
 

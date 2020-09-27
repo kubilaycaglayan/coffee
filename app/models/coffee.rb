@@ -4,14 +4,14 @@ class Coffee < ApplicationRecord
   has_many :favorites, dependent: :destroy
   has_many :favoriters, source: :user, through: :favorites, class_name: 'User'
 
-  def self.coffees_with_photos
+  def self.coffees_with_photos(user)
     coffees = Coffee.all
-    jsonifize_coffee(coffees)
+    jsonifize_coffee(coffees, user)
   end
 
   def self.favorite_coffees_with_photos(user)
     coffees = user.favorite_coffees
-    jsonifize_coffee(coffees)
+    jsonifize_coffee(coffees, user)
   end
 
   def self.coffee_with_photos(id, user)

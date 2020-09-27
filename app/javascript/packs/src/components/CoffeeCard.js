@@ -10,11 +10,22 @@ const CoffeeCard = ({ coffee }) => (
         <h5 className="card-title">
           {coffee.name}
         </h5>
-        <i className="fas fa-star" />
-        <i className="fas fa-star" />
-        <i className="fas fa-star" />
-        <i className="fas fa-star" />
-        <i className="far fa-star" />
+        <div className="d-flex justify-content-between">
+          <div>
+            <i className="fas fa-star" />
+            <i className="fas fa-star" />
+            <i className="fas fa-star" />
+            <i className="fas fa-star" />
+            <i className="far fa-star" />
+          </div>
+          <div>
+            {
+              coffee.favorite
+                ? <div className="badge badge-success text-white">Your Favorite</div>
+                : ''
+            }
+          </div>
+        </div>
       </div>
       <p className="card-text">
         {coffee.description}
@@ -32,6 +43,7 @@ CoffeeCard.propTypes = {
     id: PropTypes.number.isRequired,
     name: PropTypes.string.isRequired,
     photo: PropTypes.string.isRequired,
+    favorite: PropTypes.bool.isRequired,
   }).isRequired,
 };
 
