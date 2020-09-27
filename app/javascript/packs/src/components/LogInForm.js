@@ -39,10 +39,10 @@ const LoginForm = props => {
     <div className="sign-in-form">
       <form>
         <label htmlFor="email">
-          <input id="email" onChange={handleMailChange} spellCheck="false" />
+          <input placeholder="Email: 'tse@best.com'" id="email" onChange={handleMailChange} spellCheck="false" />
         </label>
         <label htmlFor="password">
-          <input type="password" id="password" onChange={handlePasswordChange} />
+          <input placeholder="Password: 'microverse'" type="password" id="password" onChange={handlePasswordChange} />
         </label>
         <button type="button" onClick={() => { handleClick(creds); }}>
           Sign In
