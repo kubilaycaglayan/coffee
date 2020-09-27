@@ -1,11 +1,13 @@
 import React, { useState } from 'react';
 import PropTypes from 'prop-types';
-import { credentials } from '../../constants';
 
 const LoginForm = props => {
-  const { handleLogin } = props;
+  const { handleLogin, autoFlash } = props;
 
-  const [creds, setCreds] = useState(credentials);
+  const [creds, setCreds] = useState({
+    email: '',
+    password: '',
+  });
 
   const handleMailChange = e => {
     setCreds({
@@ -21,16 +23,28 @@ const LoginForm = props => {
     });
   };
 
+  const handleClick = () => {
+    if (creds.email === '') {
+      autoFlash('Email can\'t be blank');
+      return;
+    }
+    if (creds.password === '') {
+      autoFlash('Password can\'t be blank');
+      return;
+    }
+    handleLogin(creds);
+  };
+
   return (
     <div className="sign-in-form">
       <form>
         <label htmlFor="email">
-          <input id="email" onChange={handleMailChange} />
+          <input id="email" onChange={handleMailChange} spellCheck="false" />
         </label>
         <label htmlFor="password">
           <input type="password" id="password" onChange={handlePasswordChange} />
         </label>
-        <button type="button" onClick={() => { handleLogin(creds); }}>
+        <button type="button" onClick={() => { handleClick(creds); }}>
           Sign In
         </button>
       </form>
@@ -40,6 +54,7 @@ const LoginForm = props => {
 
 LoginForm.propTypes = {
   handleLogin: PropTypes.func.isRequired,
+  autoFlash: PropTypes.func.isRequired,
 };
 
 export default LoginForm;

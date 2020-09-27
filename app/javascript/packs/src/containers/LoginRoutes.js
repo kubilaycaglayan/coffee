@@ -4,12 +4,14 @@ import { Route, Redirect } from 'react-router-dom';
 import PropTypes from 'prop-types';
 import LoginForm from '../components/LogInForm';
 import NewUserForm from '../components/NewUserForm';
-import { attemptLogin, attemptCreateUser } from '../actions';
+import { attemptLogin, attemptCreateUser, autoFlash } from '../actions';
 import NewUserButton from '../components/NewUserButton';
-import LoginButton from '../components/LoginButton';
+import EnterWithoutCreatingAccountButton from '../components/EnterWithoutCreatingAccountButton';
 
 const Login = props => {
-  const { handleLogin, handleNewUser, loggedIn } = props;
+  const {
+    handleLogin, handleNewUser, loggedIn, fireFlash,
+  } = props;
 
   return (
     <div className="outside">
@@ -26,8 +28,9 @@ const Login = props => {
           loggedIn ? '' : <Redirect to="/" />
         }
       </Route>
-      <Route exact path="/" render={() => <LoginForm handleLogin={handleLogin} />} />
+      <Route exact path="/" render={() => <LoginForm handleLogin={handleLogin} autoFlash={fireFlash} />} />
       <Route exact path="/new-user" render={() => <NewUserForm handleNewUser={handleNewUser} />} />
+      <Route exact path="/" render={() => <EnterWithoutCreatingAccountButton handleLogin={handleLogin} />} />
       <Route exact path="/" component={NewUserButton} />
     </div>
   );
@@ -36,6 +39,7 @@ const Login = props => {
 Login.propTypes = {
   handleLogin: PropTypes.func.isRequired,
   handleNewUser: PropTypes.func.isRequired,
+  fireFlash: PropTypes.func.isRequired,
   loggedIn: PropTypes.bool.isRequired,
 };
 
@@ -46,6 +50,7 @@ const mapStateToProps = state => ({
 const mapDispatchToProps = dispatch => ({
   handleLogin: creds => dispatch(attemptLogin(creds)),
   handleNewUser: user => dispatch(attemptCreateUser(user)),
+  fireFlash: message => dispatch(autoFlash(message)),
 });
 
 export default connect(

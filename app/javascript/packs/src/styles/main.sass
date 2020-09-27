@@ -26,6 +26,8 @@ html
     margin: 0
     padding: 0
     outline: 0 !important
+  body
+    min-width: 320px
 
 a
   color: $white
@@ -63,10 +65,11 @@ a
 
 .outside
   +flex-it(space-around, center)
-  background-image: $wallpaper
-  background-color: $white
   background-blend-mode: overlay
-  background-position-y: 100%
+  background-color: $white
+  background-image: $wallpaper
+  background-position-x: 50%
+  background-position-y: 50%
   background-size: cover
   flex-direction: column
   min-height: 100vh
@@ -100,8 +103,8 @@ a
     background-color: $orange
     border: 0
     border-radius: 20px
-    color: $white
-    font-weight: bold
+    color: $white-original
+    font-weight: 500
     padding: 5px
     padding-left: 15px
     padding-right: 15px
