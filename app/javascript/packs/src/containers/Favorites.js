@@ -1,11 +1,11 @@
 /* eslint-disable react/jsx-props-no-spreading */
 import React, { useEffect } from 'react';
 import { connect } from 'react-redux';
-import { Link } from 'react-router-dom';
 import Slider from 'react-slick';
 import PropTypes from 'prop-types';
 import { getFavorites } from '../actions';
 import Loading from '../components/Loading';
+import CoffeeCard from '../components/CoffeeCard';
 
 const Favorites = props => {
   const { favoritesLoader, favorites } = props;
@@ -36,14 +36,7 @@ const Favorites = props => {
               <Slider {...settings}>
                 {
                   favorites.map(coffee => (
-                    <div key={coffee.id}>
-                      <img src={coffee.photo} alt="bean" />
-                      <h2>
-                        <Link to={`/coffee/${coffee.id}`}>
-                          {coffee.name}
-                        </Link>
-                      </h2>
-                    </div>
+                    <CoffeeCard coffee={coffee} key={coffee.id} />
                   ))
                 }
               </Slider>
