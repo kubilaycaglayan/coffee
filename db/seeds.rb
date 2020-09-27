@@ -13,9 +13,14 @@ user = User.create(
   password_confirmation: '000000',
   )
 User.create(
-  email: 'b@b.com',
+  email: 'kubilay@coffee.com',
   password: '000000',
   password_confirmation: '000000',
+  )
+User.create(
+  email: 'tse@best.com',
+  password: 'microverse',
+  password_confirmation: 'microverse',
   )
 
 coffees = [

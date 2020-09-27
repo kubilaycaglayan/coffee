@@ -1,5 +1,5 @@
 export const credentials = {
-  email: 'a@a.com',
+  email: 'kubilay@coffee.com',
   password: '000000',
 };
 export const ATTEMPT = 'ATTEMPT';

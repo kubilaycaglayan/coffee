@@ -5,7 +5,7 @@ const EnterWithoutCreatingAccountButton = props => {
   const { handleLogin } = props;
 
   const creds = {
-    email: 'a@a.com',
+    email: 'kubilay@coffee.com',
     password: '000000',
   };
 
