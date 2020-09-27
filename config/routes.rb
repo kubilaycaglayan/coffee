@@ -1,6 +1,4 @@
 Rails.application.routes.draw do
-  # post 'sessions/create'
-  # delete 'sessions/destroy'
   root 'pages#index'
 
   resources :sessions, only: [:create, :destroy]

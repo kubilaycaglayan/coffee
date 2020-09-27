@@ -30,7 +30,8 @@ class Coffee < ApplicationRecord
         favorite: coffee.favoriters.include?(user)
       }
     end
-    return result.first if result.size === 1
+    return result.first if result.size == 1
+
     result
   end
 

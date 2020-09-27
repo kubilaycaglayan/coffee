@@ -1,12 +1,12 @@
 class Api::CoffeesController < ApplicationController
   def index
     @coffees = Coffee.coffees_with_photos
-    render :json => @coffees
+    render json: @coffees
   end
 
   def show
     @coffee = Coffee.coffee_with_photos(params[:id], current_user)
-    render :json => @coffee
+    render json: @coffee
   end
 
   def create
@@ -24,6 +24,7 @@ class Api::CoffeesController < ApplicationController
   end
 
   private
+
   def coffee_params
     params.require(:coffee).permit(:name, :description)
   end
