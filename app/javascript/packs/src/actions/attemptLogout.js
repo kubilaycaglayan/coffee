@@ -8,10 +8,10 @@ const attemptLogout = userId => dispatch => {
       response => {
         if (!response.loggedIn) {
           dispatch(destroySession());
-          dispatch(autoFlash('Logout successful.'));
+          dispatch(autoFlash('Logout successful'));
           window.location.reload();
         } else {
-          dispatch(autoFlash('Something went wrong.'));
+          dispatch(autoFlash('Something went wrong'));
         }
       },
     );

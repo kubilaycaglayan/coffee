@@ -7,7 +7,11 @@ const getFavorites = () => dispatch => {
     .then(
       response => {
         dispatch(recordFavorites(response));
-        dispatch(autoFlash('Heres your favs'));
+      },
+    )
+    .catch(
+      () => {
+        dispatch(autoFlash('Something went wrong.'));
       },
     );
 };

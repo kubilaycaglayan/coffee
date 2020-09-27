@@ -8,7 +8,7 @@ const attemptLogin = creds => dispatch => {
       response => {
         if (response.loggedIn) {
           dispatch(createSession(response.user));
-          dispatch(autoFlash('Login successful...'));
+          dispatch(autoFlash('Login successful'));
         } else {
           dispatch(autoFlash('Login not successful'));
         }

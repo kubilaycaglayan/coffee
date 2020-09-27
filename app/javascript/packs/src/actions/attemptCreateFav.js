@@ -10,8 +10,9 @@ const attemptCreateFav = id => dispatch => {
         if (response.success) {
           dispatch(getFavorites());
           dispatch(getCoffee(id));
+          dispatch(autoFlash('Item added to favorites'));
         } else {
-          dispatch(autoFlash('Something went wrong.'));
+          dispatch(autoFlash('Something went wrong'));
         }
       },
     );

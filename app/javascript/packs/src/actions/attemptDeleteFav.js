@@ -10,9 +10,15 @@ const attemptDeleteFav = id => dispatch => {
         if (response.success) {
           dispatch(getFavorites());
           dispatch(getCoffee(id));
+          dispatch(autoFlash('Item successfully deleted from favorites'));
         } else {
-          dispatch(autoFlash('Something went wrong.'));
+          dispatch(autoFlash('Something went wrong'));
         }
+      },
+    )
+    .catch(
+      () => {
+        dispatch(autoFlash('Something went wrong'));
       },
     );
 };

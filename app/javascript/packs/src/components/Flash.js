@@ -8,7 +8,7 @@ const Flash = ({ message }) => (
       message !== 'false'
         ? (
           <div className="flash">
-            <FlashMessage duration={105000}>
+            <FlashMessage duration={5000}>
               <strong>
                 <span role="img" aria-label="information">
                   💡
