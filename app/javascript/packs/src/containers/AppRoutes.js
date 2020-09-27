@@ -2,7 +2,7 @@ import React from 'react';
 import { connect } from 'react-redux';
 import { Route } from 'react-router-dom';
 import PropTypes from 'prop-types';
-import { push as Menu } from 'react-burger-menu'
+import { push as Menu } from 'react-burger-menu';
 import { attemptLogout } from '../actions';
 import LogoutButton from '../components/LogoutButton';
 import Coffees from './Coffees';
@@ -18,7 +18,7 @@ const Routes = props => {
 
   return (
     <div className="inside">
-      <Menu pageWrapId={ "page-wrap" } outerContainerId={ "outer-container" }>
+      <Menu pageWrapId="page-wrap" outerContainerId="outer-container">
         <div className="menu-item user-info">
           <div className="user-image">
             <img src="http://lofrev.net/wp-content/photos/2017/03/user_blue_logo.png" alt="representational user" />
