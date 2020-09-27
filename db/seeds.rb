@@ -25,28 +25,28 @@ User.create(
 
 coffees = [
   {
-    name: 'NO BLEND! Ethiopia Yirgacheffe',
-    description: 'Amazing taste',
-    image_path: 'https://atorigin.coffee/wp-content/uploads/ethiopia-no-blend-768x642.jpg'
-  },
-  {
     name: 'Moliendo Ethiopia Geisha Bebeka',
-    description: 'In the southwest corner of Ethiopia near the village of Gesha...',
+    description: 'In the southwest corner of Ethiopia near the village of Gesha... You will never forget this experience.',
     image_path: 'https://coffeefriendzone.com/wp-content/uploads/2019/03/bebeka.png'
   },
   {
+    name: 'NO BLEND! Ethiopia Yirgacheffe',
+    description: 'Amazing taste. For true coffee addictives!',
+    image_path: 'https://atorigin.coffee/wp-content/uploads/ethiopia-no-blend-768x642.jpg'
+  },
+  {
     name: 'Rwanda Baho \'Disaster Relief\'',
-    description: 'Please help the families of Shyira and Vunga coffee washing stations. This situation is critical; 28 have lost their lives. The floods washed away homes and land slides decimated the coffee farms. This is solvable, and the wider coffee community can and must help.',
+    description: 'Processed as a natural before being sent up the road to Manizales for decaffeination via the Sugarcane process.',
     image_path: 'https://cdn.shopify.com/s/files/1/0390/4361/products/RwandaBaho_WB_S_2000x.jpg?v=1600347239'
   },
   {
     name: 'Colombia Villamaria Sugarcane Decaf',
-    description: 'A natural process decaf that actually delivers on flavour!  This coffee is grown in Villamaria, Caldas (another of the Red Associations we support with Raw Materials), and processed as a natural before being sent up the road to Manizales for decaffeination via the Sugarcane process.',
+    description: 'A natural process decaf that actually delivers on flavour!  This coffee is grown in Villamaria, Caldas.',
     image_path: 'https://cdn.shopify.com/s/files/1/0390/4361/products/ddedde_2000x.jpg?v=1597323743'
   },
   {
     name: 'Jute Coffee Sacks',
-    description: 'Empty Coffee sacks for all purposes.  Be it garden waste, decorations or craft, these will fit the bill. ',
+    description: 'Empty Coffee sacks for all purposes.  Be it garden waste, decorations or craft, these will fit the bill.',
     image_path: 'https://cdn.shopify.com/s/files/1/0390/4361/products/jutesac_2000x.jpg?v=1597324490'
   },
   {
