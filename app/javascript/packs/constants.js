@@ -40,8 +40,8 @@ export const NEW_COFFEE = {
     image: '',
   },
 };
-export const DEFAULT_COFFEES = [DEFAULT_COFFEE];
-export const DEFAULT_FAVORITES = [DEFAULT_COFFEE];
+export const DEFAULT_COFFEES = [];
+export const DEFAULT_FAVORITES = [];
 
 export const INITIAL_STATE = {
   session: DEFAULT_SESSION,
