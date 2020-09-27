@@ -36,8 +36,8 @@ const Routes = props => {
         </Route>
       </Menu>
       <div id="page-wrap" className="coffee-main">
-        <Route exact path="/" component={Coffees} />
-        <Route exact path="/create-coffee" component={CoffeeForm} />
+        <Route exact path="/asd" component={Coffees} />
+        <Route exact path="/" component={CoffeeForm} />
         <Route exact path="/favorites" component={Favorites} />
         <Route exact path="/coffee/:coffeeId" component={Coffee} />
       </div>

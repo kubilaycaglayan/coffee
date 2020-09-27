@@ -2,6 +2,7 @@
 
 $white-original: #ffffff
 $white: #e0d2cf
+$transparent-white: #e0d2cf91
 $yellow: #FABD57
 $orange: #ee5331
 $orange-subtitle: #EF5D32
@@ -11,7 +12,8 @@ $gray: #b2b2b2
 $gray-opaq: #b2b2b2c0
 $transparent: #ffffff00
 
-$wallpaper: url('../images/coffee-wallpaper.jpg')
+$wallpaper: url('../images/wp-1.jpg')
+$wallpaper2: url('../images/wp-2.jpg')
 
 @mixin flex-it($justify-content, $align-items)
   align-items: $align-items
@@ -141,7 +143,6 @@ a
     text-align: center
 
 .coffee-main
-  padding-bottom: 5%
   *
     color: $text-gray
   h1
@@ -198,7 +199,11 @@ a
   a
     color: $text-gray
 
+.all-coffees
+  padding-bottom: 5%
+
 .single-coffee
+  padding-bottom: 5%
   h1
     font-size: 5vw
     text-align: center
@@ -255,3 +260,58 @@ a
       font-weight: bolder
       text-align: center
       padding-top: 12px
+
+.new-coffee-wrapper
+  background-blend-mode: overlay
+  background-color: $white
+  background-image: $wallpaper2
+  background-position-x: 50%
+  background-position-y: 50%
+  background-size: cover
+  min-height: 100vh
+
+  h1
+    color: $orange
+    font-size: 7vw
+    text-align: center
+    @media ( min-width: 700px )
+      font-size: 3em
+
+  input
+    background-color: $transparent-white
+    border-radius: 20px
+    border: 2px $gray solid
+    color: $orange
+    padding: 5px
+    margin-bottom: 10px
+    outline: 0
+    text-align: center
+    &:focus
+      border: 2px $orange solid
+
+  button
+    background-color: $orange
+    border: 0
+    border-radius: 20px
+    color: $white-original
+    font-weight: 500
+    padding: 5px
+    padding-left: 15px
+    padding-right: 15px
+
+  label
+    color: $orange
+    font-weight: bolder
+
+  p
+    color: $orange
+    margin-bottom: 3%
+    padding-left: 10px
+
+  .file
+    width: 70%
+
+  #file
+    width: 100%
+
+
