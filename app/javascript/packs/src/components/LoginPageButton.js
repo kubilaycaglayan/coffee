@@ -1,14 +1,14 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-const NewUserButton = () => (
+const LoginPageButton = () => (
   <div className="new-user">
-    <Link to="/new-user">
+    <Link to="/">
       <button type="button">
-        Create New User
+        Login Page
       </button>
     </Link>
   </div>
 );
 
-export default NewUserButton;
+export default LoginPageButton;

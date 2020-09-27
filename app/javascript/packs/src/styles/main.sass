@@ -1,4 +1,10 @@
-$white: #c0afaf
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap')
+
+$white: #e0d2cf
+$orange: #ee5331
+$text-black: #545252
+$gray: #b2b2b2
+$transparent: #ffffff00
 
 $wallpaper: url('../images/coffee-wallpaper.jpg')
 
@@ -9,9 +15,12 @@ $wallpaper: url('../images/coffee-wallpaper.jpg')
 
 html
   *
+    box-sizing: border-box
+    color: $text-black
+    font-family: 'Roboto', sans-serif;
     margin: 0
     padding: 0
-    box-sizing: border-box
+    outline: 0 !important
 
 a
   color: $white
@@ -51,17 +60,49 @@ a
   min-height: 100vh
 
 .outside
-  +flex-it(center, center)
+  +flex-it(space-around, center)
   background-image: $wallpaper
+  background-color: $white
+  background-blend-mode: overlay
   background-position-y: 100%
   background-size: cover
   flex-direction: column
   min-height: 100vh
-  opacity: .3
+
+  .title
+    margin-top: 10%
+    padding-left: 50px
+    padding-right: 50px
+    text-align: center
+    h1
+      text-align: center
+      margin-bottom: 15px
 
   form
-    +flex-it(center, center)
+    +flex-it(space-between, center)
     flex-direction: column
+
+  input
+    background-color: $transparent
+    border-radius: 20px
+    border: 2px $gray solid
+    color: $orange
+    padding: 5px
+    margin-bottom: 10px
+    outline: 0
+    text-align: center
+    &:focus
+      border: 2px $orange solid
+
+  button
+    background-color: $orange
+    border: 0
+    border-radius: 20px
+    color: $white
+    font-weight: bold
+    padding: 5px
+    padding-right: 15px
+    padding-left: 15px
 
 .menu-item
   outline: none

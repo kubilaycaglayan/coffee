@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import PropTypes from 'prop-types';
+import LoginPageButton from './LoginPageButton';
 
 const LoginForm = props => {
   const { handleNewUser } = props;
@@ -30,22 +31,23 @@ const LoginForm = props => {
   return (
     <>
       <form>
+        <h2 className="mb-3">
+          Create New User
+        </h2>
         <label htmlFor="email">
-          Email:
-          <input id="email" onChange={handleMailChange} />
+          <input placeholder="Email" id="email" onChange={handleMailChange} />
         </label>
         <label htmlFor="password">
-          Password:
-          <input type="password" id="password" onChange={handlePasswordChange} />
+          <input placeholder="Password" type="password" id="password" onChange={handlePasswordChange} />
         </label>
         <label htmlFor="passwordConfirmation">
-          Password Confirmation:
-          <input type="password" id="passwordConfirmation" onChange={handlePasswordConfirmationChange} />
+          <input placeholder="Password Confirmation" type="password" id="passwordConfirmation" onChange={handlePasswordConfirmationChange} />
         </label>
         <button type="button" onClick={() => { handleNewUser(newUser); }}>
           Create New User
         </button>
       </form>
+      <LoginPageButton />
     </>
   );
 };

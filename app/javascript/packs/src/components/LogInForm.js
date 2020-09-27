@@ -22,7 +22,7 @@ const LoginForm = props => {
   };
 
   return (
-    <>
+    <div className="sign-in-form">
       <form>
         <label htmlFor="email">
           <input id="email" onChange={handleMailChange} />
@@ -31,10 +31,10 @@ const LoginForm = props => {
           <input type="password" id="password" onChange={handlePasswordChange} />
         </label>
         <button type="button" onClick={() => { handleLogin(creds); }}>
-          Log In
+          Sign In
         </button>
       </form>
-    </>
+    </div>
   );
 };
 
