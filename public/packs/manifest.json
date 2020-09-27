@@ -22,10 +22,10 @@
     },
     "index": {
       "js": [
-        "/packs/js/index-3d3952d4b9240a771567.js"
+        "/packs/js/index-124ce5ba1dede41924f4.js"
       ],
       "js.map": [
-        "/packs/js/index-3d3952d4b9240a771567.js.map"
+        "/packs/js/index-124ce5ba1dede41924f4.js.map"
       ]
     },
     "src/actions/attemptCreateCoffee": {
@@ -374,18 +374,18 @@
     },
     "src/containers/App": {
       "js": [
-        "/packs/js/src/containers/App-3e1b9abf2c093f77d3cd.js"
+        "/packs/js/src/containers/App-efbfd3e21808975f4639.js"
       ],
       "js.map": [
-        "/packs/js/src/containers/App-3e1b9abf2c093f77d3cd.js.map"
+        "/packs/js/src/containers/App-efbfd3e21808975f4639.js.map"
       ]
     },
     "src/containers/AppRoutes": {
       "js": [
-        "/packs/js/src/containers/AppRoutes-2d86ce97ce43b747b8b8.js"
+        "/packs/js/src/containers/AppRoutes-4df1035440b25228c359.js"
       ],
       "js.map": [
-        "/packs/js/src/containers/AppRoutes-2d86ce97ce43b747b8b8.js.map"
+        "/packs/js/src/containers/AppRoutes-4df1035440b25228c359.js.map"
       ]
     },
     "src/containers/Coffee": {
@@ -398,10 +398,10 @@
     },
     "src/containers/CoffeeForm": {
       "js": [
-        "/packs/js/src/containers/CoffeeForm-bf952239826624e314a1.js"
+        "/packs/js/src/containers/CoffeeForm-ce5cb3b20b47d76ad2c4.js"
       ],
       "js.map": [
-        "/packs/js/src/containers/CoffeeForm-bf952239826624e314a1.js.map"
+        "/packs/js/src/containers/CoffeeForm-ce5cb3b20b47d76ad2c4.js.map"
       ]
     },
     "src/containers/Coffees": {
@@ -422,10 +422,10 @@
     },
     "src/containers/LogCheck": {
       "js": [
-        "/packs/js/src/containers/LogCheck-76a80e013cd8c5c434b8.js"
+        "/packs/js/src/containers/LogCheck-7eddb2a332fefe8b6cc2.js"
       ],
       "js.map": [
-        "/packs/js/src/containers/LogCheck-76a80e013cd8c5c434b8.js.map"
+        "/packs/js/src/containers/LogCheck-7eddb2a332fefe8b6cc2.js.map"
       ]
     },
     "src/containers/Login": {
@@ -446,10 +446,10 @@
     },
     "src/containers/Provided": {
       "js": [
-        "/packs/js/src/containers/Provided-4cc1fe0ca473a3a75d8e.js"
+        "/packs/js/src/containers/Provided-16b93c06485940645902.js"
       ],
       "js.map": [
-        "/packs/js/src/containers/Provided-4cc1fe0ca473a3a75d8e.js.map"
+        "/packs/js/src/containers/Provided-16b93c06485940645902.js.map"
       ]
     },
     "src/helpers/getToken": {
@@ -458,6 +458,14 @@
       ],
       "js.map": [
         "/packs/js/src/helpers/getToken-b4eaf6f91870f2f8b1b6.js.map"
+      ]
+    },
+    "src/images/coffee-image": {
+      "js": [
+        "/packs/js/src/images/coffee-image-68a481b2bfffe8a5112f.js"
+      ],
+      "js.map": [
+        "/packs/js/src/images/coffee-image-68a481b2bfffe8a5112f.js.map"
       ]
     },
     "src/images/wp-1": {
@@ -542,10 +550,10 @@
     },
     "src/styles/main": {
       "js": [
-        "/packs/js/src/styles/main-58c7cf7884d69f953e6c.js"
+        "/packs/js/src/styles/main-db546cecd37e54bcaeba.js"
       ],
       "js.map": [
-        "/packs/js/src/styles/main-58c7cf7884d69f953e6c.js.map"
+        "/packs/js/src/styles/main-db546cecd37e54bcaeba.js.map"
       ]
     },
     "src/styles/menu": {
@@ -557,12 +565,13 @@
       ]
     }
   },
-  "index.js": "/packs/js/index-3d3952d4b9240a771567.js",
-  "index.js.map": "/packs/js/index-3d3952d4b9240a771567.js.map",
+  "index.js": "/packs/js/index-124ce5ba1dede41924f4.js",
+  "index.js.map": "/packs/js/index-124ce5ba1dede41924f4.js.map",
   "media/fonts/slick.eot": "/packs/media/fonts/slick-ced611da.eot",
   "media/fonts/slick.svg": "/packs/media/fonts/slick-f97e3bbf.svg",
   "media/fonts/slick.ttf": "/packs/media/fonts/slick-d41f55a7.ttf",
   "media/fonts/slick.woff": "/packs/media/fonts/slick-b7c9e1e4.woff",
+  "media/packs/src/images/coffee-image.jpg": "/packs/media/packs/src/images/coffee-image-55873e113c1b31ea20b95541a457b50d.jpg",
   "media/packs/src/images/wp-1.jpg": "/packs/media/packs/src/images/wp-1-870f65c4aeae0f9c3fd226655a7188be.jpg",
   "media/packs/src/images/wp-2.jpg": "/packs/media/packs/src/images/wp-2-f2fc51b2042e251f47e288d532015be0.jpg",
   "media/slick/ajax-loader.gif": "/packs/media/slick/ajax-loader-c5cd7f53.gif",
@@ -652,28 +661,30 @@
   "src/components/NewUserButton.js.map": "/packs/js/src/components/NewUserButton-d8f4ed8ffe33403aefb7.js.map",
   "src/components/NewUserForm.js": "/packs/js/src/components/NewUserForm-c18a5dbffac51a0fe3a0.js",
   "src/components/NewUserForm.js.map": "/packs/js/src/components/NewUserForm-c18a5dbffac51a0fe3a0.js.map",
-  "src/containers/App.js": "/packs/js/src/containers/App-3e1b9abf2c093f77d3cd.js",
-  "src/containers/App.js.map": "/packs/js/src/containers/App-3e1b9abf2c093f77d3cd.js.map",
-  "src/containers/AppRoutes.js": "/packs/js/src/containers/AppRoutes-2d86ce97ce43b747b8b8.js",
-  "src/containers/AppRoutes.js.map": "/packs/js/src/containers/AppRoutes-2d86ce97ce43b747b8b8.js.map",
+  "src/containers/App.js": "/packs/js/src/containers/App-efbfd3e21808975f4639.js",
+  "src/containers/App.js.map": "/packs/js/src/containers/App-efbfd3e21808975f4639.js.map",
+  "src/containers/AppRoutes.js": "/packs/js/src/containers/AppRoutes-4df1035440b25228c359.js",
+  "src/containers/AppRoutes.js.map": "/packs/js/src/containers/AppRoutes-4df1035440b25228c359.js.map",
   "src/containers/Coffee.js": "/packs/js/src/containers/Coffee-a0c47bc606c9fa51dc1e.js",
   "src/containers/Coffee.js.map": "/packs/js/src/containers/Coffee-a0c47bc606c9fa51dc1e.js.map",
-  "src/containers/CoffeeForm.js": "/packs/js/src/containers/CoffeeForm-bf952239826624e314a1.js",
-  "src/containers/CoffeeForm.js.map": "/packs/js/src/containers/CoffeeForm-bf952239826624e314a1.js.map",
+  "src/containers/CoffeeForm.js": "/packs/js/src/containers/CoffeeForm-ce5cb3b20b47d76ad2c4.js",
+  "src/containers/CoffeeForm.js.map": "/packs/js/src/containers/CoffeeForm-ce5cb3b20b47d76ad2c4.js.map",
   "src/containers/Coffees.js": "/packs/js/src/containers/Coffees-5f23ca02c80af5b65321.js",
   "src/containers/Coffees.js.map": "/packs/js/src/containers/Coffees-5f23ca02c80af5b65321.js.map",
   "src/containers/Favorites.js": "/packs/js/src/containers/Favorites-0db45a896570004ffc2d.js",
   "src/containers/Favorites.js.map": "/packs/js/src/containers/Favorites-0db45a896570004ffc2d.js.map",
-  "src/containers/LogCheck.js": "/packs/js/src/containers/LogCheck-76a80e013cd8c5c434b8.js",
-  "src/containers/LogCheck.js.map": "/packs/js/src/containers/LogCheck-76a80e013cd8c5c434b8.js.map",
+  "src/containers/LogCheck.js": "/packs/js/src/containers/LogCheck-7eddb2a332fefe8b6cc2.js",
+  "src/containers/LogCheck.js.map": "/packs/js/src/containers/LogCheck-7eddb2a332fefe8b6cc2.js.map",
   "src/containers/Login.js": "/packs/js/src/containers/Login-0ed160042777292eefa9.js",
   "src/containers/Login.js.map": "/packs/js/src/containers/Login-0ed160042777292eefa9.js.map",
   "src/containers/LoginRoutes.js": "/packs/js/src/containers/LoginRoutes-41356e16dea037d325ad.js",
   "src/containers/LoginRoutes.js.map": "/packs/js/src/containers/LoginRoutes-41356e16dea037d325ad.js.map",
-  "src/containers/Provided.js": "/packs/js/src/containers/Provided-4cc1fe0ca473a3a75d8e.js",
-  "src/containers/Provided.js.map": "/packs/js/src/containers/Provided-4cc1fe0ca473a3a75d8e.js.map",
+  "src/containers/Provided.js": "/packs/js/src/containers/Provided-16b93c06485940645902.js",
+  "src/containers/Provided.js.map": "/packs/js/src/containers/Provided-16b93c06485940645902.js.map",
   "src/helpers/getToken.js": "/packs/js/src/helpers/getToken-b4eaf6f91870f2f8b1b6.js",
   "src/helpers/getToken.js.map": "/packs/js/src/helpers/getToken-b4eaf6f91870f2f8b1b6.js.map",
+  "src/images/coffee-image.js": "/packs/js/src/images/coffee-image-68a481b2bfffe8a5112f.js",
+  "src/images/coffee-image.js.map": "/packs/js/src/images/coffee-image-68a481b2bfffe8a5112f.js.map",
   "src/images/wp-1.js": "/packs/js/src/images/wp-1-9702fc59543c5571f2b1.js",
   "src/images/wp-1.js.map": "/packs/js/src/images/wp-1-9702fc59543c5571f2b1.js.map",
   "src/images/wp-2.js": "/packs/js/src/images/wp-2-8d9d0874dd5d9a6f77aa.js",
@@ -694,8 +705,8 @@
   "src/reducers/session.js.map": "/packs/js/src/reducers/session-dbc89c10776c61ceec77.js.map",
   "src/styles/loading.js": "/packs/js/src/styles/loading-50124d60b29227a7f6ef.js",
   "src/styles/loading.js.map": "/packs/js/src/styles/loading-50124d60b29227a7f6ef.js.map",
-  "src/styles/main.js": "/packs/js/src/styles/main-58c7cf7884d69f953e6c.js",
-  "src/styles/main.js.map": "/packs/js/src/styles/main-58c7cf7884d69f953e6c.js.map",
+  "src/styles/main.js": "/packs/js/src/styles/main-db546cecd37e54bcaeba.js",
+  "src/styles/main.js.map": "/packs/js/src/styles/main-db546cecd37e54bcaeba.js.map",
   "src/styles/menu.js": "/packs/js/src/styles/menu-41214385e9d564c82432.js",
   "src/styles/menu.js.map": "/packs/js/src/styles/menu-41214385e9d564c82432.js.map"
 }

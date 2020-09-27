@@ -19,9 +19,6 @@ const CoffeeForm = props => {
             👋
           </span>
           Add a new coffee, add a new taste to our library!
-          <span role="img" aria-label="coffee cup">
-            ☕
-          </span>
         </p>
         <form className="d-flex flex-column justify-content-around align-items-center">
           <label htmlFor="name">
@@ -32,11 +29,19 @@ const CoffeeForm = props => {
             <p>Description</p>
             <input name="coffee[description]" id="description" onChange={e => { handleDescriptionChange(e, newCoffee); }} />
           </label>
-          <label htmlFor="file" className="file">
-            <p>Image</p>
+          <label htmlFor="file" className="file d-flex flex-column justify-content-around align-items-center">
+            <p>Default Image</p>
+            <img className="rounded rounded-circle my-1" src="https://render.fineartamerica.com/images/rendered/square-product/small/images/artworkimages/mediumlarge/2/coffee-bean-malerapaso.jpg" alt="coffee bean" />
+            <p>Or you can add your own image (under 1 Mb)</p>
             <input name="coffee[photo][image]" id="file" type="file" onChange={e => { handlePhotoChange(e, newCoffee); }} />
           </label>
-          <button type="button" onClick={() => { handleSubmit(newCoffee); }}>Add Coffee</button>
+
+          <button className="mt-3" type="button" onClick={() => { handleSubmit(newCoffee); }}>
+            Add Coffee
+            <span className="pl-3" role="img" aria-label="coffee cup">
+              ☕
+            </span>
+          </button>
         </form>
       </div>
     </div>
