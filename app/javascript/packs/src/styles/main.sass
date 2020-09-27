@@ -1,5 +1,7 @@
 $white: #c0afaf
 
+$wallpaper: url('../images/coffee-wallpaper.jpg')
+
 @mixin flex-it($justify-content, $align-items)
   align-items: $align-items
   display: flex
@@ -48,6 +50,19 @@ a
 #root
   min-height: 100vh
 
+.outside
+  +flex-it(center, center)
+  background-image: $wallpaper
+  background-position-y: 100%
+  background-size: cover
+  flex-direction: column
+  min-height: 100vh
+  opacity: .3
+
+  form
+    +flex-it(center, center)
+    flex-direction: column
+
 .menu-item
   outline: none
 
@@ -57,3 +72,4 @@ a
   img
     margin: 0 auto
     width: 70%
+

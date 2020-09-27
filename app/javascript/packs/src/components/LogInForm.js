@@ -25,11 +25,9 @@ const LoginForm = props => {
     <>
       <form>
         <label htmlFor="email">
-          Email:
           <input id="email" onChange={handleMailChange} />
         </label>
         <label htmlFor="password">
-          Password:
           <input type="password" id="password" onChange={handlePasswordChange} />
         </label>
         <button type="button" onClick={() => { handleLogin(creds); }}>

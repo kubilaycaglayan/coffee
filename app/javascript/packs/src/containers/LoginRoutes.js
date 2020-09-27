@@ -12,7 +12,15 @@ const Login = props => {
   const { handleLogin, handleNewUser, loggedIn } = props;
 
   return (
-    <>
+    <div className="outside">
+      <div>
+        <h1>
+          Sign In
+        </h1>
+        <p>
+          Hello there! Sign in and start choosing your favorite coffee beans!
+        </p>
+      </div>
       <Route path="/">
         {
           loggedIn ? '' : <Redirect to="/" />
@@ -22,7 +30,7 @@ const Login = props => {
       <Route exact path="/" render={() => <LoginForm handleLogin={handleLogin} />} />
       <Route exact path="/new-user" component={LoginButton} />
       <Route exact path="/new-user" render={() => <NewUserForm handleNewUser={handleNewUser} />} />
-    </>
+    </div>
   );
 };
 

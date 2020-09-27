@@ -17,7 +17,7 @@ const Routes = props => {
   const { handleLogout, userId, email } = props;
 
   return (
-    <div>
+    <div className="inside">
       <Menu pageWrapId={ "page-wrap" } outerContainerId={ "outer-container" }>
         <div className="menu-item user-info">
           <div className="user-image">
