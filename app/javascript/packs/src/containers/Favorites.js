@@ -6,8 +6,6 @@ import Slider from 'react-slick';
 import PropTypes from 'prop-types';
 import { getFavorites } from '../actions';
 import Loading from '../components/Loading';
-import 'slick-carousel/slick/slick.css';
-import 'slick-carousel/slick/slick-theme.css';
 
 const Favorites = props => {
   const { favoritesLoader, favorites } = props;
