@@ -1,8 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap')
 
+$white-original: #ffffff
 $white: #e0d2cf
+$yellow: #FABD57
 $orange: #ee5331
 $text-black: #545252
+$text-gray: #646364
 $gray: #b2b2b2
 $transparent: #ffffff00
 
@@ -29,18 +32,6 @@ a
   &:hover
     color: $white
     text-decoration: 0
-
-.slick-slider
-  width: 90%
-  margin: 0 auto
-
-  img
-    width: 50%
-    margin: 0 auto
-
-  h2
-    margin: 0 auto
-    text-align: center
 
 .loading
   width: 100%
@@ -137,13 +128,39 @@ a
     text-align: center
 
 .coffee-main
+  padding-bottom: 5%
   *
-    color: $text-black
+    color: $text-gray
   h1
-    text-align: center
-    padding-top: 8%
     font-size: 7vw
+    padding-top: 8%
+    text-align: center
     @media ( min-width: 700px )
       font-size: 3em
     @media ( max-width: 436px )
       padding-top: 36px
+
+.slick-slider
+  margin: 0 auto
+  max-width: 800px
+
+  @media ( max-width: 600px )
+    .card
+      height: 60vh
+
+  img
+    margin: 0 auto
+    width: 50%
+
+  h2
+    margin: 0 auto
+    text-align: center
+
+  a
+    color: $text-gray
+
+  .fas
+    color: $yellow
+  .far
+    color: $gray
+
