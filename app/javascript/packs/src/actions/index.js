@@ -11,3 +11,4 @@ export { default as changeNewCoffee } from './changeNewCoffee';
 export { default as attemptCreateCoffee } from './attemptCreateCoffee';
 export { default as attemptCreateUser } from './attemptCreateUser';
 export { default as changeFlash } from './changeFlash';
+export { default as autoFlash } from './autoFlash';

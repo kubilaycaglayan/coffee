@@ -9,7 +9,6 @@ const createCoffee = data => fetch(CREATE_COFFEE_URL, {
     'X-CSRF-Token': token,
   },
   body: data,
-  // body: JSON.stringify({ coffee: data }),
 })
   .then(
     response => response.json(),

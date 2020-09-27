@@ -10,8 +10,11 @@ class Api::CoffeesController < ApplicationController
   end
 
   def create
-    byebug
-    @coffee = Coffee.new(coffee_params)
+    if params[:coffee][:photo_attributes][:image] == ''
+      @coffee = Coffee.initialize_with_images(coffee_params)
+    else
+      @coffee = Coffee.new(coffee_params)
+    end
 
     if @coffee.save
       render json: {

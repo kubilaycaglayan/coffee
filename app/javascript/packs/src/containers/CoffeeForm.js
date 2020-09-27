@@ -1,7 +1,7 @@
 import React from 'react';
 import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
-import { attemptCreateCoffee, changeNewCoffee } from '../actions';
+import { attemptCreateCoffee, changeNewCoffee, autoFlash } from '../actions';
 
 const CoffeeForm = props => {
   const {
@@ -34,6 +34,18 @@ const mapStateToProps = state => ({
 const mapDispatchToProps = dispatch => ({
   handleSubmit:
   newCoffee => {
+    if (newCoffee.name === '') {
+      dispatch(autoFlash('Name can\'t be blank.'));
+      return;
+    }
+    if (newCoffee.description === '') {
+      dispatch(autoFlash('Description can\'t be blank.'));
+      return;
+    }
+    if (newCoffee.photo_attributes.image && newCoffee.photo_attributes.image.size > 1100000) {
+      dispatch(autoFlash('File size should be smaller than 1 Mb'));
+      return;
+    }
     const form = new FormData();
     form.append('coffee[name]', newCoffee.name);
     form.append('coffee[description]', newCoffee.description);
