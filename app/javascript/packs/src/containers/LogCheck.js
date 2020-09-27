@@ -12,7 +12,7 @@ const LogCheck = props => {
     <>
       <Flash message={message} />
       {
-        loggedIn
+        !loggedIn
           ? <App />
           : <Login />
       }

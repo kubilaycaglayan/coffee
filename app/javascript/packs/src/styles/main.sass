@@ -1,7 +1,22 @@
+$white: #c0afaf
+
 @mixin flex-it($justify-content, $align-items)
   align-items: $align-items
   display: flex
   justify-content: $justify-content
+
+html
+  *
+    margin: 0
+    padding: 0
+    box-sizing: border-box
+
+a
+  color: $white
+  text-decoration: none
+
+  &:hover
+    color: $white
 
 .slick-slider
   width: 90%
@@ -30,3 +45,15 @@
     text-align: center
     color: #ff0000
 
+#root
+  min-height: 100vh
+
+.menu-item
+  outline: none
+
+.user-image
+  +flex-it(center, center)
+
+  img
+    margin: 0 auto
+    width: 70%

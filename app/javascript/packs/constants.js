@@ -24,7 +24,7 @@ export const CREATE_USER_URL = '/api/users/';
 
 export const DEFAULT_SESSION = {
   loggedIn: false,
-  email: '',
+  email: 'default@mail.com',
   id: '',
 };
 export const DEFAULT_COFFEE = {
