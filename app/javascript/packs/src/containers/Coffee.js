@@ -22,7 +22,7 @@ const Coffees = props => {
         coffeeId.toString() !== coffee.id.toString()
           ? <Loading />
           : (
-            <>
+            <div className="single-coffee">
               <h1>
                 Coffee
               </h1>
@@ -46,7 +46,7 @@ const Coffees = props => {
                 {coffee.description}
               </p>
               <img src={coffee.photo} alt="coffee bean" />
-            </>
+            </div>
           )
       }
     </>

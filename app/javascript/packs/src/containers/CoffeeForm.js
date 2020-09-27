@@ -9,21 +9,26 @@ const CoffeeForm = props => {
   } = props;
 
   return (
-    <form>
-      <label htmlFor="name">
-        Coffe Name
-        <input name="coffee[name]" id="name" onChange={e => { handleNameChange(e, newCoffee); }} />
-      </label>
-      <label htmlFor="description">
-        Description
-        <input name="coffee[description]" id="description" onChange={e => { handleDescriptionChange(e, newCoffee); }} />
-      </label>
-      <label htmlFor="file">
-        Image
-        <input name="coffee[photo][image]" id="file" type="file" onChange={e => { handlePhotoChange(e, newCoffee); }} />
-      </label>
-      <button type="button" onClick={() => { handleSubmit(newCoffee); }}>Add Coffee</button>
-    </form>
+    <div className="new-coffee">
+      <h1>
+        Create New Coffee
+      </h1>
+      <form>
+        <label htmlFor="name">
+          Coffe Name
+          <input name="coffee[name]" id="name" onChange={e => { handleNameChange(e, newCoffee); }} />
+        </label>
+        <label htmlFor="description">
+          Description
+          <input name="coffee[description]" id="description" onChange={e => { handleDescriptionChange(e, newCoffee); }} />
+        </label>
+        <label htmlFor="file">
+          Image
+          <input name="coffee[photo][image]" id="file" type="file" onChange={e => { handlePhotoChange(e, newCoffee); }} />
+        </label>
+        <button type="button" onClick={() => { handleSubmit(newCoffee); }}>Add Coffee</button>
+      </form>
+    </div>
   );
 };
 

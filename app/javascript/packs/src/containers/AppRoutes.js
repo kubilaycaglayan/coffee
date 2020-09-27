@@ -35,8 +35,7 @@ const Routes = props => {
           <LogoutButton handleClick={() => { handleLogout(userId); }} />
         </Route>
       </Menu>
-      <div id="page-wrap">
-
+      <div id="page-wrap" className="coffee-main">
         <Route exact path="/" component={Coffees} />
         <Route exact path="/create-coffee" component={CoffeeForm} />
         <Route exact path="/favorites" component={Favorites} />

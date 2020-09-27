@@ -29,7 +29,7 @@ const Coffees = props => {
         coffees.length === 0
           ? <Loading />
           : (
-            <>
+            <div className="all-coffees">
               <h1>
                 Coffees
               </h1>
@@ -47,7 +47,7 @@ const Coffees = props => {
                   ))
                 }
               </Slider>
-            </>
+            </div>
           )
       }
     </>

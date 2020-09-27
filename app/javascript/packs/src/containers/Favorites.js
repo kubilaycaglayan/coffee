@@ -29,7 +29,7 @@ const Favorites = props => {
         favorites.length === 0
           ? <Loading />
           : (
-            <>
+            <div className="favorites">
               <h1>
                 Favorites
               </h1>
@@ -47,7 +47,7 @@ const Favorites = props => {
                   ))
                 }
               </Slider>
-            </>
+            </div>
           )
       }
     </>
