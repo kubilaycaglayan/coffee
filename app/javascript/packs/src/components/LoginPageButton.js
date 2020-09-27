@@ -5,7 +5,7 @@ const LoginPageButton = () => (
   <div className="new-user">
     <Link to="/">
       <button type="button">
-        Login Page
+        Sign In Page
       </button>
     </Link>
   </div>

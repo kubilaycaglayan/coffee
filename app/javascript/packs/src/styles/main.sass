@@ -28,6 +28,7 @@ a
 
   &:hover
     color: $white
+    text-decoration: 0
 
 .slick-slider
   width: 90%
@@ -101,16 +102,37 @@ a
     color: $white
     font-weight: bold
     padding: 5px
-    padding-right: 15px
     padding-left: 15px
+    padding-right: 15px
 
-.menu-item
-  outline: none
+.bm-item-list
+  .menu-item
+    color: $text-black
+    outline: none
+    margin-top: 20px
+    margin-bottom: 20px
 
-.user-image
-  +flex-it(center, center)
+  a
+    color: $text-black
+    text-decoration: none
 
-  img
-    margin: 0 auto
-    width: 70%
+    &:hover
+      color: $text-black
+      text-decoration: 0
+
+  button
+    background-color: $transparent
+    border: none
+    margin-top: auto
+
+  .user-image
+    +flex-it(center, center)
+
+    img
+      margin: 25px auto
+      width: 70%
+
+  .user-email
+    margin-bottom: 30px
+    text-align: center
 

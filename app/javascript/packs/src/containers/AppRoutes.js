@@ -2,7 +2,7 @@ import React from 'react';
 import { connect } from 'react-redux';
 import { Route } from 'react-router-dom';
 import PropTypes from 'prop-types';
-import { pushRotate as Menu } from 'react-burger-menu'
+import { push as Menu } from 'react-burger-menu'
 import { attemptLogout } from '../actions';
 import LogoutButton from '../components/LogoutButton';
 import Coffees from './Coffees';
@@ -27,9 +27,10 @@ const Routes = props => {
             {email}
           </div>
         </div>
-        <Route path="/" component={FavoritesButton} />
         <Route path="/" component={CoffeesButton} />
+        <Route path="/" component={FavoritesButton} />
         <Route path="/" component={CreateNewCoffeeButton} />
+        <hr />
         <Route path="/">
           <LogoutButton handleClick={() => { handleLogout(userId); }} />
         </Route>
