@@ -1,23 +1,20 @@
 import destroySession from './destroySession';
+import autoFlash from './autoFlash';
 import { logout } from '../API';
 
-const attemptLogout = userId => {
-
-  return dispatch => {
-    logout(userId)
-      .then(
-        response => {
-          console.log(response);
-          if (!response.loggedIn) {
-            console.log('logout successful');
-            dispatch(destroySession());
-            window.location.reload();
-          } else {
-            console.log('logout not successful');
-          }
-        },
-      );
-  };
+const attemptLogout = userId => dispatch => {
+  logout(userId)
+    .then(
+      response => {
+        if (!response.loggedIn) {
+          dispatch(destroySession());
+          dispatch(autoFlash('Logout successful.'));
+          window.location.reload();
+        } else {
+          dispatch(autoFlash('Something went wrong.'));
+        }
+      },
+    );
 };
 
 export default attemptLogout;

@@ -42,7 +42,6 @@ export const NEW_COFFEE = {
 };
 export const DEFAULT_COFFEES = [DEFAULT_COFFEE];
 export const DEFAULT_FAVORITES = [DEFAULT_COFFEE];
-export const DEFAULT_FLASH = 'Welcome 😊';
 
 export const INITIAL_STATE = {
   session: DEFAULT_SESSION,
@@ -50,5 +49,5 @@ export const INITIAL_STATE = {
   coffee: DEFAULT_COFFEE,
   favorites: DEFAULT_FAVORITES,
   newCoffee: NEW_COFFEE,
-  flash: false,
+  flash: 'false',
 };

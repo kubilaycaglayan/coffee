@@ -1,5 +1,6 @@
 import React from 'react';
 import { connect } from 'react-redux';
+import PropTypes from 'prop-types';
 import Login from './Login';
 import App from './App';
 import Flash from '../components/Flash';
@@ -17,6 +18,11 @@ const LogCheck = props => {
       }
     </>
   );
+};
+
+LogCheck.propTypes = {
+  loggedIn: PropTypes.bool.isRequired,
+  message: PropTypes.string.isRequired,
 };
 
 const mapStateToProps = state => ({

@@ -13,7 +13,7 @@ import CoffeeForm from './CoffeeForm';
 import CreateNewCoffeeButton from '../components/CreateNewCoffeeButton';
 
 const Routes = props => {
-  const { handleLogout, userId, loggedIn } = props;
+  const { handleLogout, userId } = props;
 
   return (
     <>
@@ -33,6 +33,7 @@ const Routes = props => {
 
 Routes.propTypes = {
   handleLogout: PropTypes.func.isRequired,
+  userId: PropTypes.string.isRequired,
 };
 
 const mapStateToProps = state => ({

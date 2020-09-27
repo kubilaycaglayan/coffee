@@ -10,13 +10,10 @@ import { INITIAL_STATE } from '../../constants';
 
 const store = createStore(reducer, INITIAL_STATE, composeWithDevTools(applyMiddleware(thunk)));
 
-const Provided = () => {
-
-  return (
-    <Provider store={store}>
-      <LogCheck />
-    </Provider>
-  );
-};
+const Provided = () => (
+  <Provider store={store}>
+    <LogCheck />
+  </Provider>
+);
 
 export default Provided;

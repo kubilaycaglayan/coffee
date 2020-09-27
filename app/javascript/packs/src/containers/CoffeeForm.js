@@ -1,5 +1,6 @@
 import React from 'react';
 import { connect } from 'react-redux';
+import PropTypes from 'prop-types';
 import { attemptCreateCoffee, changeNewCoffee } from '../actions';
 
 const CoffeeForm = props => {
@@ -46,6 +47,17 @@ const mapDispatchToProps = dispatch => ({
   handlePhotoChange:
   (e, newCoffee) => dispatch(changeNewCoffee({ ...newCoffee, photo: { image: e.target.value } })),
 });
+
+CoffeeForm.propTypes = {
+  handleDescriptionChange: PropTypes.func.isRequired,
+  handleSubmit: PropTypes.func.isRequired,
+  handlePhotoChange: PropTypes.func.isRequired,
+  handleNameChange: PropTypes.func.isRequired,
+  newCoffee: PropTypes.shape({
+    name: PropTypes.string.isRequired,
+    description: PropTypes.string.isRequired,
+  }).isRequired,
+};
 
 export default connect(
   mapStateToProps,

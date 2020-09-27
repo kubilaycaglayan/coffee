@@ -1,6 +1,7 @@
 import React from 'react';
 import { connect } from 'react-redux';
 import { Route, Redirect } from 'react-router-dom';
+import PropTypes from 'prop-types';
 import LoginForm from '../components/LogInForm';
 import NewUserForm from '../components/NewUserForm';
 import { attemptLogin, attemptCreateUser } from '../actions';
@@ -23,6 +24,12 @@ const Login = props => {
       <Route exact path="/new-user" render={() => <NewUserForm handleNewUser={handleNewUser} />} />
     </>
   );
+};
+
+Login.propTypes = {
+  handleLogin: PropTypes.func.isRequired,
+  handleNewUser: PropTypes.func.isRequired,
+  loggedIn: PropTypes.bool.isRequired,
 };
 
 const mapStateToProps = state => ({

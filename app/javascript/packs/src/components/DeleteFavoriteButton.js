@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
 const DeleteFavoriteButton = props => {
   const { handleClick } = props;
@@ -7,6 +8,10 @@ const DeleteFavoriteButton = props => {
       Delete from favorites
     </button>
   );
+};
+
+DeleteFavoriteButton.propTypes = {
+  handleClick: PropTypes.func.isRequired,
 };
 
 export default DeleteFavoriteButton;
