@@ -22,10 +22,10 @@
     },
     "index": {
       "js": [
-        "/packs/js/index-bbdf75def9133db01755.js"
+        "/packs/js/index-f52f30184ac0b0b81501.js"
       ],
       "js.map": [
-        "/packs/js/index-bbdf75def9133db01755.js.map"
+        "/packs/js/index-f52f30184ac0b0b81501.js.map"
       ]
     },
     "src/actions/attemptCreateCoffee": {
@@ -518,10 +518,10 @@
     },
     "src/styles/main": {
       "js": [
-        "/packs/js/src/styles/main-c2a7f106232df6a50b44.js"
+        "/packs/js/src/styles/main-0fe6d4864ccf25eab0e0.js"
       ],
       "js.map": [
-        "/packs/js/src/styles/main-c2a7f106232df6a50b44.js.map"
+        "/packs/js/src/styles/main-0fe6d4864ccf25eab0e0.js.map"
       ]
     },
     "src/styles/menu": {
@@ -533,8 +533,8 @@
       ]
     }
   },
-  "index.js": "/packs/js/index-bbdf75def9133db01755.js",
-  "index.js.map": "/packs/js/index-bbdf75def9133db01755.js.map",
+  "index.js": "/packs/js/index-f52f30184ac0b0b81501.js",
+  "index.js.map": "/packs/js/index-f52f30184ac0b0b81501.js.map",
   "media/fonts/slick.eot": "/packs/media/fonts/slick-ced611da.eot",
   "media/fonts/slick.svg": "/packs/media/fonts/slick-f97e3bbf.svg",
   "media/fonts/slick.ttf": "/packs/media/fonts/slick-d41f55a7.ttf",
@@ -663,8 +663,8 @@
   "src/reducers/session.js.map": "/packs/js/src/reducers/session-e90387228fba46b39545.js.map",
   "src/styles/loading.js": "/packs/js/src/styles/loading-50124d60b29227a7f6ef.js",
   "src/styles/loading.js.map": "/packs/js/src/styles/loading-50124d60b29227a7f6ef.js.map",
-  "src/styles/main.js": "/packs/js/src/styles/main-c2a7f106232df6a50b44.js",
-  "src/styles/main.js.map": "/packs/js/src/styles/main-c2a7f106232df6a50b44.js.map",
+  "src/styles/main.js": "/packs/js/src/styles/main-0fe6d4864ccf25eab0e0.js",
+  "src/styles/main.js.map": "/packs/js/src/styles/main-0fe6d4864ccf25eab0e0.js.map",
   "src/styles/menu.js": "/packs/js/src/styles/menu-41214385e9d564c82432.js",
   "src/styles/menu.js.map": "/packs/js/src/styles/menu-41214385e9d564c82432.js.map"
 }
