@@ -1,16 +1,16 @@
 class Api::CoffeesController < ApplicationController
   def index
-    puts "################################"
-    puts "################################"
-    puts "################################"
-    puts "################################"
-    puts "################################"
+    puts '################################'
+    puts '################################'
+    puts '################################'
+    puts '################################'
+    puts '################################'
     puts "############## #{current_user.id} ###############"
-    puts "################################"
-    puts "################################"
-    puts "################################"
-    puts "################################"
-    puts "################################"
+    puts '################################'
+    puts '################################'
+    puts '################################'
+    puts '################################'
+    puts '################################'
     @coffees = Coffee.coffees_with_photos(current_user)
     render json: @coffees
   end
@@ -21,11 +21,11 @@ class Api::CoffeesController < ApplicationController
   end
 
   def create
-    if params[:coffee][:photo_attributes][:image] == ''
-      @coffee = Coffee.initialize_with_images(coffee_params)
-    else
-      @coffee = Coffee.new(coffee_params)
-    end
+    @coffee = if params[:coffee][:photo_attributes][:image] == ''
+                Coffee.initialize_with_images(coffee_params)
+              else
+                Coffee.new(coffee_params)
+              end
 
     if @coffee.save
       render json: {
@@ -39,8 +39,8 @@ class Api::CoffeesController < ApplicationController
   end
 
   private
+
   def coffee_params
     params.require(:coffee).permit(:name, :description, :photo, photo_attributes: [:image])
   end
-
 end
