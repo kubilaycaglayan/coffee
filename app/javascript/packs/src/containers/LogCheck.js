@@ -1,8 +1,8 @@
 import React from 'react';
 import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
-import Login from './Login';
-import App from './App';
+import Login from '../components/Login';
+import App from '../components/App';
 import Flash from '../components/Flash';
 
 const LogCheck = props => {

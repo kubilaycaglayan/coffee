@@ -1,6 +1,6 @@
 import React from 'react';
 import { BrowserRouter as Router } from 'react-router-dom';
-import LoginRoutes from './LoginRoutes';
+import LoginRoutes from '../containers/LoginRoutes';
 
 const Login = () => (
   <Router>
