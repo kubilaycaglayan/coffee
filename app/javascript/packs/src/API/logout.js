@@ -1,9 +1,8 @@
 import getToken from '../helpers/getToken';
 import { LOGOUT_URL } from '../../constants';
 
-const token = getToken();
-
 const logout = id => {
+  const token = getToken();
   const endpoint = `${LOGOUT_URL}${id}`;
 
   return fetch(endpoint, {

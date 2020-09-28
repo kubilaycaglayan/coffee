@@ -1,9 +1,8 @@
 import getToken from '../helpers/getToken';
 import { LOGIN_URL } from '../../constants';
 
-const token = getToken();
-
 const login = creds => {
+  const token = getToken();
   const data = JSON.stringify({
     user: creds,
   });

@@ -1,9 +1,8 @@
 import getToken from '../helpers/getToken';
 import { DELETE_FAVORITE_URL } from '../../constants';
 
-const token = getToken();
-
 const createFavorite = id => {
+  const token = getToken();
   const endpoint = `${DELETE_FAVORITE_URL}${id}`;
 
   return fetch(endpoint, {

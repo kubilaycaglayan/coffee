@@ -1,9 +1,8 @@
 import getToken from '../helpers/getToken';
 import { GET_COFFEE_URL } from '../../constants';
 
-const token = getToken();
-
 const coffeeIndex = id => {
+  const token = getToken();
   const endpoint = `${GET_COFFEE_URL}${id}`;
   return fetch(endpoint, {
     headers: {
