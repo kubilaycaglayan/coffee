@@ -1,16 +1,7 @@
 class Api::CoffeesController < ApplicationController
+  before_action :authenticate_user!
+
   def index
-    puts '################################'
-    puts '################################'
-    puts '################################'
-    puts '################################'
-    puts '################################'
-    puts "############## #{current_user.id} ###############"
-    puts '################################'
-    puts '################################'
-    puts '################################'
-    puts '################################'
-    puts '################################'
     @coffees = Coffee.coffees_with_photos(current_user)
     render json: @coffees
   end

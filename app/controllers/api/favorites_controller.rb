@@ -1,4 +1,6 @@
 class Api::FavoritesController < ApplicationController
+  before_action :authenticate_user!
+
   def index
     favorite_coffees = Coffee.favorite_coffees_with_photos(current_user)
     render json: [favorite_coffees].flatten

@@ -11,6 +11,11 @@ const attemptCreateUser = user => dispatch => {
           dispatch(autoFlash('Something went wrong.'));
         }
       },
+    )
+    .catch(
+      err => {
+        dispatch(autoFlash(`Something went wrong. ${err}`));
+      },
     );
 };
 
