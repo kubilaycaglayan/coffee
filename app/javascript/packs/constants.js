@@ -14,6 +14,7 @@ export const CHANGE_FLASH = 'CHANGE_FLASH';
 
 export const LOGIN_URL = '/sessions';
 export const LOGOUT_URL = '/sessions/';
+export const SESSION_URL = '/sessions/';
 export const GET_COFFEES_URL = '/api/coffees';
 export const GET_COFFEE_URL = '/api/coffees/';
 export const GET_FAVORITES_URL = '/api/favorites/';

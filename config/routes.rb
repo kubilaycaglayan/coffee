@@ -1,7 +1,7 @@
 Rails.application.routes.draw do
   root 'pages#index'
 
-  resources :sessions, only: [:create, :destroy]
+  resources :sessions, only: [:create, :destroy, :index]
 
   namespace :api, :defaults => {:format => :json} do
     resources :coffees, only: [:index, :show, :create]

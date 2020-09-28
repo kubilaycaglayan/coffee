@@ -1,4 +1,17 @@
 class SessionsController < ApplicationController
+  def index
+    if current_user
+      render json: {
+        loggedIn: true,
+        email: current_user.email
+      }
+    else
+      render json: {
+        loggedIn: false
+      }
+    end
+  end
+
   def create
     user = User
       .find_by(email: user_params[:email])
