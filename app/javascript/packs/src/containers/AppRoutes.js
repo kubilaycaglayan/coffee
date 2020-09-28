@@ -48,6 +48,7 @@ const Routes = props => {
 Routes.propTypes = {
   handleLogout: PropTypes.func.isRequired,
   userId: PropTypes.string.isRequired,
+  email: PropTypes.string.isRequired,
 };
 
 const mapStateToProps = state => ({

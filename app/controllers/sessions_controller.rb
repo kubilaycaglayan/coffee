@@ -1,24 +1,15 @@
 class SessionsController < ApplicationController
-  def new; end
-
   def create
-    puts 'SESSIONS CONTROLLER'
-    puts 'SESSIONS CONTROLLER'
-    puts 'SESSIONS CONTROLLER'
-    puts 'SESSIONS CONTROLLER'
-    p user_params
     user = User
       .find_by(email: user_params[:email])
       .try(:authenticate, params['user']['password'])
     if user
-      puts 'USER FOUND'
       session[:user_id] = user.id
       render json: {
         loggedIn: true,
         user: user
       }
     else
-      puts 'USER NOT FOUND'
       render json: {
         loggedIn: false
       }

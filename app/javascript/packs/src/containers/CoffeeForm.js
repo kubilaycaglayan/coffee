@@ -78,7 +78,9 @@ const mapDispatchToProps = dispatch => ({
   handleDescriptionChange:
   (e, newCoffee) => dispatch(changeNewCoffee({ ...newCoffee, description: e.target.value })),
   handlePhotoChange:
-  (e, newCoffee) => dispatch(changeNewCoffee({ ...newCoffee, photo_attributes: { image: e.target.files[0] } })),
+  (e, newCoffee) => dispatch(
+    changeNewCoffee({ ...newCoffee, photo_attributes: { image: e.target.files[0] } }),
+  ),
 });
 
 CoffeeForm.propTypes = {
