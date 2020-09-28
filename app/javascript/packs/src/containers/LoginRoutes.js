@@ -29,7 +29,7 @@ const Login = props => {
         }
       </Route>
       <Route exact path="/" render={() => <LoginForm handleLogin={handleLogin} autoFlash={fireFlash} />} />
-      <Route exact path="/new-user" render={() => <NewUserForm handleNewUser={handleNewUser} />} />
+      <Route exact path="/new-user" render={() => <NewUserForm handleNewUser={handleNewUser} autoFlash={fireFlash} />} />
       <Route exact path="/" render={() => <EnterWithoutCreatingAccountButton handleLogin={handleLogin} />} />
       <Route exact path="/" component={NewUserButton} />
     </div>

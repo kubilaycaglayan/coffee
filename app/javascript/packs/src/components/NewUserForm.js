@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import LoginPageButton from './LoginPageButton';
 
 const LoginForm = props => {
-  const { handleNewUser } = props;
+  const { handleNewUser, autoFlash } = props;
 
   const [newUser, setNewUser] = useState({ email: '', password: '', password_confirmation: '' });
 
@@ -28,6 +28,22 @@ const LoginForm = props => {
     });
   };
 
+  const handleSubmit = newUser => {
+    if (newUser.email === '') {
+      autoFlash('Email can\'t be blank');
+      return;
+    }
+    if (newUser.password === '') {
+      autoFlash('Password can\'t be blank');
+      return;
+    }
+    if (newUser.password !== newUser.password_confirmation) {
+      autoFlash('Passwords should match');
+      return;
+    }
+    handleNewUser(newUser);
+  };
+
   return (
     <>
       <form>
@@ -43,7 +59,7 @@ const LoginForm = props => {
         <label htmlFor="passwordConfirmation">
           <input placeholder="Password Confirmation" type="password" id="passwordConfirmation" onChange={handlePasswordConfirmationChange} />
         </label>
-        <button type="button" onClick={() => { handleNewUser(newUser); }}>
+        <button type="button" onClick={() => { handleSubmit(newUser); }}>
           Create New User
         </button>
       </form>
@@ -54,6 +70,7 @@ const LoginForm = props => {
 
 LoginForm.propTypes = {
   handleNewUser: PropTypes.func.isRequired,
+  autoFlash: PropTypes.func.isRequired,
 };
 
 export default LoginForm;
