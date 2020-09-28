@@ -42,6 +42,7 @@ export const NEW_COFFEE = {
 };
 export const DEFAULT_COFFEES = [];
 export const DEFAULT_FAVORITES = [];
+export const DEFAULT_FLASH = 'false';
 
 export const INITIAL_STATE = {
   session: DEFAULT_SESSION,
@@ -49,5 +50,5 @@ export const INITIAL_STATE = {
   coffee: DEFAULT_COFFEE,
   favorites: DEFAULT_FAVORITES,
   newCoffee: NEW_COFFEE,
-  flash: 'false',
+  flash: DEFAULT_FLASH,
 };

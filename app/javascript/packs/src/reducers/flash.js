@@ -1,6 +1,6 @@
-import { CHANGE_FLASH } from '../../constants';
+import { CHANGE_FLASH, DEFAULT_FLASH } from '../../constants';
 
-const flash = (state = CHANGE_FLASH, action) => {
+const flash = (state = DEFAULT_FLASH, action) => {
   switch (action.type) {
     case CHANGE_FLASH:
       return action.message;
