@@ -47,7 +47,7 @@ const Routes = props => {
 
 Routes.propTypes = {
   handleLogout: PropTypes.func.isRequired,
-  userId: PropTypes.string.isRequired,
+  userId: PropTypes.number.isRequired,
   email: PropTypes.string.isRequired,
 };
 

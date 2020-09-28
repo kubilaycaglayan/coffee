@@ -4,7 +4,7 @@ import { CREATE_FAVORITE_URL } from '../../constants';
 const createFavorite = data => {
   const token = getToken();
 
-  fetch(CREATE_FAVORITE_URL, {
+  return fetch(CREATE_FAVORITE_URL, {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json',
