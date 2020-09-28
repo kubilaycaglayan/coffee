@@ -3,7 +3,10 @@ class SessionsController < ApplicationController
     if current_user
       render json: {
         loggedIn: true,
-        email: current_user.email
+        user: {
+          email: current_user.email,
+          id: current_user.id
+        }
       }
     else
       render json: {
@@ -20,7 +23,10 @@ class SessionsController < ApplicationController
       session[:user_id] = user.id
       render json: {
         loggedIn: true,
-        user: user
+        user: {
+          email: user.email,
+          id: user.id
+        }
       }
     else
       render json: {

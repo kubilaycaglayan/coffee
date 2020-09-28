@@ -15,3 +15,4 @@ export { default as autoFlash } from './autoFlash';
 export { default as recordCoffee } from './recordCoffee';
 export { default as recordCoffees } from './recordCoffees';
 export { default as recordFavorites } from './recordFavorites';
+export { default as askIfTheSessionGoesOn } from './askIfTheSessionGoesOn';
