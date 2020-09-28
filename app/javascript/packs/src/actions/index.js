@@ -12,3 +12,6 @@ export { default as attemptCreateCoffee } from './attemptCreateCoffee';
 export { default as attemptCreateUser } from './attemptCreateUser';
 export { default as changeFlash } from './changeFlash';
 export { default as autoFlash } from './autoFlash';
+export { default as recordCoffee } from './recordCoffee';
+export { default as recordCoffees } from './recordCoffees';
+export { default as recordFavorites } from './recordFavorites';
