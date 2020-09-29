@@ -59,7 +59,7 @@ const LoginForm = props => {
         <label htmlFor="passwordConfirmation">
           <input placeholder="Password Confirmation" type="password" id="passwordConfirmation" onChange={handlePasswordConfirmationChange} />
         </label>
-        <button type="button" onClick={() => { handleSubmit(newUser); }}>
+        <button data-testid="create-user-button" type="button" onClick={() => { handleSubmit(newUser); }}>
           Create New User
         </button>
       </form>

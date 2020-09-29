@@ -5,12 +5,12 @@ import Provided from '../../containers/Provided';
 
 test('successfully lands to the login page', () => {
   const { getByText } = render(<Provided />);
-  expect(getByText('Sign In')).toBeTruthy();
+  expect(getByText(/Quick Access/)).toBeTruthy();
 });
 
 test('navigates to the new user page', () => {
-  const { getByText } = render(<Provided />);
+  const { getByText, findAllByPlaceholderText } = render(<Provided />);
   fireEvent.click(getByText(/Create New User/));
 
-  expect(getByText('Create New User')).toBeTruthy();
+  expect(findAllByPlaceholderText(/Password Confirmation/)).toBeTruthy();
 });
