@@ -1,9 +1,10 @@
+import fetch from 'node-fetch';
 import getToken from '../helpers/getToken';
 import { GET_COFFEE_URL } from '../../constants';
 
-const coffeeIndex = id => {
+const coffeeIndex = (id, proxy = '') => {
   const token = getToken();
-  const endpoint = `${GET_COFFEE_URL}${id}`;
+  const endpoint = `${proxy}${GET_COFFEE_URL}${id}`;
   return fetch(endpoint, {
     headers: {
       'Content-Type': 'application/json',
@@ -12,6 +13,9 @@ const coffeeIndex = id => {
   })
     .then(
       response => response.json(),
+    )
+    .catch(
+      err => err.toString(),
     );
 };
 
