@@ -80,5 +80,6 @@ end
 Favorite.create(user_id: 1, coffee_id: 1)
 Favorite.create(user_id: 1, coffee_id: 2)
 Favorite.create(user_id: 2, coffee_id: 3)
+Favorite.create(user_id: 3, coffee_id: 2)
 
 puts "Seeding done"

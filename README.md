@@ -1,28 +1,18 @@
-# RAILS & REACT TEMPLATE
+# ☕ COFFEE BEANS
 
-> Ready to deploy Heroku, Rails and React setup.
+#### Commands
 
-### Webpacker
+- Open console in test environment
+> `rails c -e test`
 
-- Activated with this command:
-- `bundle exec rails webpacker:install:react`
+- Start server in test environment
+> `rails s -e test`
 
-https://github.com/rails/webpacker/blob/master/docs/integrations.md#react
+- Reset test database
+> `rails RAILS_ENV=test db:reset`
 
-### Routes
+- Seed test database
+> `rails RAILS_ENV=test db:seed`
 
-```ruby
-  Rails.application.routes.draw do
-    root 'pages#index'
-
-    get '*path', to: 'pages#index', via: :all
-  end
-```
-
-### Linters
-
-- React linter activated for `/app/javascript` folder only.
-
-### Tests
-
-- `npm test`
+- Show current database in rails console
+> `ActiveRecord::Base.connection.current_database`
