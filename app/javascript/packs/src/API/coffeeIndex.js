@@ -15,7 +15,7 @@ const coffeeIndex = (id, proxy = '') => {
       response => response.json(),
     )
     .catch(
-      err => err.toString(),
+      () => 'Server Error',
     );
 };
 

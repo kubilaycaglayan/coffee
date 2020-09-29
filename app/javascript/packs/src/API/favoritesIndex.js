@@ -1,10 +1,11 @@
+import fetch from 'node-fetch';
 import getToken from '../helpers/getToken';
 import { GET_FAVORITES_URL } from '../../constants';
 
-const favoritesIndex = () => {
+const favoritesIndex = (proxy = '') => {
   const token = getToken();
 
-  return fetch(GET_FAVORITES_URL, {
+  return fetch(`${proxy}${GET_FAVORITES_URL}`, {
     headers: {
       'Content-Type': 'application/json',
       'X-CSRF-Token': token,
@@ -12,6 +13,9 @@ const favoritesIndex = () => {
   })
     .then(
       response => response.json(),
+    )
+    .catch(
+      () => 'Server Error',
     );
 };
 

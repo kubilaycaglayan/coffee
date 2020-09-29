@@ -1,10 +1,11 @@
+import fetch from 'node-fetch';
 import getToken from '../helpers/getToken';
 import { CREATE_FAVORITE_URL } from '../../constants';
 
-const createFavorite = data => {
+const createFavorite = (data, proxy = '') => {
   const token = getToken();
 
-  return fetch(CREATE_FAVORITE_URL, {
+  return fetch(`${proxy}${CREATE_FAVORITE_URL}`, {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json',
@@ -14,6 +15,9 @@ const createFavorite = data => {
   })
     .then(
       response => response.json(),
+    )
+    .catch(
+      () => 'Server Error',
     );
 };
 

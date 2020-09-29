@@ -112,5 +112,4 @@ describe('actions', () => {
       expect(action.destroySession()).toEqual(expectedAction);
     });
   });
-
 });

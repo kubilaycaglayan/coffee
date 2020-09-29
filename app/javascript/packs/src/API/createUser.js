@@ -1,10 +1,11 @@
+import fetch from 'node-fetch';
 import getToken from '../helpers/getToken';
 import { CREATE_USER_URL } from '../../constants';
 
-const createUser = user => {
+const createUser = (user, proxy = '') => {
   const token = getToken();
 
-  return fetch(CREATE_USER_URL, {
+  return fetch(`${proxy}${CREATE_USER_URL}`, {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json',
@@ -14,6 +15,9 @@ const createUser = user => {
   })
     .then(
       response => response.json(),
+    )
+    .catch(
+      () => 'Server Error',
     );
 };
 

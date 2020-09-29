@@ -1,9 +1,10 @@
+import fetch from 'node-fetch';
 import getToken from '../helpers/getToken';
 import { LOGOUT_URL } from '../../constants';
 
-const logout = id => {
+const logout = (id, proxy = '') => {
   const token = getToken();
-  const endpoint = `${LOGOUT_URL}${id}`;
+  const endpoint = `${proxy}${LOGOUT_URL}${id}`;
 
   return fetch(endpoint, {
     method: 'DELETE',
@@ -14,6 +15,9 @@ const logout = id => {
   })
     .then(
       response => response.json(),
+    )
+    .catch(
+      () => 'Server Error',
     );
 };
 

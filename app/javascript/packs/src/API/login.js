@@ -1,13 +1,14 @@
+import fetch from 'node-fetch';
 import getToken from '../helpers/getToken';
 import { LOGIN_URL } from '../../constants';
 
-const login = creds => {
+const login = (creds, proxy = '') => {
   const token = getToken();
   const data = JSON.stringify({
     user: creds,
   });
 
-  return fetch(LOGIN_URL, {
+  return fetch(`${proxy}${LOGIN_URL}`, {
     method: 'POST',
     body: data,
     headers: {
@@ -17,6 +18,9 @@ const login = creds => {
   })
     .then(
       response => response.json(),
+    )
+    .catch(
+      () => 'Server Error',
     );
 };
 

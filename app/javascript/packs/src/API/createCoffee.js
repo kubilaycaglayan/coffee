@@ -1,10 +1,11 @@
+import fetch from 'node-fetch';
 import getToken from '../helpers/getToken';
 import { CREATE_COFFEE_URL } from '../../constants';
 
-const createCoffee = data => {
+const createCoffee = (data, proxy = '') => {
   const token = getToken();
 
-  return fetch(CREATE_COFFEE_URL, {
+  return fetch(`${proxy}${CREATE_COFFEE_URL}`, {
     method: 'POST',
     headers: {
       'X-CSRF-Token': token,
@@ -13,6 +14,9 @@ const createCoffee = data => {
   })
     .then(
       response => response.json(),
+    )
+    .catch(
+      () => 'Server Error',
     );
 };
 
