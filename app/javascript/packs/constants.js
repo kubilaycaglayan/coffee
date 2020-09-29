@@ -22,6 +22,7 @@ export const CREATE_FAVORITE_URL = '/api/favorites/';
 export const DELETE_FAVORITE_URL = '/api/favorites/';
 export const CREATE_COFFEE_URL = '/api/coffees/';
 export const CREATE_USER_URL = '/api/users/';
+export const PROXY_TEST = 'http://localhost:3000';
 
 export const DEFAULT_SESSION = {
   loggedIn: false,
