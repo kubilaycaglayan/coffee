@@ -49,5 +49,8 @@
     "stylelint-csstree-validator": "^1.8.0",
     "stylelint-scss": "^3.17.2",
     "webpack-dev-server": "^3.11.0"
+  },
+  "jest": {
+    "setupFilesAfterEnv": [ "<rootDir>/setupTests.js" ]
   }
 }
