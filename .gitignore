@@ -68,4 +68,4 @@ yarn-debug.log*
 !/storage/.keep
 /public/uploads
 public/packs/manifest.json
-tmp/cache/*
+/tmp/cache
