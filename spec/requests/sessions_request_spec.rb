@@ -2,7 +2,21 @@ require 'rails_helper'
 require 'json'
 
 RSpec.describe 'Sessions', type: :request do
+  before :all do
+    User.create(
+      email: 'a@a.com',
+      password: '000000',
+      password_confirmation: '000000'
+    )
+  end
+
   describe 'GET /sessions' do
+    it 'returns loggedIn: true if logged in' do
+      post 'http://localhost:3000/sessions', params: { user: { email: 'a@a.com', password: '000000' } }
+      get 'http://localhost:3000/sessions'
+      expect(JSON[response.body]['loggedIn']).to be true
+    end
+
     it 'returns loggedIn: false' do
       get 'http://localhost:3000/sessions'
       expect(JSON[response.body]['loggedIn']).to be false
@@ -15,14 +29,6 @@ RSpec.describe 'Sessions', type: :request do
   end
 
   describe 'POST /sessions' do
-    before :all do
-      p User.create(
-        email: 'a@a.com',
-        password: '000000',
-        password_confirmation: '000000'
-      )
-    end
-
     it 'returns a session hash on successful login' do
       post 'http://localhost:3000/sessions', params: { user: { email: 'a@a.com', password: '000000' } }
       expect(JSON[response.body]['loggedIn']).to be true
