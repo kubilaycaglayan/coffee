@@ -1,7 +1,7 @@
 require 'rails_helper'
 require 'json'
 
-RSpec.describe "Sessions", type: :request do
+RSpec.describe 'Sessions', type: :request do
   describe 'GET /sessions' do
     it 'returns loggedIn: false' do
       get 'http://localhost:3000/sessions'
@@ -19,23 +19,23 @@ RSpec.describe "Sessions", type: :request do
       p User.create(
         email: 'a@a.com',
         password: '000000',
-        password_confirmation: '000000',
+        password_confirmation: '000000'
       )
     end
 
     it 'returns a session hash on successful login' do
-      post 'http://localhost:3000/sessions', :params => { :user => { email: 'a@a.com', password: '000000' } }
+      post 'http://localhost:3000/sessions', params: { user: { email: 'a@a.com', password: '000000' } }
       expect(JSON[response.body]['loggedIn']).to be true
       expect(JSON[response.body]['user']['email']).to eq('a@a.com')
     end
 
     it 'returns loggedIn:false on invalid login' do
-      post 'http://localhost:3000/sessions', :params => { :user => { email: 'a@a.com', password: 'wrongpass' } }
+      post 'http://localhost:3000/sessions', params: { user: { email: 'a@a.com', password: 'wrongpass' } }
       expect(JSON[response.body]['loggedIn']).to be false
     end
 
     it 'returns loggedIn:false on invalid login - falsy' do
-      post 'http://localhost:3000/sessions', :params => { :user => { email: 'a@a.com', password: 'wrongpass' } }
+      post 'http://localhost:3000/sessions', params: { user: { email: 'a@a.com', password: 'wrongpass' } }
       expect(JSON[response.body]['loggedIn']).not_to be true
     end
   end
