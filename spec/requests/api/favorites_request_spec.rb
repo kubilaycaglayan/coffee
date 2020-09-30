@@ -1,13 +1,13 @@
 require 'rails_helper'
 
-RSpec.describe "Api::Favorites", type: :request do
+RSpec.describe 'Api::Favorites', type: :request do
   before :all do
     User.create(
       email: 'a@a.com',
       password: '000000',
       password_confirmation: '000000'
     )
-    Coffee.initialize_with_images({name: '', description: ''}).save
+    Coffee.initialize_with_images({ name: '', description: '' }).save
     Favorite.create(
       coffee_id: Coffee.last.id,
       user_id: User.last.id
@@ -59,12 +59,12 @@ RSpec.describe "Api::Favorites", type: :request do
     end
 
     it 'returns false if cannot delete the coffee' do
-      delete "http://localhost:3000/api/favorites/0"
+      delete 'http://localhost:3000/api/favorites/0'
       expect(JSON[response.body]['success']).to be false
     end
 
     it 'returns false if cannot delete the coffee - falsy' do
-      delete "http://localhost:3000/api/favorites/0"
+      delete 'http://localhost:3000/api/favorites/0'
       expect(JSON[response.body]['success']).not_to be true
     end
   end

@@ -21,13 +21,13 @@ class Api::FavoritesController < ApplicationController
 
   def destroy
     fav = Favorite.find_by(user_id: current_user.id, coffee_id: params[:id])
-    unless fav.nil? || !fav.destroy
+    if fav.nil? || !fav.destroy
       render json: {
-        success: true
+        success: false
       }
     else
       render json: {
-        success: false
+        success: true
       }
     end
   end

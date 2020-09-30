@@ -1,3 +1,4 @@
+/* eslint-disable no-nested-ternary */
 /* eslint-disable react/jsx-props-no-spreading */
 import React, { useEffect } from 'react';
 import { connect } from 'react-redux';
@@ -29,23 +30,23 @@ const Favorites = props => {
     <>
       {
         status === LOADING
-        ? <Loading />
-        : favorites.length === 0
-          ? <NoContent info="Favorites"/>
-          : (
-            <div className="favorites">
-              <h1>
-                Favorites
-              </h1>
-              <Slider {...settings}>
-                {
+          ? <Loading />
+          : favorites.length === 0
+            ? <NoContent info="Favorites" />
+            : (
+              <div className="favorites">
+                <h1>
+                  Favorites
+                </h1>
+                <Slider {...settings}>
+                  {
                   favorites.map(coffee => (
                     <CoffeeCard coffee={coffee} key={coffee.id} />
                   ))
                 }
-              </Slider>
-            </div>
-          )
+                </Slider>
+              </div>
+            )
       }
     </>
   );
@@ -53,6 +54,7 @@ const Favorites = props => {
 
 Favorites.propTypes = {
   favoritesLoader: PropTypes.func.isRequired,
+  status: PropTypes.string.isRequired,
   favorites: PropTypes.arrayOf(PropTypes.object).isRequired,
 };
 

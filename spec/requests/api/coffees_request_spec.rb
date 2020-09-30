@@ -1,14 +1,14 @@
 require 'rails_helper'
 
-RSpec.describe "Api::Coffees", type: :request do
+RSpec.describe 'Api::Coffees', type: :request do
   before :all do
     User.create(
       email: 'a@a.com',
       password: '000000',
       password_confirmation: '000000'
     )
-    Coffee.initialize_with_images({name: 'Musoso Grande', description: 'amazing...'}).save
-    Coffee.initialize_with_images({name: 'Geisha Bebeka', description: 'amazing...'}).save
+    Coffee.initialize_with_images({ name: 'Musoso Grande', description: 'amazing...' }).save
+    Coffee.initialize_with_images({ name: 'Geisha Bebeka', description: 'amazing...' }).save
     Favorite.create(
       coffee_id: Coffee.last.id,
       user_id: User.last.id
@@ -43,7 +43,10 @@ RSpec.describe "Api::Coffees", type: :request do
     end
 
     it 'creates a coffee successfully' do
-      post 'http://localhost:3000/api/coffees', params: { coffee: { name: 'Kubilay Blend', description: 'amazing', photo_attributes: { image: '' } } }
+      post 'http://localhost:3000/api/coffees',
+           params:
+             { coffee:
+               { name: 'Kubilay Blend', description: 'amazing', photo_attributes: { image: '' } } }
       expect(JSON[response.body]['success']).to be true
     end
 

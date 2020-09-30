@@ -1,3 +1,4 @@
+/* eslint-disable no-nested-ternary */
 /* eslint-disable react/jsx-props-no-spreading */
 import React, { useEffect } from 'react';
 import { connect } from 'react-redux';
@@ -31,21 +32,21 @@ const Coffees = props => {
         status === LOADING
           ? <Loading />
           : coffees.length === 0
-            ? <NoContent info="Coffees"/>
+            ? <NoContent info="Coffees" />
             : (
-            <div className="all-coffees">
-              <h1>
-                Coffees
-              </h1>
-              <Slider {...settings} className="mt-5">
-                {
+              <div className="all-coffees">
+                <h1>
+                  Coffees
+                </h1>
+                <Slider {...settings} className="mt-5">
+                  {
                   coffees.map(coffee => (
                     <CoffeeCard coffee={coffee} key={coffee.id} />
                   ))
                 }
-              </Slider>
-            </div>
-          )
+                </Slider>
+              </div>
+            )
       }
     </>
   );
@@ -53,6 +54,7 @@ const Coffees = props => {
 
 Coffees.propTypes = {
   coffeeLoader: PropTypes.func.isRequired,
+  status: PropTypes.string.isRequired,
   coffees: PropTypes.arrayOf(PropTypes.object).isRequired,
 };
 

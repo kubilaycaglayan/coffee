@@ -92,7 +92,7 @@ RSpec.configure do |config|
   #   # as the one that triggered the failure.
   #   Kernel.srand config.seed
 
-  #cleanups
+  # cleanups
   config.before(:suite) do
     DatabaseCleaner.clean_with :transaction
   end
