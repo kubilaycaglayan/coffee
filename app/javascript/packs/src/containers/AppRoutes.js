@@ -1,8 +1,8 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { connect } from 'react-redux';
 import { Route, NavLink } from 'react-router-dom';
 import PropTypes from 'prop-types';
-import { push as Menu } from 'react-burger-menu';
+import { slide as Menu } from 'react-burger-menu';
 import { attemptLogout } from '../actions';
 import LogoutButton from '../components/LogoutButton';
 import Coffees from './Coffees';
@@ -13,9 +13,24 @@ import CoffeeForm from './CoffeeForm';
 const Routes = props => {
   const { handleLogout, userId, email } = props;
 
+  const [isOpen, setIsOpen] = useState(false);
+
+  const closeMenu = () => {
+    setIsOpen(false);
+  };
+
+  const handleStateChange = state => {
+    setIsOpen(state.isOpen);
+  };
+
   return (
     <div className="inside">
-      <Menu pageWrapId="page-wrap" outerContainerId="outer-container">
+      <Menu
+        pageWrapId="page-wrap"
+        outerContainerId="outer-container"
+        isOpen={isOpen}
+        onStateChange={state => { handleStateChange(state); }}
+      >
         <div className="menu-item user-info">
           <div className="user-image">
             <img src="http://lofrev.net/wp-content/photos/2017/03/user_blue_logo.png" alt="representational user" />
@@ -24,9 +39,9 @@ const Routes = props => {
             {email}
           </div>
         </div>
-        <NavLink exact to="/" className="menu-item">Coffees</NavLink>
-        <NavLink to="/favorites" className="menu-item">Favorites</NavLink>
-        <NavLink to="/create-coffee" className="menu-item">Create New Coffee</NavLink>
+        <NavLink onClick={closeMenu} exact to="/" className="menu-item">Coffees</NavLink>
+        <NavLink onClick={closeMenu} to="/favorites" className="menu-item">Favorites</NavLink>
+        <NavLink onClick={closeMenu} to="/create-coffee" className="menu-item">Create New Coffee</NavLink>
         <hr />
         <Route path="/">
           <LogoutButton handleClick={() => { handleLogout(userId); }} />
