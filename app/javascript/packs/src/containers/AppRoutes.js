@@ -36,6 +36,7 @@ const Routes = props => {
             <img src="http://lofrev.net/wp-content/photos/2017/03/user_blue_logo.png" alt="representational user" />
           </div>
           <div className="user-email">
+            <p>Ariel Camus</p>
             {email}
           </div>
         </div>
