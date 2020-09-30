@@ -5,6 +5,7 @@ import coffee from './coffee';
 import favorites from './favorites';
 import newCoffee from './newCoffee';
 import flash from './flash';
+import status from './status';
 
 const reducer = combineReducers({
   session,
@@ -12,6 +13,7 @@ const reducer = combineReducers({
   coffee,
   favorites,
   newCoffee,
+  status,
   flash,
 });
 

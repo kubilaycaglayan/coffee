@@ -4,6 +4,7 @@ export const credentials = {
 };
 export const ATTEMPT = 'ATTEMPT';
 export const LOADING = 'LOADING';
+export const READY = 'READY';
 export const CREATE_SESSION = 'CREATE_SESSION';
 export const DESTROY_SESSION = 'DESTROY_SESSION';
 export const RECORD_COFFEES = 'RECORD_COFFEES';
@@ -11,6 +12,7 @@ export const RECORD_COFFEE = 'RECORD_COFFEE';
 export const RECORD_FAVORITES = 'RECORD_FAVORITES';
 export const CHANGE_NEW_COFFEE = 'CHANGE_NEW_COFFEE';
 export const CHANGE_FLASH = 'CHANGE_FLASH';
+export const CHANGE_STATUS = 'CHANGE_STATUS';
 
 export const LOGIN_URL = '/sessions';
 export const LOGOUT_URL = '/sessions/';
@@ -45,6 +47,7 @@ export const NEW_COFFEE = {
 export const DEFAULT_COFFEES = [];
 export const DEFAULT_FAVORITES = [];
 export const DEFAULT_FLASH = 'false';
+export const DEFAULT_STATUS = READY;
 
 export const INITIAL_STATE = {
   session: DEFAULT_SESSION,
