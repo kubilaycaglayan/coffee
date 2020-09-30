@@ -6,9 +6,11 @@ import PropTypes from 'prop-types';
 import { getFavorites } from '../actions';
 import Loading from '../components/Loading';
 import CoffeeCard from '../components/CoffeeCard';
+import { LOADING } from '../../constants';
+import NoContent from '../components/NoContent';
 
 const Favorites = props => {
-  const { favoritesLoader, favorites } = props;
+  const { favoritesLoader, favorites, status } = props;
 
   useEffect(() => {
     favoritesLoader();
@@ -26,8 +28,10 @@ const Favorites = props => {
   return (
     <>
       {
-        favorites.length === 0
-          ? <Loading />
+        status === LOADING
+        ? <Loading />
+        : favorites.length === 0
+          ? <NoContent info="Favorites"/>
           : (
             <div className="favorites">
               <h1>
@@ -54,6 +58,7 @@ Favorites.propTypes = {
 
 const mapStateToProps = state => ({
   favorites: state.favorites,
+  status: state.status,
 });
 
 const mapDispatchToProps = dispatch => ({

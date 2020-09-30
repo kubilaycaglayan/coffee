@@ -5,10 +5,12 @@ import Slider from 'react-slick';
 import PropTypes from 'prop-types';
 import { getCoffees } from '../actions';
 import Loading from '../components/Loading';
+import NoContent from '../components/NoContent';
 import CoffeeCard from '../components/CoffeeCard';
+import { LOADING } from '../../constants';
 
 const Coffees = props => {
-  const { coffeeLoader, coffees } = props;
+  const { coffeeLoader, coffees, status } = props;
 
   useEffect(() => {
     coffeeLoader();
@@ -26,9 +28,11 @@ const Coffees = props => {
   return (
     <>
       {
-        coffees.length === 0
+        status === LOADING
           ? <Loading />
-          : (
+          : coffees.length === 0
+            ? <NoContent info="Coffees"/>
+            : (
             <div className="all-coffees">
               <h1>
                 Coffees
@@ -54,6 +58,7 @@ Coffees.propTypes = {
 
 const mapStateToProps = state => ({
   coffees: state.coffees,
+  status: state.status,
 });
 
 const mapDispatchToProps = dispatch => ({
