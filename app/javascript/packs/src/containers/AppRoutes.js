@@ -8,10 +8,7 @@ import LogoutButton from '../components/LogoutButton';
 import Coffees from './Coffees';
 import Favorites from './Favorites';
 import Coffee from './Coffee';
-import FavoritesButton from '../components/FavoritesButton';
-import CoffeesButton from '../components/CoffeesButton';
 import CoffeeForm from './CoffeeForm';
-import CreateNewCoffeeButton from '../components/CreateNewCoffeeButton';
 
 const Routes = props => {
   const { handleLogout, userId, email } = props;
