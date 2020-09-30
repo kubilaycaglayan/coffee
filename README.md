@@ -2,6 +2,7 @@
 
 #### Commands
 
+
 - Open console in test environment
 > `rails c -e test`
 
