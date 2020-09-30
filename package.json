@@ -51,6 +51,9 @@
     "webpack-dev-server": "^3.11.0"
   },
   "jest": {
-    "setupFilesAfterEnv": [ "<rootDir>/setupTests.js" ]
+    "setupFilesAfterEnv": [ "<rootDir>/setupTests.js" ],
+    "testPathIgnorePatterns" : [
+      "<rootDir>/public"
+    ]
   }
 }
