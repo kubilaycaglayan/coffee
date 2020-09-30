@@ -1,6 +1,6 @@
 import React from 'react';
 import { connect } from 'react-redux';
-import { Route } from 'react-router-dom';
+import { Route, NavLink } from 'react-router-dom';
 import PropTypes from 'prop-types';
 import { push as Menu } from 'react-burger-menu';
 import { attemptLogout } from '../actions';
@@ -27,9 +27,9 @@ const Routes = props => {
             {email}
           </div>
         </div>
-        <Route path="/" component={CoffeesButton} />
-        <Route path="/" component={FavoritesButton} />
-        <Route path="/" component={CreateNewCoffeeButton} />
+        <NavLink exact to="/" className="menu-item">Coffees</NavLink>
+        <NavLink to="/favorites" className="menu-item">Favorites</NavLink>
+        <NavLink to="/create-coffee" className="menu-item">Create New Coffee</NavLink>
         <hr />
         <Route path="/">
           <LogoutButton handleClick={() => { handleLogout(userId); }} />
