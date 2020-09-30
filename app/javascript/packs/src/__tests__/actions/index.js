@@ -1,8 +1,10 @@
 import {
   CHANGE_FLASH,
   CHANGE_NEW_COFFEE,
+  CHANGE_STATUS,
   CREATE_SESSION,
   DESTROY_SESSION,
+  LOADING,
   RECORD_COFFEE,
   RECORD_COFFEES,
   RECORD_FAVORITES,
@@ -110,6 +112,16 @@ describe('actions', () => {
         type: DESTROY_SESSION,
       };
       expect(action.destroySession()).toEqual(expectedAction);
+    });
+  });
+
+  describe(CHANGE_STATUS, () => {
+    test('returns an action object with the type CHANGE_STATUS', () => {
+      const expectedAction = {
+        type: CHANGE_STATUS,
+        status: LOADING,
+      };
+      expect(action.changeStatus(LOADING)).toEqual(expectedAction);
     });
   });
 });

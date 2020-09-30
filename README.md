@@ -17,3 +17,11 @@
 
 - Show current database in rails console
 > `ActiveRecord::Base.connection.current_database`
+
+###
+Full Acknowledgements
+Design idea by Alexey Savitskiy on Behance
+
+- what nice-to-have requirement you decided to implement and why
+
+- left menu make the lgo smaller and put it on top left
