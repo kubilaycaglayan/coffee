@@ -3,6 +3,7 @@ class Api::CoffeesController < ApplicationController
 
   def index
     @coffees = Coffee.coffees_with_photos(current_user)
+    @coffees = [@coffees] if @coffees.class == Hash
     render json: @coffees
   end
 
