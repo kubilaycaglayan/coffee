@@ -6,14 +6,12 @@
 - You can add new coffee beans and put them in your favorite list.
 - Also you can create your own account to secure your favorite list.
 
-  <ul>
-    <li><a href="#usage-local"><h6>Jump To: How To Use Locally</h6></a> </li>
-    <li><a href="#tests"><h6>Jump To: Tests</h6></a> </li>
-    <li><a href="#extras"><h6>Jump To: Nice To Have Requirements</h6></a> </li>
-    <li><a href="#futurefeatures"><h6>Jump To: Future Features</h6></a></li>
-    <li><a href="#contributing"><h6>Jump To: Contributing</h6></a> </li>
-    <li><a href="#acknowledgments"><h6>Jump To: Acknowledgements</h6></a> </li>
-  </ul>
+- [Jump To: How To Use Locally](#usage-local)
+- [Jump To: Tests](#tests)
+- [Jump To: Nice To Have Requirements](#extras)
+- [Jump To: Future Features](#futurefeatures)
+- [Jump To: Contributing](#contributing)
+- [Jump To: Acknowledgements](#acknowledgments)
 
 ## Live Demo
 
