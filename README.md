@@ -1,10 +1,17 @@
 # ☕ COFFEE BEANS
 
-> Project Description: "Find Your House"
+#### Project Description: "Find Your House"
+#### React Directory: [./app/javascript/packs](https://github.com/kubilaycaglayan/coffee/tree/coffee/app/javascript/packs)
+#### 💡 This is a Rails-React hybrid repository. For the Front-End of the application, Rails only rendering one empty view([app/views/pages/index.html.erb](https://github.com/kubilaycaglayan/coffee/blob/coffee/app/views/pages/index.html.erb)) with the [default layout](https://github.com/kubilaycaglayan/coffee/blob/coffee/app/views/layouts/application.html.erb). In the default layout we have `javascript_pack_tag` which is rendering the react scripts. After this initial response from rails, all the interactions are made with API calls([app/javascript/packs/src/API](https://github.com/kubilaycaglayan/coffee/tree/coffee/app/javascript/packs/src/API)) with Backend via React. There is no other full-page response other than the first one.
 
-- Browse through a list of coffee beans.
-- You can add new coffee beans and put them in your favorite list.
-- Also you can create your own account to secure your favorite list.
+### ➡️ Features
+
+> ☕ Browse through a list of coffee beans.
+
+> ⭐ You can add new coffee beans and put them in your favorite list.
+
+> 🔒 Also you can create your own account to secure your favorite list.
+
 
 - [Jump To: How To Use Locally](#usage-local)
 - [Jump To: Tests](#tests)
