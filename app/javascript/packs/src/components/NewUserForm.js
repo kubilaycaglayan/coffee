@@ -33,6 +33,10 @@ const LoginForm = props => {
       autoFlash('Email can\'t be blank');
       return;
     }
+    if (newUser.email.match(/.+@.+/) === null) {
+      autoFlash('Email should be in format something@something');
+      return;
+    }
     if (newUser.password === '') {
       autoFlash('Password can\'t be blank');
       return;
