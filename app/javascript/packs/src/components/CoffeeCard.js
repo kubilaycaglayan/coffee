@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import PropTypes from 'prop-types';
 
 const CoffeeCard = ({ coffee }) => (
-  <div className="card px-4 border-0 d-flex flex-column justify-content-between shadow" key={coffee.id}>
+  <article className="card px-4 border-0 d-flex flex-column justify-content-between shadow" key={coffee.id}>
     <img className="card-img-top" src={coffee.photo} alt="coffee representation" />
     <div className="card-body d-flex flex-column justify-content-between">
       <div className="stars">
@@ -34,7 +34,7 @@ const CoffeeCard = ({ coffee }) => (
         Details
       </Link>
     </div>
-  </div>
+  </article>
 );
 
 CoffeeCard.propTypes = {

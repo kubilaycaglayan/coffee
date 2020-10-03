@@ -9,7 +9,7 @@ const CoffeeForm = props => {
   } = props;
 
   return (
-    <div className="new-coffee-wrapper">
+    <section className="new-coffee-wrapper">
       <h1>
         Create New Coffee
       </h1>
@@ -44,7 +44,7 @@ const CoffeeForm = props => {
           </button>
         </form>
       </div>
-    </div>
+    </section>
   );
 };
 

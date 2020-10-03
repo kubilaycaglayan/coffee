@@ -36,7 +36,7 @@ const LoginForm = props => {
   };
 
   return (
-    <div className="sign-in-form">
+    <section className="sign-in-form">
       <form>
         <label htmlFor="email">
           <input placeholder="Email: 'tse@best.com'" id="email" onChange={handleMailChange} spellCheck="false" />
@@ -48,7 +48,7 @@ const LoginForm = props => {
           Sign In
         </button>
       </form>
-    </div>
+    </section>
   );
 };
 

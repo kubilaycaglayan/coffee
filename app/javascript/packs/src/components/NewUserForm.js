@@ -45,7 +45,7 @@ const LoginForm = props => {
   };
 
   return (
-    <>
+    <section className="text-center">
       <form>
         <h2 className="mb-3">
           Create New User
@@ -64,7 +64,7 @@ const LoginForm = props => {
         </button>
       </form>
       <LoginPageButton />
-    </>
+    </section>
   );
 };
 

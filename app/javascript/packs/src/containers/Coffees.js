@@ -35,9 +35,11 @@ const Coffees = props => {
             ? <NoContent info="Coffees" />
             : (
               <div className="all-coffees">
-                <h1>
-                  Coffees
-                </h1>
+                <header>
+                  <h1>
+                    Coffees
+                  </h1>
+                </header>
                 <Slider {...settings} className="mt-5">
                   {
                   coffees.map(coffee => (

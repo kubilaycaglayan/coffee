@@ -35,9 +35,11 @@ const Favorites = props => {
             ? <NoContent info="Favorites" />
             : (
               <div className="favorites">
-                <h1>
-                  Favorites
-                </h1>
+                <header>
+                  <h1>
+                    Favorites
+                  </h1>
+                </header>
                 <Slider {...settings}>
                   {
                   favorites.map(coffee => (

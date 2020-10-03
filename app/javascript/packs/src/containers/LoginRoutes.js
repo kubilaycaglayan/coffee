@@ -15,14 +15,14 @@ const Login = props => {
 
   return (
     <div className="outside">
-      <div className="title">
+      <section className="title">
         <h1>
           Sign In
         </h1>
         <p>
           Hello there! Sign in and start choosing your favorite coffee beans!
         </p>
-      </div>
+      </section>
       <Route exact path="/" render={() => <LoginForm handleLogin={handleLogin} autoFlash={fireFlash} />} />
       <Route exact path="/new-user" render={() => <NewUserForm handleNewUser={handleNewUser} autoFlash={fireFlash} />} />
       <Route exact path="/" render={() => <EnterWithoutCreatingAccountButton handleLogin={handleLogin} />} />
