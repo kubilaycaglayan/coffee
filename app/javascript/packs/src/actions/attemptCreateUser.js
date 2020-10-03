@@ -1,4 +1,5 @@
 import { createUser } from '../API';
+import attemptLogin from './attemptLogin';
 import autoFlash from './autoFlash';
 
 const attemptCreateUser = user => dispatch => {
@@ -7,6 +8,10 @@ const attemptCreateUser = user => dispatch => {
       response => {
         if (response.success) {
           dispatch(autoFlash('User created successfully.'));
+          dispatch(attemptLogin({
+            email: user.email,
+            password: user.password,
+          }));
         } else {
           dispatch(autoFlash('Something went wrong.'));
         }

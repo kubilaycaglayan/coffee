@@ -1,6 +1,6 @@
 import React from 'react';
 import { connect } from 'react-redux';
-import { Route, Redirect } from 'react-router-dom';
+import { Route } from 'react-router-dom';
 import PropTypes from 'prop-types';
 import LoginForm from '../components/LogInForm';
 import NewUserForm from '../components/NewUserForm';
@@ -10,7 +10,7 @@ import EnterWithoutCreatingAccountButton from '../components/EnterWithoutCreatin
 
 const Login = props => {
   const {
-    handleLogin, handleNewUser, loggedIn, fireFlash,
+    handleLogin, handleNewUser, fireFlash,
   } = props;
 
   return (
@@ -23,11 +23,6 @@ const Login = props => {
           Hello there! Sign in and start choosing your favorite coffee beans!
         </p>
       </div>
-      <Route path="/">
-        {
-          loggedIn ? '' : <Redirect to="/" />
-        }
-      </Route>
       <Route exact path="/" render={() => <LoginForm handleLogin={handleLogin} autoFlash={fireFlash} />} />
       <Route exact path="/new-user" render={() => <NewUserForm handleNewUser={handleNewUser} autoFlash={fireFlash} />} />
       <Route exact path="/" render={() => <EnterWithoutCreatingAccountButton handleLogin={handleLogin} />} />
@@ -40,7 +35,6 @@ Login.propTypes = {
   handleLogin: PropTypes.func.isRequired,
   handleNewUser: PropTypes.func.isRequired,
   fireFlash: PropTypes.func.isRequired,
-  loggedIn: PropTypes.bool.isRequired,
 };
 
 const mapStateToProps = state => ({

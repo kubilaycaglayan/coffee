@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { connect } from 'react-redux';
-import { Route, NavLink } from 'react-router-dom';
+import { Route, NavLink, Redirect } from 'react-router-dom';
 import PropTypes from 'prop-types';
 import { slide as Menu } from 'react-burger-menu';
 import { attemptLogout } from '../actions';
@@ -49,6 +49,9 @@ const Routes = props => {
         </Route>
       </Menu>
       <div id="page-wrap" className="coffee-main">
+        <Route exact path="/new-user" component={Coffees}>
+          <Redirect exact to="/" />
+        </Route>
         <Route exact path="/" component={Coffees} />
         <Route exact path="/create-coffee" component={CoffeeForm} />
         <Route exact path="/favorites" component={Favorites} />
