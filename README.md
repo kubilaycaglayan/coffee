@@ -86,7 +86,8 @@ After setup:
 After setup:
 
 ##### React Test (36)
-- Run tests with `npm run test`
+- Run tests with `npm test`, and then please push `a` to run all the tests.
+- Or, as an alternative to the above, you can directly run this command `npx jest`.
 - All the API methods, reducers and actions are tested. Also, containers and components which does not require login are also tested.
 
 ##### Rails Test (51)
