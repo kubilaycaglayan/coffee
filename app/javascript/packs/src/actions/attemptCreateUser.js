@@ -13,7 +13,7 @@ const attemptCreateUser = user => dispatch => {
             password: user.password,
           }));
         } else {
-          dispatch(autoFlash('Something went wrong.'));
+          dispatch(autoFlash(`Error: ${response.message}`));
         }
       },
     )

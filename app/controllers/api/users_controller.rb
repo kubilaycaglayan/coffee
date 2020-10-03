@@ -8,7 +8,8 @@ class Api::UsersController < ApplicationController
       }
     else
       render json: {
-        success: false
+        success: false,
+        message: user.errors.full_messages
       }
     end
   end
