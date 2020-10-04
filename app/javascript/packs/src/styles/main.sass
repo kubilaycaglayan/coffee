@@ -1,0 +1,350 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap')
+
+$white-original: #ffffff
+$white: #e0d2cf
+$transparent-white: #e0d2cf91
+$yellow: #FABD57
+$orange: #ee5331
+$orange-subtitle: #EF5D32
+$text-black: #545252
+$text-gray: #646364
+$gray: #b2b2b2
+$gray-opaq: #b2b2b2c0
+$transparent: #ffffff00
+
+$wallpaper: url('../images/wp-1.jpg')
+$wallpaper2: url('../images/wp-2.jpg')
+
+@mixin flex-it($justify-content, $align-items)
+  align-items: $align-items
+  display: flex
+  justify-content: $justify-content
+
+html
+  *
+    box-sizing: border-box
+    color: $text-black
+    font-family: 'Roboto', sans-serif;
+    margin: 0
+    padding: 0
+    outline: 0 !important
+  body
+    min-width: 320px
+
+a
+  color: $white
+  text-decoration: none
+
+  &:hover
+    color: $white
+    text-decoration: 0
+
+.loading
+  +flex-it(center, center)
+  height: 100vh
+  position: absolute
+  width: 100%
+
+.flash
+  width: 100%
+  margin: 0 auto
+  position: fixed
+  text-align: center
+  top: 38px
+  z-index: 30
+  div
+    background-color: $gray-opaq
+    border-radius: 20px
+    width: 60%
+    max-width: 400px
+    margin: 0 auto
+    text-align: center
+  strong
+    color: $white-original
+
+#root
+  min-height: 100vh
+
+.outside
+  +flex-it(space-around, center)
+  background-blend-mode: overlay
+  background-color: $white
+  background-image: $wallpaper
+  background-position-x: 50%
+  background-position-y: 50%
+  background-size: cover
+  flex-direction: column
+  min-height: 100vh
+
+  .title
+    margin-top: 10%
+    padding-left: 50px
+    padding-right: 50px
+    text-align: center
+    h1
+      text-align: center
+      margin-bottom: 15px
+
+  form
+    +flex-it(space-between, center)
+    flex-direction: column
+
+  input
+    background-color: $transparent
+    border-radius: 20px
+    border: 2px $gray solid
+    color: $orange
+    padding: 5px
+    margin-bottom: 10px
+    outline: 0
+    text-align: center
+    &:focus
+      border: 2px $orange solid
+
+  button
+    background-color: $orange
+    border: 0
+    border-radius: 20px
+    color: $white-original
+    font-weight: 500
+    padding: 5px
+    padding-left: 15px
+    padding-right: 15px
+    margin-bottom: 20px
+
+  .new-user
+    margin-bottom: 50px
+
+.bm-item-list
+  .menu-item
+    color: $text-black
+    outline: none
+    margin-top: 25px
+    margin-bottom: 25px
+
+  a
+    color: $text-black
+    text-decoration: none
+
+    &:hover
+      color: $orange-subtitle
+      text-decoration: 0
+
+    &:focus
+      color: $orange
+
+  .active
+    color: $orange
+
+  button
+    background-color: $transparent
+    border: none
+    margin-top: auto
+
+  .user-image
+
+    img
+      margin: 25px auto
+      width: 30%
+
+  .user-email
+    margin-bottom: 100px
+    text-align: left
+
+    p
+      font-weight: bold
+
+.coffee-main
+  *
+    color: $text-gray
+  h1
+    font-size: 7vw
+    padding-top: 8%
+    text-align: center
+    @media ( min-width: 700px )
+      font-size: 3em
+    @media ( max-width: 436px )
+      padding-top: 36px
+
+  .fas
+    color: $yellow
+  .far
+    color: $gray
+
+.slick-slider
+  margin: 0 auto
+  max-width: 800px
+
+  .slick-arrow
+    background-color: $gray-opaq
+    border-radius: 50%
+    width: 30px
+    height: 30px
+    z-index: 10
+    &:hover
+      background-color: $gray
+
+  .slick-prev
+    left: 10px
+
+  .slick-next
+    right: 10px
+
+  .slick-slide
+    padding: 20px
+
+  .slick-track
+    align-items: center
+    display: flex
+
+  .card
+    height: 100%
+
+  img
+    margin: 0 auto
+    max-width: 400px
+
+  h2
+    margin: 0 auto
+    text-align: center
+
+  a
+    color: $text-gray
+
+.all-coffees,
+.favorites
+  padding-bottom: 10%
+
+.single-coffee
+  padding-bottom: 8%
+  h1
+    font-size: 5vw
+    text-align: center
+    @media ( min-width: 700px )
+      font-size: 3em
+
+  .card
+    max-width: 800px
+    margin: 0 auto
+
+    h2
+      font-size: 1.3em
+
+  .card-body
+    p
+      padding-bottom: 25px
+
+  .signature-wrapper
+    position: relative
+
+  .signature
+    position: absolute
+    bottom: 25px
+    left: 25px
+    width: 250px
+
+    p
+      color: $white
+      font-size: 1.3em
+      font-weight: bolder
+
+    img
+      width: 50px
+
+  .subtitle
+    background-color: $orange-subtitle
+    position: fixed
+    bottom: 0
+    left: 0
+    right: 0
+    height: 50px
+
+    @media ( min-width: 800px )
+      bottom: 40px
+      border-radius: 20px
+      height: 50px
+      left: auto
+      right: 40px
+      width: 200px
+
+    p
+      color: $white-original
+      cursor: pointer
+      font-weight: bolder
+      text-align: center
+      padding-top: 12px
+
+.new-coffee-wrapper
+  background-blend-mode: overlay
+  background-color: $white
+  background-image: $wallpaper2
+  background-position-x: 50%
+  background-position-y: 50%
+  background-size: cover
+  min-height: 100vh
+  padding-bottom: 3%
+
+  h1
+    color: $orange
+    font-size: 7vw
+    text-align: center
+    @media ( min-width: 700px )
+      font-size: 3em
+
+  input
+    background-color: $transparent-white
+    border-radius: 20px
+    border: 2px $gray solid
+    color: $orange
+    padding: 5px
+    margin-bottom: 10px
+    outline: 0
+    text-align: center
+    &:focus
+      border: 2px $orange solid
+
+  button
+    background-color: $orange
+    border: 0
+    border-radius: 20px
+    color: $white-original
+    font-weight: 500
+    padding: 5px
+    padding-left: 15px
+    padding-right: 15px
+
+  label
+    color: $orange
+    font-weight: bolder
+
+  p
+    color: $orange
+    margin-bottom: 3%
+    padding-left: 10px
+
+  .file
+    width: 70%
+
+    img
+      width: 30%
+
+
+  #file
+    width: 100%
+
+.no-content
+  +flex-it(center, center)
+  flex-direction: column
+  height: 100vh
+  margin: 0 auto
+  width: 100%
+
+  p
+    background-color: $orange
+    border-radius: 10px
+    color: $white-original
+    font-weight: bold
+    padding: 10px
+    text-align: center
+    width: 300px
+
